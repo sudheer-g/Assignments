@@ -127,18 +127,28 @@ public class CustomArrayListTest {
     }
 
     @Test
-    public void testResize()
-    {
+    public void testResize() {
         List<Integer> list = getNewList(3);
         populateList(list);
-        Assert.assertEquals(7,list.size());
+        Assert.assertEquals(7, list.size());
+
+        List<Integer> listAddAllTest = getNewList(7);
+        populateList(listAddAllTest);
+        List<Integer> integerList = new ArrayList<Integer>(5);
+        populateList(integerList);
+        list.addAll(integerList);
+        Assert.assertEquals(14, list.size());
+
     }
 
 
     private List getNewList() {
         return new CustomArrayList();
     }
-    private List getNewList(int capacity) { return new CustomArrayList(capacity); }
+
+    private List getNewList(int capacity) {
+        return new CustomArrayList(capacity);
+    }
 
 }
 

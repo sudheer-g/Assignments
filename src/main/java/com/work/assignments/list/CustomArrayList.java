@@ -16,16 +16,22 @@ public class CustomArrayList<T> implements List<T> {
         elementData = (T[]) new Object[capacity];
     }
 
-    private boolean resize() {
-        return resize(1);
-    }
 
     private boolean resize(int numberOfElements) {
         return currentIndex + 1 + numberOfElements > capacity;
     }
 
-    private void increaseThresholdOfArrayList() {
-        int newSizeOfArrayList = this.capacity * 2;
+    private void increaseThresholdOfArrayList(int numberOfElements) {
+
+        int newSizeOfArrayList = 0;
+        if(numberOfElements == 1)
+        {
+            newSizeOfArrayList = this.capacity * 2;
+        }
+        else
+        {
+            newSizeOfArrayList = this.capacity + numberOfElements + 1;
+        }
         elementData = Arrays.copyOf(elementData, newSizeOfArrayList);
         this.capacity = newSizeOfArrayList;
     }
@@ -78,7 +84,7 @@ public class CustomArrayList<T> implements List<T> {
 
     public boolean add(T t) {
         if (resize(1)) {
-            increaseThresholdOfArrayList();
+            increaseThresholdOfArrayList(1);
         }
         elementData[++currentIndex] = t;
         return true;
@@ -100,6 +106,10 @@ public class CustomArrayList<T> implements List<T> {
     }
 
     public boolean addAll(Collection<? extends T> c) {
+        int numberOfElements = c.size();
+        if (resize(numberOfElements)) {
+            increaseThresholdOfArrayList(numberOfElements);
+        }
         byte editFlag = 0;
         for (T ele : c) {
             elementData[++currentIndex] = ele;
@@ -142,7 +152,7 @@ public class CustomArrayList<T> implements List<T> {
     public void add(int index, T element){
 
         if (resize(1)) {
-            increaseThresholdOfArrayList();
+            increaseThresholdOfArrayList(1);
         }
 
         for (int i = currentIndex; i >= index; i--) {
