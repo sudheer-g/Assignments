@@ -36,6 +36,28 @@ public class CustomArrayList<T> implements List<T> {
         this.capacity = newSizeOfArrayList;
     }
 
+    private int linearSearch(Object e, boolean parseFromBeginning)
+    {
+        if(parseFromBeginning)
+        {
+            for (int index = 0; index <= currentIndex; index++) {
+                if (elementData[index] == e) {
+                    return index;
+                }
+            }
+
+        }
+        else
+        {
+            for(int index = currentIndex; index >= 0; index--){
+                if (elementData[index] == (T) e) {
+                    return index;
+                }
+            }
+        }
+        return -1;
+    }
+
     public int size() {
         return currentIndex + 1;
     }
@@ -45,12 +67,7 @@ public class CustomArrayList<T> implements List<T> {
     }
 
     public boolean contains(Object o)  {
-        for (int index = 0; index <= currentIndex; index++) {
-            if (elementData[index] == (T) o) {
-                return true;
-            }
-        }
-        return false;
+        return (linearSearch((T) o, true) > 0);
     }
 
     public Iterator<T> iterator() {
@@ -102,7 +119,12 @@ public class CustomArrayList<T> implements List<T> {
     }
 
     public boolean containsAll(Collection<?> c) {
-        return false;
+        for(Object e: c){
+            if(linearSearch((T)e,true) == -1) {
+                return false;
+            }
+        }
+        return true;
     }
 
     public boolean addAll(Collection<? extends T> c) {

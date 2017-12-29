@@ -53,6 +53,28 @@ public class CustomArrayListTest {
     }
 
     @Test
+    public void testContainsAll() {
+        List list = getNewList();
+        populateList(list);
+        List<Integer> integerList = new ArrayList<Integer>(5);
+        populateList(integerList);
+        Assert.assertEquals(true, list.containsAll(integerList));
+
+        List<String> stringList = new ArrayList<>();
+        stringList.add("One");
+        stringList.add("Two");
+        Assert.assertEquals(false, list.containsAll(stringList));
+
+        List listRandom = new ArrayList();
+        listRandom.add(1);
+        listRandom.add(null);
+        listRandom.add("three");
+
+        Assert.assertEquals(false, list.containsAll(listRandom));
+
+    }
+
+    @Test
     public void testRemove() {
         List list = getNewList();
         populateList(list);
