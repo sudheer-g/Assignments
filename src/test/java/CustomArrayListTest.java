@@ -23,7 +23,7 @@ public class CustomArrayListTest {
 
     @Test
     public void testAdd() {
-        List list = getNewList();
+        List list = getNewList(3);
         Assert.assertEquals(list.size(), 0);
         populateList(list);
         //System.out.println(list.get(1));
@@ -126,10 +126,19 @@ public class CustomArrayListTest {
 
     }
 
+    @Test
+    public void testResize()
+    {
+        List<Integer> list = getNewList(3);
+        populateList(list);
+        Assert.assertEquals(7,list.size());
+    }
+
 
     private List getNewList() {
         return new CustomArrayList();
     }
+    private List getNewList(int capacity) { return new CustomArrayList(capacity); }
 
 }
 

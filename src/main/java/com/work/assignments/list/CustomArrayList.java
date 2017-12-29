@@ -3,12 +3,12 @@ package com.work.assignments.list;
 import java.util.*;
 
 public class CustomArrayList<T> implements List<T> {
-    private int capacity = 20;
+    private int capacity;
     private int currentIndex = -1;
     private T[] elementData;
 
     public CustomArrayList() {
-        this(3);
+        this(20);
     }
 
     public CustomArrayList(int capacity) {
@@ -25,9 +25,9 @@ public class CustomArrayList<T> implements List<T> {
     }
 
     private void increaseThresholdOfArrayList() {
-        int newSizeOfArrayList = capacity * 2;
+        int newSizeOfArrayList = this.capacity * 2;
         elementData = Arrays.copyOf(elementData, newSizeOfArrayList);
-        capacity = newSizeOfArrayList;
+        this.capacity = newSizeOfArrayList;
     }
 
     public int size() {
@@ -77,7 +77,7 @@ public class CustomArrayList<T> implements List<T> {
     }
 
     public boolean add(T t) {
-        if (resize()) {
+        if (resize(1)) {
             increaseThresholdOfArrayList();
         }
         elementData[++currentIndex] = t;
@@ -141,7 +141,7 @@ public class CustomArrayList<T> implements List<T> {
 
     public void add(int index, T element){
 
-        if (resize()) {
+        if (resize(1)) {
             increaseThresholdOfArrayList();
         }
 
