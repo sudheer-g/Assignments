@@ -19,11 +19,12 @@ public class CustomArrayListTest {
         list.add(0, 1);
         list.add(3, 33);
         list.add(6, 66);
+
     }
 
     @Test
     public void testAdd() {
-        List list = getNewList(3);
+        List<Integer> list = getNewList(3);
         Assert.assertEquals(list.size(), 0);
         populateList(list);
         //System.out.println(list.get(1));
@@ -33,6 +34,13 @@ public class CustomArrayListTest {
         Assert.assertEquals(new Integer(33), list.get(3));
         Assert.assertEquals(new Integer(66), list.get(6));
         Assert.assertEquals(7, list.size());
+
+        list.add(list.size(),111);
+        Assert.assertEquals(new Integer(111),list.get(list.size() - 1));
+
+        list.add(null);
+        System.out.println(list.get(list.size() - 1));
+        Assert.assertEquals(null, list.get(list.size()));
     }
 
     @Test
@@ -65,6 +73,7 @@ public class CustomArrayListTest {
         stringList.add("Two");
         Assert.assertEquals(false, list.containsAll(stringList));
 
+        list.add(null);
         List listRandom = new ArrayList();
         listRandom.add(1);
         listRandom.add(null);

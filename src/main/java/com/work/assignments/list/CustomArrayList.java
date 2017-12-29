@@ -16,24 +16,21 @@ public class CustomArrayList<T> implements List<T> {
         elementData = (T[]) new Object[capacity];
     }
 
-
-    private boolean resize(int numberOfElements) {
-        return currentIndex + 1 + numberOfElements > capacity;
-    }
-
-    private void increaseThresholdOfArrayList(int numberOfElements) {
-
-        int newSizeOfArrayList = 0;
-        if(numberOfElements == 1)
-        {
-            newSizeOfArrayList = this.capacity * 2;
+    /**
+     * resizes the backed up array if the numberOfElements to be added exceeds capacity
+     * @return true if resized, otherwise false
+     */
+    private boolean resizeIfNeeded(int numberOfElements) {
+        int newSizeOfArrayList = this.currentIndex + 1 + numberOfElements;
+        boolean resized = false;
+        while (capacity < newSizeOfArrayList) {
+            capacity = capacity*2;
+            resized = true;
         }
-        else
-        {
-            newSizeOfArrayList = this.capacity + numberOfElements + 1;
+        if (resized) {
+            elementData = Arrays.copyOf(elementData, capacity);
         }
-        elementData = Arrays.copyOf(elementData, newSizeOfArrayList);
-        this.capacity = newSizeOfArrayList;
+        return resized;
     }
 
     private int linearSearch(Object e, boolean parseFromBeginning)
@@ -41,7 +38,7 @@ public class CustomArrayList<T> implements List<T> {
         if(parseFromBeginning)
         {
             for (int index = 0; index <= currentIndex; index++) {
-                if (elementData[index] == e) {
+                if (Objects.equals(elementData[index], e)) {
                     return index;
                 }
             }
@@ -50,7 +47,7 @@ public class CustomArrayList<T> implements List<T> {
         else
         {
             for(int index = currentIndex; index >= 0; index--){
-                if (elementData[index] == (T) e) {
+                if (Objects.equals(elementData[index], equals(e))) {
                     return index;
                 }
             }
@@ -67,7 +64,7 @@ public class CustomArrayList<T> implements List<T> {
     }
 
     public boolean contains(Object o)  {
-        return (linearSearch((T) o, true) > 0);
+        return linearSearch(o, true) >= 0;
     }
 
     public Iterator<T> iterator() {
@@ -100,9 +97,7 @@ public class CustomArrayList<T> implements List<T> {
     }
 
     public boolean add(T t) {
-        if (resize(1)) {
-            increaseThresholdOfArrayList(1);
-        }
+        resizeIfNeeded(1);
         elementData[++currentIndex] = t;
         return true;
     }
@@ -129,9 +124,7 @@ public class CustomArrayList<T> implements List<T> {
 
     public boolean addAll(Collection<? extends T> c) {
         int numberOfElements = c.size();
-        if (resize(numberOfElements)) {
-            increaseThresholdOfArrayList(numberOfElements);
-        }
+        resizeIfNeeded(numberOfElements);
         byte editFlag = 0;
         for (T ele : c) {
             elementData[++currentIndex] = ele;
@@ -172,10 +165,7 @@ public class CustomArrayList<T> implements List<T> {
     }
 
     public void add(int index, T element){
-
-        if (resize(1)) {
-            increaseThresholdOfArrayList(1);
-        }
+        resizeIfNeeded(1);
 
         for (int i = currentIndex; i >= index; i--) {
             elementData[i + 1] = elementData[i];
