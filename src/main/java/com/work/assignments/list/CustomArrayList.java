@@ -3,7 +3,7 @@ package com.work.assignments.list;
 import java.util.*;
 
 public class CustomArrayList<T> implements List<T> {
-    private int capacity;
+    private int capacity = 20;
     private int currentIndex = -1;
     private T[] elementData;
 
@@ -38,7 +38,7 @@ public class CustomArrayList<T> implements List<T> {
         return (currentIndex >= 0);
     }
 
-    public boolean contains(Object o) throws ClassCastException, NullPointerException {
+    public boolean contains(Object o)  {
         for (int index = 0; index <= currentIndex; index++) {
             if (elementData[index] == (T) o) {
                 return true;
@@ -64,6 +64,7 @@ public class CustomArrayList<T> implements List<T> {
                     throw new NoSuchElementException("No more Elements left.");
                 }
             }
+
         };
     }
 
@@ -75,8 +76,7 @@ public class CustomArrayList<T> implements List<T> {
         return null;
     }
 
-    public boolean add(T t) throws UnsupportedOperationException, ClassCastException,
-            NullPointerException, IllegalArgumentException {
+    public boolean add(T t) {
         if (resize()) {
             increaseThresholdOfArrayList();
         }
@@ -84,7 +84,7 @@ public class CustomArrayList<T> implements List<T> {
         return true;
     }
 
-    public boolean remove(Object o) throws ClassCastException, NullPointerException, UnsupportedOperationException {
+    public boolean remove(Object o) {
         for (int index = 0; index <= currentIndex; index++) {
             if (Objects.equals(elementData[index], o)) {
                 this.remove(index);
@@ -95,12 +95,11 @@ public class CustomArrayList<T> implements List<T> {
         return false;
     }
 
-    public boolean containsAll(Collection<?> c) throws ClassCastException, NullPointerException {
+    public boolean containsAll(Collection<?> c) {
         return false;
     }
 
-    public boolean addAll(Collection<? extends T> c) throws UnsupportedOperationException, ClassCastException,
-            NullPointerException, IllegalArgumentException {
+    public boolean addAll(Collection<? extends T> c) {
         byte editFlag = 0;
         for (T ele : c) {
             elementData[++currentIndex] = ele;
@@ -109,8 +108,7 @@ public class CustomArrayList<T> implements List<T> {
         return (editFlag == 1);
     }
 
-    public boolean addAll(int index, Collection<? extends T> c) throws UnsupportedOperationException, ClassCastException,
-            NullPointerException, IllegalArgumentException, IndexOutOfBoundsException {
+    public boolean addAll(int index, Collection<? extends T> c) {
         T[] updatedElementData = (T[]) new Object[capacity];
         System.arraycopy((T[]) c.toArray(), 0, elementData, index, c.size());
         return true;
@@ -124,26 +122,24 @@ public class CustomArrayList<T> implements List<T> {
         return false;
     }
 
-    public void clear() throws UnsupportedOperationException {
+    public void clear(){
         for (int index = 0; index <= currentIndex; index++) {
             this.remove(index);
         }
         currentIndex = -1;
     }
 
-    public T get(int index) throws IndexOutOfBoundsException {
+    public T get(int index) {
         return elementData[index];
     }
 
-    public T set(int index, T element) throws UnsupportedOperationException, ClassCastException
-            , NullPointerException, IllegalArgumentException, IndexOutOfBoundsException {
+    public T set(int index, T element) {
         T previousElement = elementData[index];
         elementData[index] = element;
         return previousElement;
     }
 
-    public void add(int index, T element) throws IndexOutOfBoundsException, UnsupportedOperationException
-            , ClassCastException, NullPointerException, IllegalArgumentException {
+    public void add(int index, T element){
 
         if (resize()) {
             increaseThresholdOfArrayList();
@@ -157,7 +153,7 @@ public class CustomArrayList<T> implements List<T> {
         currentIndex++;
     }
 
-    public T remove(int index) throws UnsupportedOperationException, IndexOutOfBoundsException {
+    public T remove(int index) {
         T removedData = elementData[index];
         if (index == currentIndex) {
             elementData[index] = null;
@@ -188,7 +184,7 @@ public class CustomArrayList<T> implements List<T> {
         return null;
     }
 
-    public List<T> subList(int fromIndex, int toIndex) throws IndexOutOfBoundsException, IllegalArgumentException {
+    public List<T> subList(int fromIndex, int toIndex) {
         List<T> subList = new CustomArrayList<T>();
 
         for (int index = fromIndex; index < toIndex; index++) {
