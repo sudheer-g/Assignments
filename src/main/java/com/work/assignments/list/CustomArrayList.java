@@ -122,12 +122,10 @@ public class CustomArrayList<T> implements List<T> {
     public boolean addAll(Collection<? extends T> c) {
         int numberOfElements = c.size();
         resizeIfNeeded(numberOfElements);
-        byte editFlag = 0;
         for (T ele : c) {
             elementData[++currentIndex] = ele;
-            editFlag = 1;
         }
-        return (editFlag == 1);
+        return c.size() > 0;
     }
 
     public boolean addAll(int index, Collection<? extends T> c) {
