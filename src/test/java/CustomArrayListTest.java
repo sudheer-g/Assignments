@@ -19,7 +19,6 @@ public class CustomArrayListTest {
         list.add(0, 1);
         list.add(3, 33);
         list.add(6, 66);
-
     }
 
     @Test
@@ -38,14 +37,22 @@ public class CustomArrayListTest {
         list.add(list.size(),111);
         Assert.assertEquals(new Integer(111),list.get(list.size() - 1));
 
+        try
+        {
+            list.add(255, 4);
+        }
+        catch (ArrayIndexOutOfBoundsException e)
+        {
+            System.err.println("Illegal index entry" + e);
+        }
+
         list.add(null);
-        System.out.println(list.get(list.size() - 1));
         Assert.assertEquals(null, list.get(list.size()));
     }
 
     @Test
     public void testSet() {
-        List list = getNewList();
+        List<Integer> list = getNewList();
         populateList(list);
         list.set(0, 1);
         Assert.assertEquals(new Integer(1), list.get(0));
@@ -53,7 +60,7 @@ public class CustomArrayListTest {
 
     @Test
     public void testContains() {
-        List list = getNewList();
+        List<Integer> list = getNewList();
         populateList(list);
         Assert.assertEquals(true, list.contains(66));
         Assert.assertEquals(false, list.contains(155));
@@ -62,7 +69,7 @@ public class CustomArrayListTest {
 
     @Test
     public void testContainsAll() {
-        List list = getNewList();
+        List<Integer> list = getNewList();
         populateList(list);
         List<Integer> integerList = new ArrayList<Integer>(5);
         populateList(integerList);
@@ -85,7 +92,7 @@ public class CustomArrayListTest {
 
     @Test
     public void testRemove() {
-        List list = getNewList();
+        List<Integer> list = getNewList();
         populateList(list);
         Integer i = 33;
         list.remove(6);
@@ -97,7 +104,7 @@ public class CustomArrayListTest {
 
     @Test
     public void testClear() {
-        List list = getNewList();
+        List<Integer> list = getNewList();
         populateList(list);
         list.clear();
         Assert.assertEquals(0, list.size());
@@ -105,12 +112,12 @@ public class CustomArrayListTest {
 
     @Test
     public void testSubList() {
-        List list = getNewList();
+        List<Integer> list = getNewList();
         populateList(list);
         List<Integer> subList = list.subList(0, 4);
         try {
             List<Integer> subList2 = list.subList(0, 25);
-        } catch (ArrayIndexOutOfBoundsException e) {
+        } catch (IndexOutOfBoundsException e) {
             System.err.println(e + ": Array Index is out of Bounds!");
         }
         Assert.assertEquals(4, subList.size());
@@ -119,7 +126,7 @@ public class CustomArrayListTest {
 
     @Test
     public void testIterator() {
-        List list = getNewList();
+        List<Integer> list = getNewList();
         populateList(list);
         Iterator<Integer> iterator = list.iterator();
         Assert.assertEquals(true, iterator.hasNext());
@@ -134,7 +141,7 @@ public class CustomArrayListTest {
 
     @Test
     public void testAddAll() {
-        List list = getNewList();
+        List<Integer> list = getNewList();
         populateList(list);
 
         //Testing with a populated Array List.
@@ -143,18 +150,34 @@ public class CustomArrayListTest {
         list.addAll(integerList);
         Assert.assertEquals(14, list.size());
         Assert.assertEquals(new Integer(66), list.get(13));
-        integerList.clear();
 
         //Sending an empty Collection, should return false because list has not changed.
-        Assert.assertEquals(false, list.addAll(integerList));
+        List<Integer> emptyList= getNewList();
+        Assert.assertEquals(false, list.addAll(emptyList));
+    }
 
-        //Add all from a given index.
-       /* populateList(list);
+    @Test
+    public void testAddAllWithIndex() {
+        List<Integer> integerList = new ArrayList<Integer>(3);
         populateList(integerList);
-        list.addAll(3,integerList);
-        Assert.assertEquals(14, list.size());*/
+        System.out.println(integerList.toString());
 
+        List<Integer> listTwo = getNewList();
+        populateList(listTwo);
+        //listTwo.add(100);
+        //listTwo.remove(6);
+        Assert.assertEquals(true, listTwo.addAll(3,integerList));
+        Assert.assertEquals(14, listTwo.size());
+        Assert.assertEquals(new Integer(66),listTwo.get(9));
+        System.out.println(listTwo);
 
+        List<Integer> listThree = getNewList();
+        populateList(listThree);
+
+        Assert.assertEquals(true,listThree.addAll(0,integerList));
+        Assert.assertEquals(new Integer(66),listThree.get(6));
+        Assert.assertEquals(new Integer(66),listThree.get(13));
+        System.out.println(listThree);
     }
 
     @Test
@@ -172,6 +195,16 @@ public class CustomArrayListTest {
 
     }
 
+    @Test
+    public void testIndexOfAndLastIndexOf()
+    {
+        List<Integer> list = getNewList();
+        populateList(list);
+        list.add(1);
+        Assert.assertEquals(0,list.indexOf(new Integer(1)));
+        Assert.assertEquals(7,list.lastIndexOf(new Integer(1)));
+    }
+
 
     private List getNewList() {
         return new CustomArrayList();
@@ -180,6 +213,7 @@ public class CustomArrayListTest {
     private List getNewList(int capacity) {
         return new CustomArrayList(capacity);
     }
+
 
 }
 

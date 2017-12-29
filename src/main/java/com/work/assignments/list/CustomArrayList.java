@@ -18,13 +18,14 @@ public class CustomArrayList<T> implements List<T> {
 
     /**
      * resizes the backed up array if the numberOfElements to be added exceeds capacity
+     *
      * @return true if resized, otherwise false
      */
     private boolean resizeIfNeeded(int numberOfElements) {
         int newSizeOfArrayList = this.currentIndex + 1 + numberOfElements;
         boolean resized = false;
         while (capacity < newSizeOfArrayList) {
-            capacity = capacity*2;
+            capacity = capacity * 2;
             resized = true;
         }
         if (resized) {
@@ -33,21 +34,17 @@ public class CustomArrayList<T> implements List<T> {
         return resized;
     }
 
-    private int linearSearch(Object e, boolean parseFromBeginning)
-    {
-        if(parseFromBeginning)
-        {
+    private int linearSearch(Object e, boolean traverseFromBeginning) {
+        if (traverseFromBeginning) {
             for (int index = 0; index <= currentIndex; index++) {
                 if (Objects.equals(elementData[index], e)) {
                     return index;
                 }
             }
 
-        }
-        else
-        {
-            for(int index = currentIndex; index >= 0; index--){
-                if (Objects.equals(elementData[index], equals(e))) {
+        } else {
+            for (int index = currentIndex; index >= 0; index--) {
+                if (Objects.equals(elementData[index], e)) {
                     return index;
                 }
             }
@@ -63,7 +60,7 @@ public class CustomArrayList<T> implements List<T> {
         return (currentIndex >= 0);
     }
 
-    public boolean contains(Object o)  {
+    public boolean contains(Object o) {
         return linearSearch(o, true) >= 0;
     }
 
@@ -114,8 +111,8 @@ public class CustomArrayList<T> implements List<T> {
     }
 
     public boolean containsAll(Collection<?> c) {
-        for(Object e: c){
-            if(linearSearch((T)e,true) == -1) {
+        for (Object e : c) {
+            if (linearSearch((T) e, true) == -1) {
                 return false;
             }
         }
@@ -134,9 +131,17 @@ public class CustomArrayList<T> implements List<T> {
     }
 
     public boolean addAll(int index, Collection<? extends T> c) {
-        T[] updatedElementData = (T[]) new Object[capacity];
-        System.arraycopy((T[]) c.toArray(), 0, elementData, index, c.size());
-        return true;
+        int numberOfElements = c.size();
+        resizeIfNeeded(numberOfElements);
+        for (int i = currentIndex; i >= index; i--) {
+            elementData[i + numberOfElements] = elementData[i];
+        }
+        currentIndex += numberOfElements;
+        int indexToAdd = index;
+        for(T ele: c) {
+            elementData[indexToAdd++] = ele;
+        }
+        return c.size() > 0;
     }
 
     public boolean removeAll(Collection<?> c) {
@@ -147,7 +152,7 @@ public class CustomArrayList<T> implements List<T> {
         return false;
     }
 
-    public void clear(){
+    public void clear() {
         for (int index = 0; index <= currentIndex; index++) {
             this.remove(index);
         }
@@ -164,7 +169,7 @@ public class CustomArrayList<T> implements List<T> {
         return previousElement;
     }
 
-    public void add(int index, T element){
+    public void add(int index, T element) {
         resizeIfNeeded(1);
 
         for (int i = currentIndex; i >= index; i--) {
@@ -191,11 +196,11 @@ public class CustomArrayList<T> implements List<T> {
     }
 
     public int indexOf(Object o) {
-        return 0;
+        return linearSearch(o,true);
     }
 
     public int lastIndexOf(Object o) {
-        return 0;
+        return linearSearch(o, false);
     }
 
     public ListIterator<T> listIterator() {
@@ -207,11 +212,19 @@ public class CustomArrayList<T> implements List<T> {
     }
 
     public List<T> subList(int fromIndex, int toIndex) {
-        List<T> subList = new CustomArrayList<T>();
+        if (fromIndex < 0 || toIndex > currentIndex || fromIndex > toIndex) {
+            throw new IndexOutOfBoundsException();
+        }
+        List<T> subList = new CustomArrayList<T>(toIndex-fromIndex+1);
 
         for (int index = fromIndex; index < toIndex; index++) {
             subList.add(elementData[index]);
         }
         return subList;
+    }
+
+    @Override
+    public String toString() {
+        return Arrays.toString(elementData);
     }
 }
