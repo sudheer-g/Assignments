@@ -205,6 +205,26 @@ public class CustomArrayListTest {
         Assert.assertEquals(7,list.lastIndexOf(new Integer(1)));
     }
 
+    @Test
+    public void testRemoveAll()
+    {
+        List<Integer> testList = new ArrayList<>();
+        populateList(testList);
+        List<Integer> list = getNewList();
+        populateList(list);
+        list.removeAll(testList);
+        //System.out.println(list.toString());
+        Assert.assertEquals(0,list.size());
+        list = getNewList();
+        populateList(list);
+        list.add(new Integer(111));
+        list.add(new Integer(112));
+        list.removeAll(testList);
+        Assert.assertEquals(2,list.size());
+        Assert.assertEquals(new Integer(112),list.get(1));
+
+    }
+
 
     private List getNewList() {
         return new CustomArrayList();

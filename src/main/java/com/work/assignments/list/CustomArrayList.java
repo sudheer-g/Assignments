@@ -1,5 +1,6 @@
 package com.work.assignments.list;
 
+import javax.jws.Oneway;
 import java.util.*;
 
 public class CustomArrayList<T> implements List<T> {
@@ -86,7 +87,9 @@ public class CustomArrayList<T> implements List<T> {
     }
 
     public Object[] toArray() {
-        return new Object[0];
+        Object[] arr;
+        arr = elementData;
+        return arr;
     }
 
     public <T1> T1[] toArray(T1[] a) {
@@ -143,11 +146,21 @@ public class CustomArrayList<T> implements List<T> {
     }
 
     public boolean removeAll(Collection<?> c) {
-        return false;
+        for(Object o : c)
+        {
+            this.remove(o);
+        }
+        return c.size() > 0;
     }
 
     public boolean retainAll(Collection<?> c) {
-        return false;
+        for(Object o : c)
+        {
+            if(!(this.contains(o))){
+                this.remove(o);
+            }
+        }
+        return c.size() > 0;
     }
 
     public void clear() {
