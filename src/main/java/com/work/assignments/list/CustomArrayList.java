@@ -219,7 +219,75 @@ public class CustomArrayList<T> implements List<T> {
     }
 
     public ListIterator<T> listIterator() {
-        return null;
+        return new ListIterator<T>() {
+            int index = -1, lastReturnedElement = -1;
+            @Override
+            public boolean hasNext() {
+                return (index < currentIndex);
+            }
+
+            @Override
+            public T next() {
+                if (hasNext()) {
+                    return elementData[++index];
+                } else {
+                    throw new NoSuchElementException("No more Elements left.");
+                }
+            }
+
+            @Override
+            public boolean hasPrevious() {
+                return index > 0;
+            }
+
+            @Override
+            public T previous() {
+                if(hasPrevious()){
+                    lastReturnedElement = index--;
+                    return elementData[lastReturnedElement];
+                }
+                else {
+                    throw new NoSuchElementException("No more Elements left.");
+                }
+            }
+
+            @Override
+            public int nextIndex() {
+                if(hasNext()){
+                    return index + 1;
+                }
+                else {
+                    return currentIndex + 1;
+                }
+            }
+
+            @Override
+            public int previousIndex() {
+                if(hasPrevious()){
+                    return index;
+                }
+                else{
+                    return -1;
+                }
+            }
+
+            @Override
+            public void remove() {
+                CustomArrayList.this.remove(lastReturnedElement);
+            }
+
+            @Override
+            public void set(T t) {
+                CustomArrayList.this.set(lastReturnedElement, t);
+
+            }
+
+            @Override
+            public void add(T t) {
+                CustomArrayList.this.add(index++, t);
+                lastReturnedElement = -1;
+            }
+        };
     }
 
     public ListIterator<T> listIterator(int index) {
