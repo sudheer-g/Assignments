@@ -154,13 +154,17 @@ public class CustomArrayList<T> implements List<T> {
     }
 
     public boolean retainAll(Collection<?> c) {
-        for(Object o : c)
+        boolean changed = false;
+
+        for(int index = 0;index <= currentIndex;index++)
         {
-            if(!(this.contains(o))){
-                this.remove(o);
+            Object o = this.get(index);
+            if(!(c.contains(o))){
+                this.remove(index);
+                changed = true;
             }
         }
-        return c.size() > 0;
+        return changed;
     }
 
     public void clear() {

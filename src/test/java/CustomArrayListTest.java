@@ -2,10 +2,7 @@ import com.work.assignments.list.CustomArrayList;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.NoSuchElementException;
+import java.util.*;
 
 
 @Test
@@ -223,6 +220,34 @@ public class CustomArrayListTest {
         Assert.assertEquals(2,list.size());
         Assert.assertEquals(new Integer(112),list.get(1));
 
+    }
+
+    @Test
+    public void testRetainAll()
+    {
+        List<Integer> testList = new ArrayList<>();
+        populateList(testList);
+        List<Integer> list = getNewList();
+        populateList(list);
+        //System.out.println(list.toString());
+        Assert.assertEquals(false,list.retainAll(testList));
+        list = getNewList();
+        populateList(list);
+        list.add(new Integer(111));
+        list.add(new Integer(112));
+        //list.retainAll(testList);
+        Assert.assertEquals(true,list.retainAll(testList));
+        System.out.println(list.toString());
+        Assert.assertEquals(false, list.contains(new Integer(112)));
+    }
+
+    public void testToArray()
+    {
+        List<Integer> list = getNewList();
+        populateList(list);
+        Object[] arr = list.toArray();
+        Assert.assertEquals(true,arr instanceof Object[]);
+        Assert.assertEquals(1,arr[0]);
     }
 
 
