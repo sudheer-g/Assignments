@@ -221,6 +221,7 @@ public class CustomArrayList<T> implements List<T> {
     public ListIterator<T> listIterator() {
         return new ListIterator<T>() {
             int index = -1, lastReturnedElement = -1;
+            boolean removed = false;
             @Override
             public boolean hasNext() {
                 return (index < currentIndex);
@@ -229,6 +230,10 @@ public class CustomArrayList<T> implements List<T> {
             @Override
             public T next() {
                 if (hasNext()) {
+                    if(removed){
+                        removed = false;
+                        return elementData[index];
+                    }
                     lastReturnedElement = ++index;
                     return elementData[index];
                 } else {
@@ -274,7 +279,9 @@ public class CustomArrayList<T> implements List<T> {
 
             @Override
             public void remove() {
-                CustomArrayList.this.remove(lastReturnedElement--);
+                CustomArrayList.this.remove(lastReturnedElement);
+                lastReturnedElement = -1;
+                removed = true;
             }
 
             @Override

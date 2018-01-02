@@ -289,6 +289,9 @@ public class CustomArrayListTest {
         List<Integer> list = getNewList();
         populateList(list);
         ListIterator listIterator = list.listIterator();
+        /*List<Integer> testList = new ArrayList<>();
+        populateList(testList);
+        ListIterator listIterator = testList.listIterator();*/
         Assert.assertEquals(false,listIterator.hasPrevious());
         Assert.assertEquals(true,listIterator.hasNext());
         System.out.println(listIterator.next());
@@ -296,12 +299,9 @@ public class CustomArrayListTest {
         Assert.assertEquals(true,listIterator.hasPrevious());
         listIterator.remove();
         Assert.assertEquals(false,listIterator.hasPrevious());
-        System.out.println(listIterator.next());
+        Assert.assertEquals(6,listIterator.next());
 
-
-
-
-
+        
     }
 
 
