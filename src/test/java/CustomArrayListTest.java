@@ -309,6 +309,57 @@ public class CustomArrayListTest {
 
     }
 
+    public void testWithCustomClassObjects() {
+        class Person{
+            Person()
+            {
+                firstName = "Sudheer";
+                lastName = "Gotety";
+            }
+            Person(String firstName, String lastName)
+            {
+                this.firstName = firstName;
+                this.lastName = lastName;
+            }
+            private String firstName;
+            private String lastName;
+
+            @Override
+            public boolean equals(Object obj) {
+                if(obj == this)
+                    return true;
+
+                if(!(obj instanceof Person)){
+                    return false;
+                }
+
+                Person object = (Person) obj;
+                return Objects.equals(this.firstName,object.firstName) && Objects.equals(this.lastName,object.lastName);
+            }
+
+            @Override
+            public int hashCode() {
+                int c = super.hashCode();
+                int result = 123;
+                result = 37 * result + c;
+                return result;
+            }
+        }
+
+        Person person1 = new Person();
+        Person person2 = new Person();
+        Person person3 = new Person("FirstName", "LastName");
+        List<Person> list = getNewList();
+        list.add(person1);
+        Assert.assertEquals(true, list.contains(person1));
+        Assert.assertEquals(true,list.contains(person2));
+        Assert.assertEquals(true,person1.equals(person2));
+        Assert.assertEquals(false,list.contains(person3));
+        Assert.assertEquals(false,person1.equals(person3));
+        System.out.println(person1.hashCode());
+        System.out.println(person2.hashCode());
+    }
+
 
     private List getNewList() {
         return new CustomArrayList();

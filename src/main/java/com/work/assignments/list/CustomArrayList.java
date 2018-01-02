@@ -294,6 +294,9 @@ public class CustomArrayList<T> implements List<T> {
 
             @Override
             public void set(T t) {
+                if(removed|| added || lastReturnedElement == -1){  //Possible bug.
+                    throw new IllegalStateException();
+                }
                 CustomArrayList.this.set(lastReturnedElement, t);
 
             }
@@ -322,9 +325,9 @@ public class CustomArrayList<T> implements List<T> {
         return subList;
     }
 
-
     @Override
     public String toString() {
         return Arrays.toString(elementData);
     }
+
 }
