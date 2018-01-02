@@ -270,13 +270,15 @@ public class CustomArrayListTest {
         IntStream.range(from, to).forEach( n -> {
             Assert.assertEquals(true,listIterator.hasNext());
             Assert.assertEquals(n,listIterator.nextIndex());
-            System.out.println(listIterator.next());
+            Assert.assertEquals(list.get(from + n), listIterator.next());
+            //System.out.println(listIterator.next());
         });
         Assert.assertEquals(false,listIterator.hasNext());
         IntStream.range(from, to).forEach( n -> {
             Assert.assertEquals(true,listIterator.hasPrevious());
             Assert.assertEquals(to - 1 - n ,listIterator.previousIndex());
-            System.out.println(listIterator.previous());
+            Assert.assertEquals(list.get(to - 1 - n), listIterator.previous());
+            //System.out.println(listIterator.previous());
         });
         Assert.assertEquals(false,listIterator.hasPrevious());
         Assert.assertEquals(0,listIterator.nextIndex());
@@ -289,19 +291,22 @@ public class CustomArrayListTest {
         List<Integer> list = getNewList();
         populateList(list);
         ListIterator listIterator = list.listIterator();
-        /*List<Integer> testList = new ArrayList<>();
-        populateList(testList);
-        ListIterator listIterator = testList.listIterator();*/
-        Assert.assertEquals(false,listIterator.hasPrevious());
-        Assert.assertEquals(true,listIterator.hasNext());
         System.out.println(listIterator.next());
-        //System.out.println(listIterator.next());
-        Assert.assertEquals(true,listIterator.hasPrevious());
         listIterator.remove();
         Assert.assertEquals(false,listIterator.hasPrevious());
         Assert.assertEquals(6,listIterator.next());
+        Assert.assertEquals(2,listIterator.next());
+        int from = 2, to = list.size();
+        IntStream.range(from, to).forEach( n -> {
+            Assert.assertEquals(true,listIterator.hasNext());
+            Assert.assertEquals(n,listIterator.nextIndex());
+            System.out.println(listIterator.next());
+        });
+        listIterator.remove();
+        Assert.assertEquals(false,listIterator.hasNext());
+        Assert.assertEquals(true,listIterator.hasPrevious());
+        Assert.assertEquals(4,listIterator.previous());
 
-        
     }
 
 

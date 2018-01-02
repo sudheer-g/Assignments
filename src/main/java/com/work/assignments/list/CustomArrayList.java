@@ -221,7 +221,7 @@ public class CustomArrayList<T> implements List<T> {
     public ListIterator<T> listIterator() {
         return new ListIterator<T>() {
             int index = -1, lastReturnedElement = -1;
-            boolean removed = false;
+            boolean removed = false, added = false;
             @Override
             public boolean hasNext() {
                 return (index < currentIndex);
@@ -232,7 +232,7 @@ public class CustomArrayList<T> implements List<T> {
                 if (hasNext()) {
                     if(removed){
                         removed = false;
-                        return elementData[index];
+                        //return elementData[index];
                     }
                     lastReturnedElement = ++index;
                     return elementData[index];
@@ -243,12 +243,16 @@ public class CustomArrayList<T> implements List<T> {
 
             @Override
             public boolean hasPrevious() {
-                return index >= 0 && lastReturnedElement > -1;
+                return index >= 0;
             }
 
             @Override
             public T previous() {
                 if(hasPrevious()){
+                    if(removed){
+                        removed = false;
+                        //return elementData[index];
+                    }
                     lastReturnedElement = index;
                     return elementData[index--];
                 }
@@ -263,7 +267,7 @@ public class CustomArrayList<T> implements List<T> {
                     return index + 1;
                 }
                 else {
-                    return currentIndex + 1;
+                    return CustomArrayList.this.size();
                 }
             }
 
@@ -279,7 +283,11 @@ public class CustomArrayList<T> implements List<T> {
 
             @Override
             public void remove() {
+                if(removed|| added || lastReturnedElement == -1){  //Possible bug.
+                    throw new IllegalStateException();
+                }
                 CustomArrayList.this.remove(lastReturnedElement);
+                index--;
                 lastReturnedElement = -1;
                 removed = true;
             }
