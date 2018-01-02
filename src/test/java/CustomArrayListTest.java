@@ -253,7 +253,7 @@ public class CustomArrayListTest {
     }
 
     @Test
-    public void testListIterator()
+    public void testListIteratorTraversal()
     {
         List<Integer> list = getNewList();
         populateList(list);
@@ -278,6 +278,28 @@ public class CustomArrayListTest {
             Assert.assertEquals(to - 1 - n ,listIterator.previousIndex());
             System.out.println(listIterator.previous());
         });
+        Assert.assertEquals(false,listIterator.hasPrevious());
+        Assert.assertEquals(0,listIterator.nextIndex());
+        Assert.assertEquals(-1,listIterator.previousIndex());
+
+    }
+
+    @Test
+    public void testListIteratorCRUD(){
+        List<Integer> list = getNewList();
+        populateList(list);
+        ListIterator listIterator = list.listIterator();
+        Assert.assertEquals(false,listIterator.hasPrevious());
+        Assert.assertEquals(true,listIterator.hasNext());
+        System.out.println(listIterator.next());
+        //System.out.println(listIterator.next());
+        Assert.assertEquals(true,listIterator.hasPrevious());
+        listIterator.remove();
+        Assert.assertEquals(false,listIterator.hasPrevious());
+        System.out.println(listIterator.next());
+
+
+
 
 
     }

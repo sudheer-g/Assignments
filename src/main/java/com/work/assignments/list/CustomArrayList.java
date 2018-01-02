@@ -238,14 +238,14 @@ public class CustomArrayList<T> implements List<T> {
 
             @Override
             public boolean hasPrevious() {
-                return index >= 0;
+                return index >= 0 && lastReturnedElement > -1;
             }
 
             @Override
             public T previous() {
                 if(hasPrevious()){
-                    index--;
-                    return elementData[lastReturnedElement--];
+                    lastReturnedElement = index;
+                    return elementData[index--];
                 }
                 else {
                     throw new NoSuchElementException("No more Elements left.");
@@ -265,7 +265,7 @@ public class CustomArrayList<T> implements List<T> {
             @Override
             public int previousIndex() {
                 if(hasPrevious()){
-                    return lastReturnedElement;
+                    return index;
                 }
                 else{
                     return -1;
@@ -274,7 +274,7 @@ public class CustomArrayList<T> implements List<T> {
 
             @Override
             public void remove() {
-                CustomArrayList.this.remove(lastReturnedElement);
+                CustomArrayList.this.remove(lastReturnedElement--);
             }
 
             @Override
