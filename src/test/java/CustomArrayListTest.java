@@ -311,7 +311,6 @@ public class CustomArrayListTest {
     @Test
     public void testWithCustomClassObjects() {
 
-
         Person person1 = new Person();
         Person person2 = new Person();
         Person person3 = new Person("FirstName", "LastName");
@@ -322,10 +321,8 @@ public class CustomArrayListTest {
         Assert.assertEquals(true,person1.equals(person2));
         Assert.assertEquals(false,list.contains(person3));
         Assert.assertEquals(false,person1.equals(person3));
-        System.out.println(person1.hashCode());
-        System.out.println(person2.hashCode());
-        System.out.println(person3.hashCode());
     }
+
 
 
     private List getNewList() {
