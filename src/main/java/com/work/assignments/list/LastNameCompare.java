@@ -1,5 +1,6 @@
+package com.work.assignments.list;
+
 import java.util.Comparator;
-import com.work.assignments.list.Person;
 
 public class LastNameCompare implements Comparator<Person> {
     @Override

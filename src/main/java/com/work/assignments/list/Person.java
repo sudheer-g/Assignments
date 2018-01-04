@@ -1,21 +1,23 @@
 package com.work.assignments.list;
 
-import java.util.Comparator;
 import java.util.Objects;
 
-public class Person implements Comparable{
+public class Person implements Comparable<Person> {
+
+    private String firstName;
+    private String lastName;
+
     public Person()
     {
         firstName = "Sudheer";
         lastName = "Gotety";
     }
+
     public Person(String firstName, String lastName)
     {
         this.firstName = firstName;
         this.lastName = lastName;
     }
-    private String firstName;
-    private String lastName;
 
     public String getFirstName() {
         return this.firstName;
@@ -44,36 +46,16 @@ public class Person implements Comparable{
     }
 
     @Override
-    public int compareTo(Object o) {
-        if(!(o instanceof Person))
-            return -1;
-
-        if(this.equals(o))
-            return 0;
-
-        Person object = (Person) o;
-
-        if(this.firstName.compareTo(object.firstName) > 0){
-            return 1;
+    public int compareTo(Person otherPerson) {
+        int c = this.firstName.compareTo(otherPerson.firstName);
+        if(c == 0) {
+            c = this.lastName.compareTo(otherPerson.lastName);
         }
-        else if(this.firstName.compareTo(object.firstName) < 0) {
-            return -1;
-        }
-
-        if(this.firstName.compareTo(object.firstName) == 0){
-            if(this.lastName.compareTo(object.lastName) > 0) {
-                return 1;
-            }
-
-            else {
-                return -1;
-            }
-        }
-        return 0;
+        return c;
     }
 
     @Override
     public String toString() {
-        return this.firstName + this.lastName;
+        return this.firstName + " " + this.lastName;
     }
 }

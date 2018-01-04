@@ -1,3 +1,4 @@
+import com.work.assignments.list.LastNameCompare;
 import com.work.assignments.list.Person;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -40,11 +41,9 @@ public class PersonTest {
             System.out.println(p.toString());
         }
         System.out.println("\n");
-        Assert.assertEquals("AahoChibi", list.get(0).toString());
+        Assert.assertEquals("Aaho Chibi", list.get(0).toString());
         list.clear();
         populateList(list);
-        list.add(person1);
-        list.add(person2);
         LastNameCompare lastNameCompare = new LastNameCompare();
         Collections.sort(list, lastNameCompare);
         for(Person p :list) {
