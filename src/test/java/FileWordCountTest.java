@@ -5,8 +5,6 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.util.*;
-import java.io.*;
-
 import org.apache.logging.log4j.*;
 
 @Test
@@ -39,9 +37,20 @@ public class FileWordCountTest {
     public void testReadFileCached(String fileName, Map<String, Integer> assertMap) {
         FileWordCountCached fc = new FileWordCountCached();
         Map<String, Integer> hashMap;
-        hashMap = fc.createOrReadFileWordCache(fileName);
-        for (Map.Entry<String, Integer> entry : assertMap.entrySet()) {
-            Assert.assertEquals(hashMap.get(entry.getKey()), entry.getValue());
+        int i = 0;
+        long startTime, endTime, totalTime;
+        long[] timeArr = new long[20];
+        while(i < 2){
+            startTime = System.currentTimeMillis();
+            hashMap = fc.createOrReadFileWordCache(fileName);
+            endTime = System.currentTimeMillis();
+            totalTime = endTime - startTime;
+            timeArr[i] = totalTime;
+            for (Map.Entry<String, Integer> entry : assertMap.entrySet()) {
+                Assert.assertEquals(hashMap.get(entry.getKey()), entry.getValue());
+            }
+            i++;
         }
+        Assert.assertEquals(true, timeArr[1] < timeArr[0] );
     }
 }
