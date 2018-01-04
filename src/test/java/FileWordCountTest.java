@@ -10,6 +10,7 @@ import org.apache.logging.log4j.*;
 @Test
 public class FileWordCountTest {
 
+    private static Logger logger = LogManager.getLogger();
     @DataProvider(name = "sampleFileData")
     public static Object[][] wordCountData() {
         Map<String, Integer> assertMap = new HashMap<>();
@@ -23,7 +24,7 @@ public class FileWordCountTest {
 
     @Test(dataProvider = "sampleFileData")
     public void testReadFile(String fileName, Map<String, Integer> assertMap) {
-        //logger.debug("Test Statement");
+        logger.debug("Test Statement");
         FileWordCount fc = new FileWordCount();
         Map<String, Integer> hashMap;
         hashMap = fc.countWordsInAFile(fileName);
@@ -46,6 +47,7 @@ public class FileWordCountTest {
             endTime = System.currentTimeMillis();
             totalTime = endTime - startTime;
             timeArr[i] = totalTime;
+            logger.info("Total time for call to return: " + totalTime);
             for (Map.Entry<String, Integer> entry : assertMap.entrySet()) {
                 Assert.assertEquals(hashMap.get(entry.getKey()), entry.getValue());
             }
