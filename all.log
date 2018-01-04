@@ -1,3 +1,6 @@
-2018-01-04 18:13:04.749 [main] DEBUG FileWordCountTest - Test Statement
-2018-01-04 18:13:04.784 [main] INFO  FileWordCountTest - Total time for call to return: 8
-2018-01-04 18:13:04.784 [main] INFO  FileWordCountTest - Total time for call to return: 0
+2018-01-04 18:15:45.992 [main] DEBUG FileWordCountTest - Test Statement
+2018-01-04 18:15:46.036 [main] INFO  FileWordCountTest - Total time for call to return: 12
+2018-01-04 18:15:46.036 [main] INFO  FileWordCountTest - Total time for call to return: 0
+2018-01-04 18:19:35.371 [main] DEBUG FileWordCountTest - Test Statement
+2018-01-04 18:19:35.423 [main] INFO  FileWordCountTest - Total time for call to return: 7
+2018-01-04 18:19:35.424 [main] INFO  FileWordCountTest - Total time for call to return: 0
