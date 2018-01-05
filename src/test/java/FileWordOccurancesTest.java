@@ -1,4 +1,5 @@
 import com.work.assignments.FileIO.FileWordOccurances;
+import com.work.assignments.FileIO.Result;
 import com.work.assignments.FileIO.Tuple;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -8,41 +9,40 @@ public class FileWordOccurancesTest {
 
     @DataProvider(name = "FileWordOccurances")
     public static Object[][] fileWordOccurances() {
-        List<Tuple<Integer, Integer>> positionList = new ArrayList<>();
-        Tuple<Integer, Integer> t1 = new Tuple<>(1,1);
-        Tuple<Integer, Integer> t2 = new Tuple<>(1,6);
-        Tuple<Integer, Integer> t3 = new Tuple<>(1,14);
-        Tuple<Integer, Integer> t4 = new Tuple<>(2,2);
-        Tuple<Integer, Integer> t5 = new Tuple<>(2,7);
-        Tuple<Integer, Integer> t6 = new Tuple<>(2,15);
-        Tuple<Integer, Integer> t7 = new Tuple<>(3,2);
-        Tuple<Integer, Integer> t8 = new Tuple<>(3,7);
-        Tuple<Integer, Integer> t9 = new Tuple<>(3,15);
-        positionList.add(t1);
-        positionList.add(t2);
-        positionList.add(t3);
-        positionList.add(t4);
-        positionList.add(t5);
-        positionList.add(t6);
-        positionList.add(t7);
-        positionList.add(t8);
-        positionList.add(t9);
+        List<Result> positionList = new ArrayList<>();
+        String fileName = "sampleInput";
+        Result r1 = new Result(1,1, fileName);
+        Result r2 = new Result(1,6, fileName);
+        Result r3 = new Result(1,14, fileName);
+        Result r4 = new Result(2,2, fileName);
+        Result r5 = new Result(2,7, fileName);
+        Result r6 = new Result(2,15, fileName);
+        Result r7 = new Result(3,2, fileName);
+        Result r8 = new Result(3,7, fileName);
+        Result r9 = new Result(3,15, fileName);
+
+        positionList.add(r1);
+        positionList.add(r2);
+        positionList.add(r3);
+        positionList.add(r4);
+        positionList.add(r5);
+        positionList.add(r6);
+        positionList.add(r7);
+        positionList.add(r8);
+        positionList.add(r9);
         return new Object[][] {new Object[] {"sampleInput","This", positionList}};
     }
 
     @Test(dataProvider = "FileWordOccurances")
-    public void test(String fileName, String word, List<Tuple<Integer, Integer>> assertList) {
+    public void test(String fileName, String word, List<Result> assertList) {
         FileWordOccurances fo = new FileWordOccurances();
-        List<Tuple<Integer, Integer>> list  = fo.getFileWordOccurances(fileName, word);
+        List<Result> list  = fo.getFileWordOccurances(fileName, word);
         Iterator iterator = list.iterator();
-        for(Tuple<Integer,Integer> tuple : assertList) {
+        for(Result result : assertList) {
             if(!iterator.hasNext()) {
-                break;
+                throw new RuntimeException("Ran out of words");
             }
-            Assert.assertEquals(true, Objects.equals(tuple, iterator.next()));
+            Assert.assertEquals(true, Objects.equals(result, iterator.next()));
         }
     }
-
-
-
 }

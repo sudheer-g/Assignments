@@ -1,5 +1,4 @@
 package com.work.assignments.FileIO;
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -9,7 +8,8 @@ import java.util.*;
 
 public class FileWordOccurances {
 
-    public List<Tuple<Integer, Integer>> getFileWordOccurances(String fileName, String word) {
+
+    public List<Result> getFileWordOccurances(String fileName, String word) {
         BufferedReader bufferedReader = null;
         File file = new File(fileName);
         try {
@@ -39,17 +39,18 @@ public class FileWordOccurances {
         for (String s : list) {
             if(file.containsWord(s)) {
                 Word word =  file.getWord(s);
-                word.putwordsInLine(lineCounter, wordPosition++);
+                //Result containing Line number and Word position with filename.
+                word.putwordsInLine(lineCounter, wordPosition++, file.name);
             }
             else {
                 Word word = new Word(s);
-                word.putwordsInLine(lineCounter, wordPosition++);
+                word.putwordsInLine(lineCounter, wordPosition++, file.name);
                 file.putWord(s, word);
             }
         }
     }
 
-    private List<Tuple<Integer, Integer>> getLineWordPositions(File file, String word) {
+    private List<Result> getLineWordPositions(File file, String word) {
         Word obj = file.getWord(word);
         return obj.getwordList();
     }
