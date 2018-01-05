@@ -1,6 +1,8 @@
 package com.work.assignments.FileIO;
+
 import java.util.*;
-public class Word{
+
+public class Word {
     private String wordName;
     private List<Result> list = new ArrayList<>();
 

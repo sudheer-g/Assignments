@@ -1,7 +1,6 @@
 package com.work.assignments.FileIO;
 
-public class Tuple<X,Y>
-{
+public class Tuple<X, Y> {
     private X x;
     private Y y;
 
@@ -29,15 +28,15 @@ public class Tuple<X,Y>
 
     @Override
     public String toString() {
-        return "(" + x.toString() + ", " +  y.toString() + ")";
+        return "(" + x.toString() + ", " + y.toString() + ")";
     }
 
     @Override
     public boolean equals(Object obj) {
-        if(obj == this)
+        if (obj == this)
             return true;
 
-        if(!(obj instanceof Tuple)){
+        if (!(obj instanceof Tuple)) {
             return false;
         }
 

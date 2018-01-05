@@ -1,4 +1,5 @@
 package com.work.assignments.FileIO;
+
 import java.io.*;
 import java.util.*;
 
@@ -25,7 +26,7 @@ public class FileWordCount {
     private void wordCount(Map<String, Integer> wordCountMap, String line) {
         List<String> list = Arrays.asList(line.split(" "));
         for (String s : list) {
-            s = s.replaceAll("[-+.^:,@*!#${}&()]","");
+            s = s.replaceAll("[-+.^:,@*!#${}&()]", "");
             if (wordCountMap.containsKey(s)) {
                 int wc = wordCountMap.get(s);
                 wordCountMap.put(s, ++wc);

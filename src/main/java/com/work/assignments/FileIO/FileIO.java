@@ -18,8 +18,7 @@ public class FileIO {
         }
     }
 
-    public static void closeFile(Reader fr)
-    {
+    public static void closeFile(Reader fr) {
         if (fr != null) {
             try {
                 fr.close();

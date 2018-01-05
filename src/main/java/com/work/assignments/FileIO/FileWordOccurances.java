@@ -1,4 +1,5 @@
 package com.work.assignments.FileIO;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -17,17 +18,14 @@ public class FileWordOccurances {
             bufferedReader = new BufferedReader(fr);
             String line;
             int lineCounter = 1;
-            while((line = bufferedReader.readLine())!= null) {
+            while ((line = bufferedReader.readLine()) != null) {
                 countWordOccurancesInLine(file, line, lineCounter);
                 lineCounter++;
             }
-            return getLineWordPositions(file,word);
-        }
-        catch (IOException e)
-        {
+            return getLineWordPositions(file, word);
+        } catch (IOException e) {
             throw new RuntimeException("Failed to read File.", e);
-        }
-        finally {
+        } finally {
             FileIO.closeFile(bufferedReader);
         }
 
@@ -37,12 +35,11 @@ public class FileWordOccurances {
         List<String> list = Arrays.asList(line.split(" "));
         int wordPosition = 1;
         for (String s : list) {
-            if(file.containsWord(s)) {
-                Word word =  file.getWord(s);
+            if (file.containsWord(s)) {
+                Word word = file.getWord(s);
                 //Result containing Line number and Word position with filename.
                 word.putwordsInLine(lineCounter, wordPosition++, file.name);
-            }
-            else {
+            } else {
                 Word word = new Word(s);
                 word.putwordsInLine(lineCounter, wordPosition++, file.name);
                 file.putWord(s, word);
