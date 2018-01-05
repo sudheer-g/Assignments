@@ -3,21 +3,25 @@ package com.work.assignments.FileIO;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.Arrays;
+import java.util.*;
+
 
 public class FileWordOccurances {
-    Map<String, List<Integer>> hashMap = new HashMap<>();
-    public Map<String ,List<Integer>> getFileWordOccurances(String fileName) {
-        BufferedReader bufferedReader = null;
-        try {
 
+    public List<Tuple<Integer, Integer>> getFileWordOccurances(String fileName, String word) {
+        BufferedReader bufferedReader = null;
+        File file = new File(fileName);
+        try {
             FileReader fr = FileIO.openFile(fileName);
             bufferedReader = new BufferedReader(fr);
             String line;
+            int lineCounter = 1;
             while((line = bufferedReader.readLine())!= null) {
+                countWordOccurancesInLine(file, line, lineCounter);
+                lineCounter++;
             }
+            return getLineWordPositions(file,word);
         }
         catch (IOException e)
         {
@@ -26,6 +30,27 @@ public class FileWordOccurances {
         finally {
             FileIO.closeFile(bufferedReader);
         }
-        return hashMap;
+
+    }
+
+    private void countWordOccurancesInLine(File file, String line, int lineCounter) {
+        List<String> list = Arrays.asList(line.split(" "));
+        int wordPosition = 1;
+        for (String s : list) {
+            if(file.containsWord(s)) {
+                Word word =  file.getWord(s);
+                word.putwordsInLine(lineCounter, wordPosition++);
+            }
+            else {
+                Word word = new Word(s);
+                word.putwordsInLine(lineCounter, wordPosition++);
+                file.putWord(s, word);
+            }
+        }
+    }
+
+    private List<Tuple<Integer, Integer>> getLineWordPositions(File file, String word) {
+        Word obj = file.getWord(word);
+        return obj.getwordList();
     }
 }

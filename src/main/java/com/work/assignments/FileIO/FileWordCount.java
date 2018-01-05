@@ -1,6 +1,4 @@
 package com.work.assignments.FileIO;
-
-
 import java.io.*;
 import java.util.*;
 
@@ -36,5 +34,4 @@ public class FileWordCount {
             }
         }
     }
-
 }
