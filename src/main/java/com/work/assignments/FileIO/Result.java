@@ -1,6 +1,8 @@
 package com.work.assignments.FileIO;
 
-public class Result {
+import java.util.Comparator;
+
+public class Result implements Comparable<Result>{
     private int lineNumber;
     private int positionNumber;
     private String fileName;
@@ -32,5 +34,19 @@ public class Result {
     @Override
     public int hashCode() {
         return this.fileName.hashCode() ^ this.positionNumber ^ this.lineNumber;
+    }
+
+    @Override
+    public int compareTo(Result o) {
+        int compare = this.fileName.compareTo(o.fileName);
+        if(compare == 0) {
+            if(this.lineNumber == o.lineNumber) {
+                return this.positionNumber - o.positionNumber;
+            }
+            else {
+                return this.lineNumber - o.lineNumber;
+            }
+        }
+        return compare;
     }
 }

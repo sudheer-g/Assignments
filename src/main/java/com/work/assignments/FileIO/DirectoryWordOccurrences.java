@@ -9,7 +9,7 @@ import java.util.*;
 
 
 public class DirectoryWordOccurrences {
-
+    private List<Result> resultList = new ArrayList<>();
     private void countWordOccurrencesInLine(String line, int lineCounter, String word, String fileName, List<Result> resultList) {
         int wordIndex;
         wordIndex = line.indexOf(word);
@@ -44,7 +44,6 @@ public class DirectoryWordOccurrences {
     public List<Result> getDirectoryWordOccurrences(String directoryName, String word, boolean recursive) {
         File folder = new File(directoryName);
         File[] listOfFiles = folder.listFiles();
-        List<Result> resultList = new ArrayList<>();
         if (listOfFiles != null) {
             for (File file : listOfFiles) {
                 if (file.isFile()) {
