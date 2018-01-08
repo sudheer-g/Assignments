@@ -15,7 +15,7 @@ public class DirectoryWordOccurrencesTest {
     private Logger logger = LogManager.getLogger(DirectoryWordOccurrencesTest.class);
 
     @DataProvider(name = "DirectoryWordOccurrences")
-    public static Object[][] fileWordOccurances() {
+    public static Object[][] directoryWordOccurrences() {
         List<Result> positionList = new ArrayList<>();
         String fileName2 = "sampleDirectory/sampleInput2";
         Result r10 = new Result(1, 0, fileName2);
@@ -56,16 +56,16 @@ public class DirectoryWordOccurrencesTest {
         positionList.add(r8);
         //positionList.add(r9);
 
-        return new Object[][]{new Object[]{"sampleDirectory", "This is", positionList}};
+        return new Object[][]{new Object[]{"sampleDirectory", "This is", positionList, true}};
     }
 
     @Test(dataProvider = "DirectoryWordOccurrences")
-    public void folderWordOccurences(String folderName, String word, List<Result> assertList) {
+    public void folderWordOccurences(String folderName, String word, List<Result> assertList, boolean recursive) {
         DirectoryWordOccurrences fo = new DirectoryWordOccurrences();
-        List<Result> resultList = fo.getDirectoryWordOccurrences(folderName, word);
+        List<Result> resultList = fo.getDirectoryWordOccurrences(folderName, word, recursive);
         Iterator iterator = resultList.iterator();
         for (Result result : assertList) {
-            Assert.assertEquals(true, Objects.equals(result, iterator.next()));
+            Assert.assertEquals(Objects.equals(result, iterator.next()), true);
         }
     }
 }

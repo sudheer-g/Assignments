@@ -28,4 +28,9 @@ public class Result {
         Result result = (Result) obj;
         return this.lineNumber == result.lineNumber && this.positionNumber == result.positionNumber && this.fileName.equals(result.fileName);
     }
+
+    @Override
+    public int hashCode() {
+        return this.fileName.hashCode() ^ this.positionNumber ^ this.lineNumber;
+    }
 }

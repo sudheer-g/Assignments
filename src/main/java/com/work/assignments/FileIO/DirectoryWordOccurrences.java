@@ -10,28 +10,30 @@ import java.util.*;
 
 public class DirectoryWordOccurrences {
 
-    private void countWordOccurencesInLine(String line, int lineCounter, String word, String fileName, Word wordObj) {
+    private void countWordOccurrencesInLine(String line, int lineCounter, String word, String fileName, List<Result> resultList) {
         int wordIndex;
         wordIndex = line.indexOf(word);
+        Result result;
         while(wordIndex >= 0) {
-            wordObj.putWordsInLine(lineCounter, wordIndex, fileName);
+            result = new Result(lineCounter, wordIndex, fileName);
+            resultList.add(result);
             wordIndex = line.indexOf(word, wordIndex + word.length());
         }
     }
 
     private List<Result> getFileWordOccurances(String fileName, String word) {
         BufferedReader bufferedReader = null;
-        Word wordObj = new Word();
+        List<Result> resultList = new ArrayList<>();
         int lineCounter = 1;
         try {
             FileReader fr = FileIO.openFile(fileName);
             bufferedReader = new BufferedReader(fr);
             String line;
             while ((line = bufferedReader.readLine()) != null) {
-                countWordOccurencesInLine(line, lineCounter, word, fileName, wordObj);
+                countWordOccurrencesInLine(line, lineCounter, word, fileName, resultList);
                 lineCounter++;
             }
-            return wordObj.getWordList();
+            return resultList;
         } catch (IOException e) {
             throw new RuntimeException("Failed to read File.", e);
         } finally {
@@ -39,15 +41,18 @@ public class DirectoryWordOccurrences {
         }
     }
 
-    public List<Result> getDirectoryWordOccurrences(String directoryName, String word) {
-        java.io.File folder = new java.io.File(directoryName);
-        java.io.File[] listOfFiles = folder.listFiles();
+    public List<Result> getDirectoryWordOccurrences(String directoryName, String word, boolean recursive) {
+        File folder = new File(directoryName);
+        File[] listOfFiles = folder.listFiles();
         List<Result> resultList = new ArrayList<>();
         if (listOfFiles != null) {
             for (File file : listOfFiles) {
                 if (file.isFile()) {
                     List<Result> list = getFileWordOccurances(directoryName + "/" + file.getName(), word);
                     resultList.addAll(list);
+                }
+                if(file.isDirectory() && recursive) {
+                    resultList = getDirectoryWordOccurrences(directoryName + '/' + file.getName(), word, recursive);
                 }
             }
         }
