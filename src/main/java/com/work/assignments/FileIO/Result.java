@@ -26,6 +26,6 @@ public class Result {
         }
 
         Result result = (Result) obj;
-        return this.lineNumber == result.lineNumber && this.positionNumber == result.positionNumber;
+        return this.lineNumber == result.lineNumber && this.positionNumber == result.positionNumber && this.fileName.equals(result.fileName);
     }
 }

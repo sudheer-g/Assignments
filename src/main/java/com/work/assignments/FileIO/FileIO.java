@@ -23,7 +23,7 @@ public class FileIO {
             try {
                 fr.close();
             } catch (IOException e) {
-                logger.error("Failed to close");
+                logger.error("Failed to close", e);
             }
         }
     }
