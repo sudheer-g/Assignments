@@ -4,17 +4,18 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class DirectoryWordOccurrences {
     private List<Result> resultList = new ArrayList<>();
+
     private void countWordOccurrencesInLine(String line, int lineCounter, String word, String fileName, List<Result> resultList) {
         int wordIndex;
         wordIndex = line.indexOf(word);
         Result result;
-        while(wordIndex >= 0) {
+        while (wordIndex >= 0) {
             result = new Result(lineCounter, wordIndex, fileName);
             resultList.add(result);
             wordIndex = line.indexOf(word, wordIndex + word.length());
@@ -50,7 +51,7 @@ public class DirectoryWordOccurrences {
                     List<Result> list = getFileWordOccurances(directoryName + "/" + file.getName(), word);
                     resultList.addAll(list);
                 }
-                if(file.isDirectory() && recursive) {
+                if (file.isDirectory() && recursive) {
                     resultList = getDirectoryWordOccurrences(directoryName + '/' + file.getName(), word, recursive);
                 }
             }

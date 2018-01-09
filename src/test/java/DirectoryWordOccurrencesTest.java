@@ -1,13 +1,11 @@
 import com.work.assignments.FileIO.DirectoryWordOccurrences;
 import com.work.assignments.FileIO.FileIO;
 import com.work.assignments.FileIO.Result;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LogManager;
-
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -53,7 +51,7 @@ public class DirectoryWordOccurrencesTest {
         Collections.sort(resultList);
         Collections.sort(assertList);
         Iterator iterator = resultList.iterator();
-        for(Result result : assertList) {
+        for (Result result : assertList) {
             Assert.assertEquals(Objects.equals(result, iterator.next()), true);
         }
     }

@@ -32,15 +32,12 @@ public class CustomArrayListTest {
         Assert.assertEquals(new Integer(66), list.get(6));
         Assert.assertEquals(7, list.size());
 
-        list.add(list.size(),111);
-        Assert.assertEquals(new Integer(111),list.get(list.size() - 1));
+        list.add(list.size(), 111);
+        Assert.assertEquals(new Integer(111), list.get(list.size() - 1));
 
-        try
-        {
+        try {
             list.add(255, 4);
-        }
-        catch (ArrayIndexOutOfBoundsException e)
-        {
+        } catch (ArrayIndexOutOfBoundsException e) {
             System.err.println("Illegal index entry" + e);
         }
 
@@ -150,7 +147,7 @@ public class CustomArrayListTest {
         Assert.assertEquals(new Integer(66), list.get(13));
 
         //Sending an empty Collection, should return false because list has not changed.
-        List<Integer> emptyList= getNewList();
+        List<Integer> emptyList = getNewList();
         Assert.assertEquals(false, list.addAll(emptyList));
     }
 
@@ -164,17 +161,17 @@ public class CustomArrayListTest {
         populateList(listTwo);
         //listTwo.add(100);
         //listTwo.remove(6);
-        Assert.assertEquals(true, listTwo.addAll(3,integerList));
+        Assert.assertEquals(true, listTwo.addAll(3, integerList));
         Assert.assertEquals(14, listTwo.size());
-        Assert.assertEquals(new Integer(66),listTwo.get(9));
+        Assert.assertEquals(new Integer(66), listTwo.get(9));
         System.out.println(listTwo);
 
         List<Integer> listThree = getNewList();
         populateList(listThree);
 
-        Assert.assertEquals(true,listThree.addAll(0,integerList));
-        Assert.assertEquals(new Integer(66),listThree.get(6));
-        Assert.assertEquals(new Integer(66),listThree.get(13));
+        Assert.assertEquals(true, listThree.addAll(0, integerList));
+        Assert.assertEquals(new Integer(66), listThree.get(6));
+        Assert.assertEquals(new Integer(66), listThree.get(13));
         System.out.println(listThree);
     }
 
@@ -194,117 +191,113 @@ public class CustomArrayListTest {
     }
 
     @Test
-    public void testIndexOfAndLastIndexOf()
-    {
+    public void testIndexOfAndLastIndexOf() {
         List<Integer> list = getNewList();
         populateList(list);
         list.add(1);
-        Assert.assertEquals(0,list.indexOf(new Integer(1)));
-        Assert.assertEquals(7,list.lastIndexOf(new Integer(1)));
+        Assert.assertEquals(0, list.indexOf(new Integer(1)));
+        Assert.assertEquals(7, list.lastIndexOf(new Integer(1)));
     }
 
     @Test
-    public void testRemoveAll()
-    {
+    public void testRemoveAll() {
         List<Integer> testList = new ArrayList<>();
         populateList(testList);
         List<Integer> list = getNewList();
         populateList(list);
         list.removeAll(testList);
         //System.out.println(list.toString());
-        Assert.assertEquals(0,list.size());
+        Assert.assertEquals(0, list.size());
         list = getNewList();
         populateList(list);
         list.add(new Integer(111));
         list.add(new Integer(112));
         list.removeAll(testList);
-        Assert.assertEquals(2,list.size());
-        Assert.assertEquals(new Integer(112),list.get(1));
+        Assert.assertEquals(2, list.size());
+        Assert.assertEquals(new Integer(112), list.get(1));
 
     }
 
     @Test
-    public void testRetainAll()
-    {
+    public void testRetainAll() {
         List<Integer> testList = new ArrayList<>();
         populateList(testList);
         List<Integer> list = getNewList();
         populateList(list);
         //System.out.println(list.toString());
-        Assert.assertEquals(false,list.retainAll(testList));
+        Assert.assertEquals(false, list.retainAll(testList));
         list = getNewList();
         populateList(list);
         list.add(new Integer(111));
         list.add(new Integer(112));
         //list.retainAll(testList);
-        Assert.assertEquals(true,list.retainAll(testList));
+        Assert.assertEquals(true, list.retainAll(testList));
         System.out.println(list.toString());
         Assert.assertEquals(false, list.contains(new Integer(111)));
     }
 
     @Test
-    public void testToArray()
-    {
+    public void testToArray() {
         List<Integer> list = getNewList();
         populateList(list);
         Object[] arr = list.toArray();
-        Assert.assertEquals(true,arr instanceof Object[]);
-        Assert.assertEquals(1,arr[0]);
+        Assert.assertEquals(true, arr instanceof Object[]);
+        Assert.assertEquals(1, arr[0]);
     }
 
     @Test
-    public void testListIteratorTraversal()
-    {
+    public void testListIteratorTraversal() {
         List<Integer> list = getNewList();
         populateList(list);
         ListIterator listIterator = list.listIterator();
-        Assert.assertEquals(false,listIterator.hasPrevious());
-        Assert.assertEquals(true,listIterator.hasNext());
-        IntStream.range(0,5).forEach( n -> {
-            Assert.assertEquals(1,listIterator.next());
-            Assert.assertEquals(1,listIterator.previous());
+        Assert.assertEquals(false, listIterator.hasPrevious());
+        Assert.assertEquals(true, listIterator.hasNext());
+        IntStream.range(0, 5).forEach(n -> {
+            Assert.assertEquals(1, listIterator.next());
+            Assert.assertEquals(1, listIterator.previous());
         });
-        Assert.assertEquals(0,listIterator.nextIndex());
-        Assert.assertEquals(-1,listIterator.previousIndex());
+        Assert.assertEquals(0, listIterator.nextIndex());
+        Assert.assertEquals(-1, listIterator.previousIndex());
         int from = 0, to = list.size();
-        IntStream.range(from, to).forEach( n -> {
-            Assert.assertEquals(true,listIterator.hasNext());
-            Assert.assertEquals(n,listIterator.nextIndex());
+        IntStream.range(from, to).forEach(n -> {
+            Assert.assertEquals(true, listIterator.hasNext());
+            Assert.assertEquals(n, listIterator.nextIndex());
             Assert.assertEquals(list.get(from + n), listIterator.next());
             //System.out.println(listIterator.next());
         });
-        Assert.assertEquals(false,listIterator.hasNext());
-        IntStream.range(from, to).forEach( n -> {
-            Assert.assertEquals(true,listIterator.hasPrevious());
-            Assert.assertEquals(to - 1 - n ,listIterator.previousIndex());
+        Assert.assertEquals(false, listIterator.hasNext());
+        IntStream.range(from, to).forEach(n -> {
+            Assert.assertEquals(true, listIterator.hasPrevious());
+            Assert.assertEquals(to - 1 - n, listIterator.previousIndex());
             Assert.assertEquals(list.get(to - 1 - n), listIterator.previous());
             //System.out.println(listIterator.previous());
         });
-        Assert.assertEquals(false,listIterator.hasPrevious());
-        Assert.assertEquals(0,listIterator.nextIndex());
-        Assert.assertEquals(-1,listIterator.previousIndex());
+        Assert.assertEquals(false, listIterator.hasPrevious());
+        Assert.assertEquals(0, listIterator.nextIndex());
+        Assert.assertEquals(-1, listIterator.previousIndex());
 
     }
+
     @Test
-    public void testListIteratorCRUD(){
+    public void testListIteratorCRUD() {
         List<Integer> list = getNewList();
         populateList(list);
         ListIterator listIterator = list.listIterator();
         System.out.println(listIterator.next());
         listIterator.remove();
-        Assert.assertEquals(false,listIterator.hasPrevious());
-        Assert.assertEquals(6,listIterator.next());
-        Assert.assertEquals(2,listIterator.next());
+        Assert.assertEquals(false, listIterator.hasPrevious());
+        Assert.assertEquals(6, listIterator.next());
+        Assert.assertEquals(2, listIterator.next());
         int from = 2, to = list.size();
-        IntStream.range(from, to).forEach( n -> {
-            Assert.assertEquals(true,listIterator.hasNext());
-            Assert.assertEquals(n,listIterator.nextIndex());
+        IntStream.range(from, to).forEach(n -> {
+            Assert.assertEquals(true, listIterator.hasNext());
+            Assert.assertEquals(n, listIterator.nextIndex());
             System.out.println(listIterator.next());
         });
         listIterator.remove();
-        Assert.assertEquals(false,listIterator.hasNext());
-        Assert.assertEquals(true,listIterator.hasPrevious());
-        Assert.assertEquals(4,listIterator.previous());
+        Assert.assertEquals(false, listIterator.hasNext());
+        Assert.assertEquals(true, listIterator.hasPrevious());
+        Assert.assertEquals(4, listIterator.previous());
 
     }
 
@@ -317,12 +310,11 @@ public class CustomArrayListTest {
         List<Person> list = getNewList();
         list.add(person1);
         Assert.assertEquals(true, list.contains(person1));
-        Assert.assertEquals(true,list.contains(person2));
-        Assert.assertEquals(true,person1.equals(person2));
-        Assert.assertEquals(false,list.contains(person3));
-        Assert.assertEquals(false,person1.equals(person3));
+        Assert.assertEquals(true, list.contains(person2));
+        Assert.assertEquals(true, person1.equals(person2));
+        Assert.assertEquals(false, list.contains(person3));
+        Assert.assertEquals(false, person1.equals(person3));
     }
-
 
 
     private List getNewList() {

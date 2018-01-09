@@ -1,6 +1,5 @@
 package com.work.assignments.list;
 
-import javax.jws.Oneway;
 import java.util.*;
 
 public class CustomArrayList<T> implements List<T> {
@@ -139,15 +138,14 @@ public class CustomArrayList<T> implements List<T> {
         }
         currentIndex += numberOfElements;
         int indexToAdd = index;
-        for(T ele: c) {
+        for (T ele : c) {
             elementData[indexToAdd++] = ele;
         }
         return c.size() > 0;
     }
 
     public boolean removeAll(Collection<?> c) {
-        for(Object o : c)
-        {
+        for (Object o : c) {
             this.remove(o);
         }
         return c.size() > 0;
@@ -156,10 +154,9 @@ public class CustomArrayList<T> implements List<T> {
     public boolean retainAll(Collection<?> c) {
         boolean changed = false;
 
-        for(int index = 0;index <= currentIndex;index++)
-        {
+        for (int index = 0; index <= currentIndex; index++) {
             Object o = this.get(index);
-            if(!(c.contains(o))){
+            if (!(c.contains(o))) {
                 this.remove(index);
                 changed = true;
             }
@@ -211,7 +208,7 @@ public class CustomArrayList<T> implements List<T> {
     }
 
     public int indexOf(Object o) {
-        return linearSearch(o,true);
+        return linearSearch(o, true);
     }
 
     public int lastIndexOf(Object o) {
@@ -222,6 +219,7 @@ public class CustomArrayList<T> implements List<T> {
         return new ListIterator<T>() {
             int index = -1, lastReturnedElement = -1;
             boolean removed = false, added = false;
+
             @Override
             public boolean hasNext() {
                 return (index < currentIndex);
@@ -230,7 +228,7 @@ public class CustomArrayList<T> implements List<T> {
             @Override
             public T next() {
                 if (hasNext()) {
-                    if(removed){
+                    if (removed) {
                         removed = false;
                         //return elementData[index];
                     }
@@ -248,42 +246,39 @@ public class CustomArrayList<T> implements List<T> {
 
             @Override
             public T previous() {
-                if(hasPrevious()){
-                    if(removed){
+                if (hasPrevious()) {
+                    if (removed) {
                         removed = false;
                         //return elementData[index];
                     }
                     lastReturnedElement = index;
                     return elementData[index--];
-                }
-                else {
+                } else {
                     throw new NoSuchElementException("No more Elements left.");
                 }
             }
 
             @Override
             public int nextIndex() {
-                if(hasNext()){
+                if (hasNext()) {
                     return index + 1;
-                }
-                else {
+                } else {
                     return CustomArrayList.this.size();
                 }
             }
 
             @Override
             public int previousIndex() {
-                if(hasPrevious()){
+                if (hasPrevious()) {
                     return index;
-                }
-                else{
+                } else {
                     return -1;
                 }
             }
 
             @Override
             public void remove() {
-                if(removed|| added || lastReturnedElement == -1){  //Possible bug.
+                if (removed || added || lastReturnedElement == -1) {  //Possible bug.
                     throw new IllegalStateException();
                 }
                 CustomArrayList.this.remove(lastReturnedElement);
@@ -294,7 +289,7 @@ public class CustomArrayList<T> implements List<T> {
 
             @Override
             public void set(T t) {
-                if(removed|| added || lastReturnedElement == -1){  //Possible bug.
+                if (removed || added || lastReturnedElement == -1) {  //Possible bug.
                     throw new IllegalStateException();
                 }
                 CustomArrayList.this.set(lastReturnedElement, t);
@@ -317,7 +312,7 @@ public class CustomArrayList<T> implements List<T> {
         if (fromIndex < 0 || toIndex > currentIndex || fromIndex > toIndex) {
             throw new IndexOutOfBoundsException();
         }
-        List<T> subList = new CustomArrayList<T>(toIndex-fromIndex+1);
+        List<T> subList = new CustomArrayList<T>(toIndex - fromIndex + 1);
 
         for (int index = fromIndex; index < toIndex; index++) {
             subList.add(elementData[index]);

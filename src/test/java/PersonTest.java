@@ -15,7 +15,7 @@ public class PersonTest {
     }
 
     @Test
-    public void testHashCode(){
+    public void testHashCode() {
         Map<Person, Person> hashMap = new HashMap<Person, Person>();
         Person person1 = new Person();
         Person person2 = new Person();
@@ -32,12 +32,12 @@ public class PersonTest {
         Person person2 = new Person();
         list.add(person1);
         list.add(person2);
-        for(Person p :list) {
+        for (Person p : list) {
             System.out.println(p.toString());
         }
         System.out.println("\n");
         Collections.sort(list);
-        for(Person p :list) {
+        for (Person p : list) {
             System.out.println(p.toString());
         }
         System.out.println("\n");
@@ -46,7 +46,7 @@ public class PersonTest {
         populateList(list);
         LastNameCompare lastNameCompare = new LastNameCompare();
         Collections.sort(list, lastNameCompare);
-        for(Person p :list) {
+        for (Person p : list) {
             System.out.println(p.toString());
         }
 

@@ -1,16 +1,19 @@
 import com.work.assignments.FileIO.FileWordCount;
 import com.work.assignments.FileIO.FileWordCountCached;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.util.*;
-import org.apache.logging.log4j.*;
+import java.util.HashMap;
+import java.util.Map;
 
 @Test
 public class FileWordCountTest {
 
     private static Logger logger = LogManager.getLogger();
+
     @DataProvider(name = "sampleFileData")
     public static Object[][] wordCountData() {
         Map<String, Integer> assertMap = new HashMap<>();
@@ -18,7 +21,7 @@ public class FileWordCountTest {
         assertMap.put("This", 9);
         assertMap.put("sample", 3);
         assertMap.put("ipsum", 8);
-        return new Object[][] {new Object[] {"sampleInput", assertMap}};
+        return new Object[][]{new Object[]{"sampleInput", assertMap}};
     }
 
 
@@ -41,7 +44,7 @@ public class FileWordCountTest {
         int i = 0;
         long startTime, endTime, totalTime;
         long[] timeArr = new long[20];
-        while(i < 2){
+        while (i < 2) {
             startTime = System.currentTimeMillis();
             hashMap = fc.createOrReadFileWordCache(fileName);
             endTime = System.currentTimeMillis();
@@ -53,6 +56,6 @@ public class FileWordCountTest {
             }
             i++;
         }
-        Assert.assertEquals(true, timeArr[1] < timeArr[0] );
+        Assert.assertEquals(true, timeArr[1] < timeArr[0]);
     }
 }

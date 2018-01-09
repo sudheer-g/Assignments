@@ -7,14 +7,12 @@ public class Person implements Comparable<Person> {
     private String firstName;
     private String lastName;
 
-    public Person()
-    {
+    public Person() {
         firstName = "Sudheer";
         lastName = "Gotety";
     }
 
-    public Person(String firstName, String lastName)
-    {
+    public Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
@@ -29,15 +27,15 @@ public class Person implements Comparable<Person> {
 
     @Override
     public boolean equals(Object obj) {
-        if(obj == this)
+        if (obj == this)
             return true;
 
-        if(!(obj instanceof Person)){
+        if (!(obj instanceof Person)) {
             return false;
         }
 
         Person object = (Person) obj;
-        return Objects.equals(this.firstName,object.firstName) && Objects.equals(this.lastName,object.lastName);
+        return Objects.equals(this.firstName, object.firstName) && Objects.equals(this.lastName, object.lastName);
     }
 
     @Override
@@ -48,7 +46,7 @@ public class Person implements Comparable<Person> {
     @Override
     public int compareTo(Person otherPerson) {
         int c = this.firstName.compareTo(otherPerson.firstName);
-        if(c == 0) {
+        if (c == 0) {
             c = this.lastName.compareTo(otherPerson.lastName);
         }
         return c;

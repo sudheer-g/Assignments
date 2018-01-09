@@ -7,42 +7,14 @@ import java.util.function.BiConsumer;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 
-public class CustomHashMap<K,V> implements Map{
+public class CustomHashMap<K, V> implements Map {
 
     private int initialCapacity, numberOfElements;
-
-    static class Node<K,V> implements Map.Entry{
-        K key;V value;
-        Node<K,V> next;
-
-        Node(K key, V value, Node<K,V> next)
-        {
-            this.key = key;
-            this.value = value;
-            this.next = next;
-        }
-
-        @Override
-        public Object getKey() {
-            return key;
-        }
-
-        @Override
-        public Object getValue() {
-            return value;
-        }
-
-        @Override
-        public Object setValue(Object value) {
-            V oldValue = this.value;
-            this.value = (V)value;
-            return oldValue;
-        }
-    }
 
     public CustomHashMap() {
         this.initialCapacity = 20;
     }
+
     @Override
     public Object getOrDefault(Object key, Object defaultValue) {
         return null;
@@ -156,5 +128,34 @@ public class CustomHashMap<K,V> implements Map{
     @Override
     public Set<Entry> entrySet() {
         return null;
+    }
+
+    static class Node<K, V> implements Map.Entry {
+        K key;
+        V value;
+        Node<K, V> next;
+
+        Node(K key, V value, Node<K, V> next) {
+            this.key = key;
+            this.value = value;
+            this.next = next;
+        }
+
+        @Override
+        public Object getKey() {
+            return key;
+        }
+
+        @Override
+        public Object getValue() {
+            return value;
+        }
+
+        @Override
+        public Object setValue(Object value) {
+            V oldValue = this.value;
+            this.value = (V) value;
+            return oldValue;
+        }
     }
 }
