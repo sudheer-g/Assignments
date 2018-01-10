@@ -13,7 +13,7 @@ public class Result implements Comparable<Result> {
 
     @Override
     public String toString() {
-        return "(" + lineNumber + ", " + positionNumber + ")";
+        return "(" + lineNumber + ", " + positionNumber + "," + fileName + ")";
     }
 
     @Override

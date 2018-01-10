@@ -16,7 +16,20 @@ public class Consumer implements Runnable {
         this.blockingQueue = blockingQueue;
     }
 
-    private void consume(Query q) {
+    private synchronized void consume() {
+        try {
+            while (true) {
+                Query q = blockingQueue.take();
+                if (q.directoryName == null || q.word == null) {
+                    break;
+                }
+                execute(q);
+            }
+        } catch (InterruptedException e) {
+            logger.error(e);
+        }
+    }
+    private void execute(Query q) {
         DirectoryWordOccurrences fo = new DirectoryWordOccurrences();
         List<Result> resultList = fo.getDirectoryWordOccurrences(q.directoryName, q.word, q.recursive);
         Collections.sort(resultList);
@@ -25,16 +38,7 @@ public class Consumer implements Runnable {
 
     @Override
     public void run() {
-        try {
-            while (true) {
-                Query q = blockingQueue.take();
-                if (q.directoryName == null || q.word == null) {
-                    break;
-                }
-                consume(q);
-            }
-        } catch (InterruptedException e) {
-            logger.error(e);
-        }
+        logger.debug("Hello" + this);
+        consume();
     }
 }

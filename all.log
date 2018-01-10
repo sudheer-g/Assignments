@@ -1,104 +1,11 @@
-2018-01-04 18:15:45.992 [main] DEBUG FileWordCountTest - Test Statement
-2018-01-04 18:15:46.036 [main] INFO  FileWordCountTest - Total time for call to return: 12
-2018-01-04 18:15:46.036 [main] INFO  FileWordCountTest - Total time for call to return: 0
-2018-01-04 18:19:35.371 [main] DEBUG FileWordCountTest - Test Statement
-2018-01-04 18:19:35.423 [main] INFO  FileWordCountTest - Total time for call to return: 7
-2018-01-04 18:19:35.424 [main] INFO  FileWordCountTest - Total time for call to return: 0
-2018-01-04 19:47:01.820 [main] DEBUG FileWordCountTest - Test Statement
-2018-01-04 19:47:01.871 [main] INFO  FileWordCountTest - Total time for call to return: 4
-2018-01-04 19:47:01.872 [main] INFO  FileWordCountTest - Total time for call to return: 0
-2018-01-08 14:44:29.392 [main] INFO  DirectoryWordOccurrencesTest - 1597431102
-2018-01-08 14:44:29.397 [main] INFO  DirectoryWordOccurrencesTest - 1597431148
-2018-01-08 14:44:29.398 [main] INFO  DirectoryWordOccurrencesTest - 1597431108
-2018-01-08 14:44:29.398 [main] INFO  DirectoryWordOccurrencesTest - 1597431156
-2018-01-08 14:44:29.398 [main] INFO  DirectoryWordOccurrencesTest - 1597431110
-2018-01-08 14:44:29.398 [main] INFO  DirectoryWordOccurrencesTest - 1597431156
-2018-01-08 14:44:29.398 [main] INFO  DirectoryWordOccurrencesTest - -225564630
-2018-01-08 14:44:29.399 [main] INFO  DirectoryWordOccurrencesTest - -225564584
-2018-01-08 14:44:29.399 [main] INFO  DirectoryWordOccurrencesTest - -225564624
-2018-01-08 14:44:29.399 [main] INFO  DirectoryWordOccurrencesTest - -225564576
-2018-01-08 14:44:29.399 [main] INFO  DirectoryWordOccurrencesTest - -225564622
-2018-01-08 14:44:29.401 [main] INFO  DirectoryWordOccurrencesTest - -225564576
-2018-01-08 14:45:21.730 [main] INFO  DirectoryWordOccurrencesTest - 798715551
-2018-01-08 14:45:21.735 [main] INFO  DirectoryWordOccurrencesTest - 798715551
-2018-01-08 14:45:21.735 [main] INFO  DirectoryWordOccurrencesTest - 798715574
-2018-01-08 14:45:21.735 [main] INFO  DirectoryWordOccurrencesTest - 798715574
-2018-01-08 14:45:21.735 [main] INFO  DirectoryWordOccurrencesTest - 798715554
-2018-01-08 14:45:21.736 [main] INFO  DirectoryWordOccurrencesTest - 798715554
-2018-01-08 14:45:21.736 [main] INFO  DirectoryWordOccurrencesTest - 798715578
-2018-01-08 14:45:21.736 [main] INFO  DirectoryWordOccurrencesTest - 798715578
-2018-01-08 14:45:21.736 [main] INFO  DirectoryWordOccurrencesTest - 798715555
-2018-01-08 14:45:21.736 [main] INFO  DirectoryWordOccurrencesTest - 798715555
-2018-01-08 14:45:21.737 [main] INFO  DirectoryWordOccurrencesTest - 798715578
-2018-01-08 14:45:21.737 [main] INFO  DirectoryWordOccurrencesTest - 798715578
-2018-01-08 14:45:21.737 [main] INFO  DirectoryWordOccurrencesTest - -112782315
-2018-01-08 14:45:21.737 [main] INFO  DirectoryWordOccurrencesTest - -112782315
-2018-01-08 14:45:21.737 [main] INFO  DirectoryWordOccurrencesTest - -112782292
-2018-01-08 14:45:21.737 [main] INFO  DirectoryWordOccurrencesTest - -112782292
-2018-01-08 14:45:21.738 [main] INFO  DirectoryWordOccurrencesTest - -112782312
-2018-01-08 14:45:21.738 [main] INFO  DirectoryWordOccurrencesTest - -112782312
-2018-01-08 14:45:21.738 [main] INFO  DirectoryWordOccurrencesTest - -112782288
-2018-01-08 14:45:21.738 [main] INFO  DirectoryWordOccurrencesTest - -112782288
-2018-01-08 14:45:21.738 [main] INFO  DirectoryWordOccurrencesTest - -112782311
-2018-01-08 14:45:21.738 [main] INFO  DirectoryWordOccurrencesTest - -112782311
-2018-01-08 14:45:21.738 [main] INFO  DirectoryWordOccurrencesTest - -112782288
-2018-01-08 14:45:21.739 [main] INFO  DirectoryWordOccurrencesTest - -112782288
-2018-01-08 14:56:08.289 [main] INFO  DirectoryWordOccurrencesTest - 798715551
-2018-01-08 14:56:08.293 [main] INFO  DirectoryWordOccurrencesTest - 798715551
-2018-01-08 14:56:08.293 [main] INFO  DirectoryWordOccurrencesTest - 798715572
-2018-01-08 14:56:08.293 [main] INFO  DirectoryWordOccurrencesTest - 798715572
-2018-01-08 14:56:08.293 [main] INFO  DirectoryWordOccurrencesTest - 798715554
-2018-01-08 14:56:08.293 [main] INFO  DirectoryWordOccurrencesTest - 798715554
-2018-01-08 14:56:08.293 [main] INFO  DirectoryWordOccurrencesTest - 798715578
-2018-01-08 14:56:08.294 [main] INFO  DirectoryWordOccurrencesTest - 798715578
-2018-01-08 14:56:08.294 [main] INFO  DirectoryWordOccurrencesTest - 798715555
-2018-01-08 14:56:08.294 [main] INFO  DirectoryWordOccurrencesTest - 798715555
-2018-01-08 14:56:08.294 [main] INFO  DirectoryWordOccurrencesTest - 798715572
-2018-01-08 14:56:08.294 [main] INFO  DirectoryWordOccurrencesTest - 798715572
-2018-01-08 14:56:08.294 [main] INFO  DirectoryWordOccurrencesTest - -112782315
-2018-01-08 14:56:08.294 [main] INFO  DirectoryWordOccurrencesTest - -112782315
-2018-01-08 14:56:08.295 [main] INFO  DirectoryWordOccurrencesTest - -112782294
-2018-01-08 14:56:08.295 [main] INFO  DirectoryWordOccurrencesTest - -112782294
-2018-01-08 14:56:08.295 [main] INFO  DirectoryWordOccurrencesTest - -112782316
-2018-01-08 14:56:08.295 [main] INFO  DirectoryWordOccurrencesTest - -112782316
-2018-01-08 14:56:08.295 [main] INFO  DirectoryWordOccurrencesTest - -112782292
-2018-01-08 14:56:08.295 [main] INFO  DirectoryWordOccurrencesTest - -112782292
-2018-01-08 14:56:08.295 [main] INFO  DirectoryWordOccurrencesTest - -112782315
-2018-01-08 14:56:08.295 [main] INFO  DirectoryWordOccurrencesTest - -112782315
-2018-01-08 14:56:08.295 [main] INFO  DirectoryWordOccurrencesTest - -112782290
-2018-01-08 14:56:08.296 [main] INFO  DirectoryWordOccurrencesTest - -112782290
-2018-01-08 14:59:38.407 [main] INFO  DirectoryWordOccurrencesTest - 798715551
-2018-01-08 14:59:38.412 [main] INFO  DirectoryWordOccurrencesTest - 798715551
-2018-01-08 14:59:38.413 [main] INFO  DirectoryWordOccurrencesTest - 798715528
-2018-01-08 14:59:38.413 [main] INFO  DirectoryWordOccurrencesTest - 798715528
-2018-01-08 14:59:38.414 [main] INFO  DirectoryWordOccurrencesTest - 798715550
-2018-01-08 14:59:38.414 [main] INFO  DirectoryWordOccurrencesTest - 798715550
-2018-01-08 14:59:38.414 [main] INFO  DirectoryWordOccurrencesTest - 798715526
-2018-01-08 14:59:38.414 [main] INFO  DirectoryWordOccurrencesTest - 798715526
-2018-01-08 14:59:38.415 [main] INFO  DirectoryWordOccurrencesTest - 798715551
-2018-01-08 14:59:38.421 [main] INFO  DirectoryWordOccurrencesTest - 798715551
-2018-01-08 14:59:38.421 [main] INFO  DirectoryWordOccurrencesTest - 798715524
-2018-01-08 14:59:38.422 [main] INFO  DirectoryWordOccurrencesTest - 798715524
-2018-01-08 14:59:38.423 [main] INFO  DirectoryWordOccurrencesTest - -112782315
-2018-01-08 14:59:38.423 [main] INFO  DirectoryWordOccurrencesTest - -112782315
-2018-01-08 14:59:38.423 [main] INFO  DirectoryWordOccurrencesTest - -112782334
-2018-01-08 14:59:38.424 [main] INFO  DirectoryWordOccurrencesTest - -112782334
-2018-01-08 14:59:38.424 [main] INFO  DirectoryWordOccurrencesTest - -112782316
-2018-01-08 14:59:38.424 [main] INFO  DirectoryWordOccurrencesTest - -112782316
-2018-01-08 14:59:38.428 [main] INFO  DirectoryWordOccurrencesTest - -112782324
-2018-01-08 14:59:38.428 [main] INFO  DirectoryWordOccurrencesTest - -112782324
-2018-01-08 14:59:38.428 [main] INFO  DirectoryWordOccurrencesTest - -112782315
-2018-01-08 14:59:38.428 [main] INFO  DirectoryWordOccurrencesTest - -112782315
-2018-01-08 14:59:38.429 [main] INFO  DirectoryWordOccurrencesTest - -112782322
-2018-01-08 14:59:38.429 [main] INFO  DirectoryWordOccurrencesTest - -112782322
-2018-01-09 14:14:53.007 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25)]
-2018-01-09 14:34:57.430 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25)]
-2018-01-09 14:35:31.019 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25)]
-2018-01-09 14:35:47.394 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25)]
-2018-01-09 14:48:30.147 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25)]
-2018-01-09 15:21:16.921 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25)]
-2018-01-09 15:28:44.415 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25)]
-2018-01-09 15:46:48.945 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25)]
-2018-01-09 15:48:38.540 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25)]
-2018-01-09 15:58:55.497 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25)]
-2018-01-09 16:08:32.942 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25), (1, 0), (1, 23), (2, 2), (2, 26), (3, 2), (3, 25)]
+2018-01-10 17:04:05.195 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0,sampleDirectory/sampleInput), (1, 23,sampleDirectory/sampleInput), (2, 2,sampleDirectory/sampleInput), (2, 26,sampleDirectory/sampleInput), (3, 2,sampleDirectory/sampleInput), (3, 25,sampleDirectory/sampleInput), (1, 0,sampleDirectory/sampleInput2), (1, 23,sampleDirectory/sampleInput2), (2, 2,sampleDirectory/sampleInput2), (2, 26,sampleDirectory/sampleInput2), (3, 2,sampleDirectory/sampleInput2), (3, 25,sampleDirectory/sampleInput2)]
+2018-01-10 17:04:43.313 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0,sampleDirectory/sampleInput), (1, 23,sampleDirectory/sampleInput), (2, 2,sampleDirectory/sampleInput), (2, 26,sampleDirectory/sampleInput), (3, 2,sampleDirectory/sampleInput), (3, 25,sampleDirectory/sampleInput), (1, 0,sampleDirectory/sampleInput2), (1, 23,sampleDirectory/sampleInput2), (2, 2,sampleDirectory/sampleInput2), (2, 26,sampleDirectory/sampleInput2), (3, 2,sampleDirectory/sampleInput2), (3, 25,sampleDirectory/sampleInput2)]
+2018-01-10 17:04:57.949 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0,sampleDirectory/sampleInput), (1, 23,sampleDirectory/sampleInput), (2, 2,sampleDirectory/sampleInput), (2, 26,sampleDirectory/sampleInput), (3, 2,sampleDirectory/sampleInput), (3, 25,sampleDirectory/sampleInput), (1, 0,sampleDirectory/sampleInput2), (1, 23,sampleDirectory/sampleInput2), (2, 2,sampleDirectory/sampleInput2), (2, 26,sampleDirectory/sampleInput2), (3, 2,sampleDirectory/sampleInput2), (3, 25,sampleDirectory/sampleInput2)]
+2018-01-10 17:05:02.849 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0,sampleDirectory/sampleInput), (1, 23,sampleDirectory/sampleInput), (2, 2,sampleDirectory/sampleInput), (2, 26,sampleDirectory/sampleInput), (3, 2,sampleDirectory/sampleInput), (3, 25,sampleDirectory/sampleInput), (1, 0,sampleDirectory/sampleInput2), (1, 23,sampleDirectory/sampleInput2), (2, 2,sampleDirectory/sampleInput2), (2, 26,sampleDirectory/sampleInput2), (3, 2,sampleDirectory/sampleInput2), (3, 25,sampleDirectory/sampleInput2)]
+2018-01-10 17:05:06.013 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0,sampleDirectory/sampleInput), (1, 23,sampleDirectory/sampleInput), (2, 2,sampleDirectory/sampleInput), (2, 26,sampleDirectory/sampleInput), (3, 2,sampleDirectory/sampleInput), (3, 25,sampleDirectory/sampleInput), (1, 0,sampleDirectory/sampleInput2), (1, 23,sampleDirectory/sampleInput2), (2, 2,sampleDirectory/sampleInput2), (2, 26,sampleDirectory/sampleInput2), (3, 2,sampleDirectory/sampleInput2), (3, 25,sampleDirectory/sampleInput2)]
+2018-01-10 17:05:09.089 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0,sampleDirectory/sampleInput), (1, 23,sampleDirectory/sampleInput), (2, 2,sampleDirectory/sampleInput), (2, 26,sampleDirectory/sampleInput), (3, 2,sampleDirectory/sampleInput), (3, 25,sampleDirectory/sampleInput), (1, 0,sampleDirectory/sampleInput2), (1, 23,sampleDirectory/sampleInput2), (2, 2,sampleDirectory/sampleInput2), (2, 26,sampleDirectory/sampleInput2), (3, 2,sampleDirectory/sampleInput2), (3, 25,sampleDirectory/sampleInput2)]
+2018-01-10 17:06:18.105 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Hellocom.work.assignments.FileIO.Consumer@7ee261b8
+2018-01-10 17:06:18.105 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Hellocom.work.assignments.FileIO.Consumer@69d697c8
+2018-01-10 17:06:35.321 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Hellocom.work.assignments.FileIO.Consumer@272344dc
+2018-01-10 17:06:35.323 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Hellocom.work.assignments.FileIO.Consumer@c55dd03
+2018-01-10 17:06:35.333 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0,sampleDirectory/sampleInput), (1, 23,sampleDirectory/sampleInput), (2, 2,sampleDirectory/sampleInput), (2, 26,sampleDirectory/sampleInput), (3, 2,sampleDirectory/sampleInput), (3, 25,sampleDirectory/sampleInput), (1, 0,sampleDirectory/sampleInput2), (1, 23,sampleDirectory/sampleInput2), (2, 2,sampleDirectory/sampleInput2), (2, 26,sampleDirectory/sampleInput2), (3, 2,sampleDirectory/sampleInput2), (3, 25,sampleDirectory/sampleInput2)]

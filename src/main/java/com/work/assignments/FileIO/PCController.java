@@ -1,14 +1,18 @@
 package com.work.assignments.FileIO;
 
+import java.util.List;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
 public class PCController {
-    public void startThreads() {
-        BlockingQueue<Query> blockingQueue = new ArrayBlockingQueue<>(10);
-        Producer producer = new Producer(blockingQueue);
-        Consumer consumer = new Consumer(blockingQueue);
-        new Thread(producer).start();
-        new Thread(consumer).start();
+    public void startThreads(List<Query> queryList) {
+        BlockingQueue<Query> blockingQueue = new ArrayBlockingQueue<>(1);
+
+        Thread producerThread = new Thread(new Producer(blockingQueue, queryList));
+        Thread consumerThread = new Thread(new Consumer(blockingQueue));
+        Thread consumerThreadTwo = new Thread(new Consumer(blockingQueue));
+        producerThread.start();
+        consumerThread.start();
+        consumerThreadTwo.start();
     }
 }

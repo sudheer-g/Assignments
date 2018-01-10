@@ -10,4 +10,9 @@ public class Query {
         this.word = word;
         this.recursive = recursive;
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
