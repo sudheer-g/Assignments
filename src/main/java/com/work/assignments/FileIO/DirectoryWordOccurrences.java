@@ -1,5 +1,8 @@
 package com.work.assignments.FileIO;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -10,8 +13,11 @@ import java.util.List;
 
 public class DirectoryWordOccurrences {
     private List<Result> resultList = new ArrayList<>();
+    private Logger logger = LogManager.getLogger(DirectoryWordOccurrences.class);
+
 
     private void countWordOccurrencesInLine(String line, int lineCounter, String word, String fileName, List<Result> resultList) {
+        logger.info("hit countWordOccurrencesInLine");
         int wordIndex;
         wordIndex = line.indexOf(word);
         Result result;
@@ -23,6 +29,7 @@ public class DirectoryWordOccurrences {
     }
 
     private List<Result> getFileWordOccurances(String fileName, String word) {
+        logger.info("hit getFileWordOccurrences");
         BufferedReader bufferedReader = null;
         List<Result> resultList = new ArrayList<>();
         int lineCounter = 1;
@@ -43,6 +50,7 @@ public class DirectoryWordOccurrences {
     }
 
     public List<Result> getDirectoryWordOccurrences(String directoryName, String word, boolean recursive) {
+        logger.info("hit getDirectoryWordOccurrences");
         File folder = new File(directoryName);
         File[] listOfFiles = folder.listFiles();
         if (listOfFiles != null) {

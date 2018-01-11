@@ -3,7 +3,7 @@ package com.work.assignments.FileIO;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.BlockingQueue;
 
@@ -17,18 +17,34 @@ public class Producer implements Runnable {
     }
     private synchronized void produce() {
         try {
-            for (Query query : queryList) {
-                blockingQueue.put(query);
-                queryList.remove(query);
+            Iterator<Query> iterator = queryList.iterator();
+            while (iterator.hasNext()) {
+                logger.info("hit before put " + blockingQueue + queryList);
+                blockingQueue.put(iterator.next());
+                //logger.info("hit after put " + blockingQueue + queryList);
+                iterator.remove();
+                //logger.info("hit after remove " + blockingQueue + queryList);
             }
-            //blockingQueue.put(new Query(null, null, false));
+            blockingQueue.put(new Query(null, null, false));
+            logger.info("EndLoop : QUEUE: " + blockingQueue + " QUERYLIST: "+ queryList);
         } catch (InterruptedException e) {
+            e.printStackTrace();
             logger.error(e);
+        } catch (Throwable e) {
+            e.printStackTrace();
         }
     }
 
     @Override
     public void run() {
+        try {
+            logger.info("hit producer " + this);
             produce();
+            logger.debug("Producer end");
+        }
+        catch (Throwable e) {
+            e.printStackTrace();
+            logger.error(e);
+        }
     }
 }

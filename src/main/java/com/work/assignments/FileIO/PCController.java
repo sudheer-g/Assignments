@@ -10,9 +10,15 @@ public class PCController {
 
         Thread producerThread = new Thread(new Producer(blockingQueue, queryList));
         Thread consumerThread = new Thread(new Consumer(blockingQueue));
-        Thread consumerThreadTwo = new Thread(new Consumer(blockingQueue));
+        //Thread consumerThreadTwo = new Thread(new Consumer(blockingQueue));
         producerThread.start();
         consumerThread.start();
-        consumerThreadTwo.start();
+        try {
+            producerThread.join();
+            consumerThread.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        //consumerThreadTwo.start();
     }
 }

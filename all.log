@@ -1,11 +1,438 @@
-2018-01-10 17:04:05.195 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0,sampleDirectory/sampleInput), (1, 23,sampleDirectory/sampleInput), (2, 2,sampleDirectory/sampleInput), (2, 26,sampleDirectory/sampleInput), (3, 2,sampleDirectory/sampleInput), (3, 25,sampleDirectory/sampleInput), (1, 0,sampleDirectory/sampleInput2), (1, 23,sampleDirectory/sampleInput2), (2, 2,sampleDirectory/sampleInput2), (2, 26,sampleDirectory/sampleInput2), (3, 2,sampleDirectory/sampleInput2), (3, 25,sampleDirectory/sampleInput2)]
-2018-01-10 17:04:43.313 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0,sampleDirectory/sampleInput), (1, 23,sampleDirectory/sampleInput), (2, 2,sampleDirectory/sampleInput), (2, 26,sampleDirectory/sampleInput), (3, 2,sampleDirectory/sampleInput), (3, 25,sampleDirectory/sampleInput), (1, 0,sampleDirectory/sampleInput2), (1, 23,sampleDirectory/sampleInput2), (2, 2,sampleDirectory/sampleInput2), (2, 26,sampleDirectory/sampleInput2), (3, 2,sampleDirectory/sampleInput2), (3, 25,sampleDirectory/sampleInput2)]
-2018-01-10 17:04:57.949 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0,sampleDirectory/sampleInput), (1, 23,sampleDirectory/sampleInput), (2, 2,sampleDirectory/sampleInput), (2, 26,sampleDirectory/sampleInput), (3, 2,sampleDirectory/sampleInput), (3, 25,sampleDirectory/sampleInput), (1, 0,sampleDirectory/sampleInput2), (1, 23,sampleDirectory/sampleInput2), (2, 2,sampleDirectory/sampleInput2), (2, 26,sampleDirectory/sampleInput2), (3, 2,sampleDirectory/sampleInput2), (3, 25,sampleDirectory/sampleInput2)]
-2018-01-10 17:05:02.849 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0,sampleDirectory/sampleInput), (1, 23,sampleDirectory/sampleInput), (2, 2,sampleDirectory/sampleInput), (2, 26,sampleDirectory/sampleInput), (3, 2,sampleDirectory/sampleInput), (3, 25,sampleDirectory/sampleInput), (1, 0,sampleDirectory/sampleInput2), (1, 23,sampleDirectory/sampleInput2), (2, 2,sampleDirectory/sampleInput2), (2, 26,sampleDirectory/sampleInput2), (3, 2,sampleDirectory/sampleInput2), (3, 25,sampleDirectory/sampleInput2)]
-2018-01-10 17:05:06.013 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0,sampleDirectory/sampleInput), (1, 23,sampleDirectory/sampleInput), (2, 2,sampleDirectory/sampleInput), (2, 26,sampleDirectory/sampleInput), (3, 2,sampleDirectory/sampleInput), (3, 25,sampleDirectory/sampleInput), (1, 0,sampleDirectory/sampleInput2), (1, 23,sampleDirectory/sampleInput2), (2, 2,sampleDirectory/sampleInput2), (2, 26,sampleDirectory/sampleInput2), (3, 2,sampleDirectory/sampleInput2), (3, 25,sampleDirectory/sampleInput2)]
-2018-01-10 17:05:09.089 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0,sampleDirectory/sampleInput), (1, 23,sampleDirectory/sampleInput), (2, 2,sampleDirectory/sampleInput), (2, 26,sampleDirectory/sampleInput), (3, 2,sampleDirectory/sampleInput), (3, 25,sampleDirectory/sampleInput), (1, 0,sampleDirectory/sampleInput2), (1, 23,sampleDirectory/sampleInput2), (2, 2,sampleDirectory/sampleInput2), (2, 26,sampleDirectory/sampleInput2), (3, 2,sampleDirectory/sampleInput2), (3, 25,sampleDirectory/sampleInput2)]
-2018-01-10 17:06:18.105 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Hellocom.work.assignments.FileIO.Consumer@7ee261b8
-2018-01-10 17:06:18.105 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Hellocom.work.assignments.FileIO.Consumer@69d697c8
-2018-01-10 17:06:35.321 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Hellocom.work.assignments.FileIO.Consumer@272344dc
-2018-01-10 17:06:35.323 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Hellocom.work.assignments.FileIO.Consumer@c55dd03
-2018-01-10 17:06:35.333 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0,sampleDirectory/sampleInput), (1, 23,sampleDirectory/sampleInput), (2, 2,sampleDirectory/sampleInput), (2, 26,sampleDirectory/sampleInput), (3, 2,sampleDirectory/sampleInput), (3, 25,sampleDirectory/sampleInput), (1, 0,sampleDirectory/sampleInput2), (1, 23,sampleDirectory/sampleInput2), (2, 2,sampleDirectory/sampleInput2), (2, 26,sampleDirectory/sampleInput2), (3, 2,sampleDirectory/sampleInput2), (3, 25,sampleDirectory/sampleInput2)]
+2018-01-11 11:00:08.094 [main] INFO  PCTest - 
+
+2018-01-11 11:00:08.107 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@6a74e867
+2018-01-11 11:00:08.109 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:00:08.109 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put
+2018-01-11 11:00:08.110 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after put
+2018-01-11 11:00:08.111 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after remove
+2018-01-11 11:00:08.112 [Thread-1] ERROR com.work.assignments.FileIO.Producer - java.lang.IllegalMonitorStateException
+2018-01-11 11:06:49.933 [main] INFO  PCTest - 
+
+2018-01-11 11:06:49.939 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@6a74e867
+2018-01-11 11:06:49.939 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:06:49.940 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put
+2018-01-11 11:06:49.940 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after put
+2018-01-11 11:06:49.940 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after remove
+2018-01-11 11:06:49.941 [Thread-1] ERROR com.work.assignments.FileIO.Producer - java.lang.IllegalMonitorStateException
+2018-01-11 11:06:54.222 [main] INFO  PCTest - 
+
+2018-01-11 11:06:54.243 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@66f415ab
+2018-01-11 11:06:54.244 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:06:54.244 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put
+2018-01-11 11:06:54.244 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after put
+2018-01-11 11:06:54.244 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after remove
+2018-01-11 11:06:54.245 [Thread-1] ERROR com.work.assignments.FileIO.Producer - java.lang.IllegalMonitorStateException
+2018-01-11 11:06:59.872 [main] INFO  PCTest - 
+
+2018-01-11 11:06:59.905 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@703d0a9e
+2018-01-11 11:06:59.906 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:06:59.907 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put
+2018-01-11 11:06:59.907 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after put
+2018-01-11 11:06:59.907 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after remove
+2018-01-11 11:06:59.908 [Thread-1] ERROR com.work.assignments.FileIO.Producer - java.lang.IllegalMonitorStateException
+2018-01-11 11:07:08.326 [main] INFO  PCTest - 
+
+2018-01-11 11:07:08.339 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@703d0a9e
+2018-01-11 11:07:08.341 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:07:08.341 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put
+2018-01-11 11:07:08.342 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after put
+2018-01-11 11:07:08.342 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after remove
+2018-01-11 11:07:08.343 [Thread-1] ERROR com.work.assignments.FileIO.Producer - java.lang.IllegalMonitorStateException
+2018-01-11 11:07:36.407 [main] INFO  PCTest - 
+
+2018-01-11 11:07:40.763 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@2a038a72
+2018-01-11 11:07:40.764 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:07:40.764 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put
+2018-01-11 11:07:40.764 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after put
+2018-01-11 11:07:40.765 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after remove
+2018-01-11 11:07:40.826 [Thread-1] ERROR com.work.assignments.FileIO.Producer - java.lang.IllegalMonitorStateException
+2018-01-11 11:07:49.380 [main] INFO  PCTest - 
+
+2018-01-11 11:07:59.620 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@555c327
+2018-01-11 11:07:59.621 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:07:59.622 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put
+2018-01-11 11:07:59.622 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after put
+2018-01-11 11:07:59.622 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after remove
+2018-01-11 11:07:59.624 [Thread-1] ERROR com.work.assignments.FileIO.Producer - java.lang.IllegalMonitorStateException
+2018-01-11 11:08:07.612 [main] INFO  PCTest - 
+
+2018-01-11 11:08:20.791 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@75658dbd
+2018-01-11 11:08:22.657 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:08:22.659 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put
+2018-01-11 11:08:22.659 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after put
+2018-01-11 11:08:22.660 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after remove
+2018-01-11 11:08:22.664 [Thread-1] ERROR com.work.assignments.FileIO.Producer - java.lang.IllegalMonitorStateException
+2018-01-11 11:08:59.191 [main] INFO  PCTest - 
+
+2018-01-11 11:08:59.200 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@e4da451
+2018-01-11 11:08:59.201 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:08:59.201 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit before put
+2018-01-11 11:08:59.202 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit after put
+2018-01-11 11:08:59.202 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit after remove
+2018-01-11 11:08:59.204 [Thread-2] ERROR com.work.assignments.FileIO.Producer - java.lang.IllegalMonitorStateException
+2018-01-11 11:09:19.074 [main] INFO  PCTest - 
+
+2018-01-11 11:09:23.082 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@35186c88
+2018-01-11 11:09:24.839 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:09:24.841 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put
+2018-01-11 11:09:24.842 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after put
+2018-01-11 11:09:24.842 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after remove
+2018-01-11 11:09:45.906 [main] INFO  PCTest - 
+
+2018-01-11 11:09:45.925 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@6186f369
+2018-01-11 11:09:45.926 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:09:45.926 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put
+2018-01-11 11:09:45.926 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after put
+2018-01-11 11:09:45.926 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after remove
+2018-01-11 11:09:45.927 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-11 11:09:58.113 [main] INFO  PCTest - 
+
+2018-01-11 11:09:58.125 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@4e348f3
+2018-01-11 11:09:58.126 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:09:58.126 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put
+2018-01-11 11:09:58.126 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after put
+2018-01-11 11:09:58.126 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after remove
+2018-01-11 11:09:58.127 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-11 11:10:04.802 [main] INFO  PCTest - 
+
+2018-01-11 11:10:04.816 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@151a26c7
+2018-01-11 11:10:04.817 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:10:04.818 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put
+2018-01-11 11:10:04.818 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after put
+2018-01-11 11:10:04.818 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after remove
+2018-01-11 11:10:04.819 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-11 11:11:29.054 [main] INFO  PCTest - 
+
+2018-01-11 11:11:29.067 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@6a74e867
+2018-01-11 11:11:29.067 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:11:29.071 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put
+2018-01-11 11:11:29.071 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after put
+2018-01-11 11:11:29.071 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after remove
+2018-01-11 11:11:29.072 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-11 11:12:17.521 [main] INFO  PCTest - 
+
+2018-01-11 11:12:17.530 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@4e348f3
+2018-01-11 11:12:17.530 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:12:17.531 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [][com.work.assignments.FileIO.Query@a24b61f, com.work.assignments.FileIO.Query@e1b2383]
+2018-01-11 11:12:17.532 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after put [com.work.assignments.FileIO.Query@a24b61f][com.work.assignments.FileIO.Query@a24b61f, com.work.assignments.FileIO.Query@e1b2383]
+2018-01-11 11:12:17.533 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after remove [com.work.assignments.FileIO.Query@a24b61f][com.work.assignments.FileIO.Query@e1b2383]
+2018-01-11 11:12:17.533 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-11 11:14:54.110 [main] INFO  PCTest - 
+
+2018-01-11 11:14:54.124 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@2f00fa67
+2018-01-11 11:14:54.124 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:14:54.125 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:14:54.125 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after put [(sampleDirectory, This is, false)][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:14:54.125 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after remove [(sampleDirectory, This is, false)][(sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:14:54.125 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-11 11:17:28.862 [main] INFO  PCTest - 
+
+2018-01-11 11:17:28.873 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@2f00fa67
+2018-01-11 11:17:28.873 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:17:28.874 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:17:28.876 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after put [(sampleDirectory, This is, false)][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:17:28.876 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after remove [(sampleDirectory, This is, false)][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:17:28.876 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [(sampleDirectory, This is, false)][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:18:55.126 [main] INFO  PCTest - 
+
+2018-01-11 11:18:55.150 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@2f00fa67
+2018-01-11 11:18:55.151 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:18:55.152 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:18:55.153 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after put [(sampleDirectory, This is, false)][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:18:55.154 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after remove [(sampleDirectory, This is, false)][(sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:18:55.154 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-11 11:19:07.787 [main] INFO  PCTest - 
+
+2018-01-11 11:19:07.802 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@4e348f3
+2018-01-11 11:19:07.804 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:19:07.804 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:19:07.805 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after put [(sampleDirectory, This is, false)][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:19:07.805 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after remove [(sampleDirectory, This is, false)][(sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:19:07.806 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-11 11:20:25.939 [main] INFO  PCTest - 
+
+2018-01-11 11:20:31.002 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@77fb5a86
+2018-01-11 11:20:31.003 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:20:31.004 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:20:31.004 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after put [(sampleDirectory, This is, false)][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:20:31.004 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after remove [(sampleDirectory, This is, false)][(sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:20:31.005 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-11 11:20:53.448 [main] INFO  PCTest - 
+
+2018-01-11 11:20:53.467 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@2e8e5eb5
+2018-01-11 11:20:53.467 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:21:09.869 [main] INFO  PCTest - 
+
+2018-01-11 11:21:09.893 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@2e8e5eb5
+2018-01-11 11:21:09.894 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:21:27.956 [main] INFO  PCTest - 
+
+2018-01-11 11:21:27.978 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@291d2bcc
+2018-01-11 11:21:27.978 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:21:35.405 [main] INFO  PCTest - 
+
+2018-01-11 11:21:35.440 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@6d410b34
+2018-01-11 11:21:35.441 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:21:55.182 [main] INFO  PCTest - 
+
+2018-01-11 11:21:55.195 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@4e348f3
+2018-01-11 11:21:55.195 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:21:55.196 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:21:55.197 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after put [(sampleDirectory, This is, false)][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:21:55.197 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after remove [(sampleDirectory, This is, false)][(sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:21:55.197 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-11 11:22:27.370 [main] INFO  PCTest - 
+
+2018-01-11 11:22:27.392 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@2e8e5eb5
+2018-01-11 11:22:27.395 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:22:39.802 [main] INFO  PCTest - 
+
+2018-01-11 11:22:39.818 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@7fe9e169
+2018-01-11 11:22:39.819 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:27:32.906 [main] INFO  PCTest - 
+
+2018-01-11 11:27:32.928 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@7fe9e169
+2018-01-11 11:27:32.929 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:27:55.666 [main] INFO  PCTest - 
+
+2018-01-11 11:27:55.684 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@6a74e867
+2018-01-11 11:27:55.685 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:27:55.686 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:27:55.687 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after put [(sampleDirectory, This is, false)][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:27:55.688 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after remove [(sampleDirectory, This is, false)][(sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:27:55.688 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-11 11:28:30.067 [main] INFO  PCTest - 
+
+2018-01-11 11:28:30.079 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@6a74e867
+2018-01-11 11:28:30.080 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:28:30.080 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:28:30.080 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after put [(sampleDirectory, This is, false)][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:28:30.081 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after remove [(sampleDirectory, This is, false)][(sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:28:30.081 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-11 11:29:20.022 [main] INFO  PCTest - 
+
+2018-01-11 11:29:20.033 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@29ad3665
+2018-01-11 11:29:20.034 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:34:43.372 [main] INFO  PCTest - 
+
+2018-01-11 11:34:43.386 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@2058ee2f
+2018-01-11 11:34:43.387 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:34:43.387 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:34:43.388 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after put [(sampleDirectory, This is, false)][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:34:43.389 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after remove [(sampleDirectory, This is, false)][(sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:34:43.391 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-11 11:36:20.560 [main] INFO  PCTest - 
+
+2018-01-11 11:36:20.577 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@6d410b34
+2018-01-11 11:36:20.578 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:36:53.837 [main] INFO  PCTest - 
+
+2018-01-11 11:36:53.850 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@2cfa2652
+2018-01-11 11:38:22.944 [main] INFO  PCTest - 
+
+2018-01-11 11:38:22.987 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@2cfa2652
+2018-01-11 11:39:57.340 [main] INFO  PCTest - 
+
+2018-01-11 11:39:57.354 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@6186f369
+2018-01-11 11:39:57.355 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:39:57.355 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:39:57.356 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after put [(sampleDirectory, This is, false)][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:39:57.357 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after remove [(sampleDirectory, This is, false)][(sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:39:57.357 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-11 11:44:07.070 [main] INFO  PCTest - 
+
+2018-01-11 11:44:07.081 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@151a26c7
+2018-01-11 11:44:07.082 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:44:07.083 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:44:07.084 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after put [(sampleDirectory, This is, false)][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:44:07.084 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit after remove [(sampleDirectory, This is, false)][(sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:44:07.084 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [(sampleDirectory, This is, false)][(sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:45:11.619 [main] INFO  PCTest - 
+
+2018-01-11 11:45:11.633 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@151a26c7
+2018-01-11 11:45:11.634 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit produce
+2018-01-11 11:45:11.635 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:45:11.636 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [(sampleDirectory, This is, false)][(sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:45:46.686 [main] INFO  PCTest - 
+
+2018-01-11 11:45:46.703 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@6a74e867
+2018-01-11 11:45:46.705 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:45:46.709 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [(sampleDirectory, This is, false)][(sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:46:51.679 [main] INFO  PCTest - 
+
+2018-01-11 11:46:51.696 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@6a74e867
+2018-01-11 11:46:51.698 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [(sampleDirectory, This is, false)][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:48:06.249 [main] INFO  PCTest - 
+
+2018-01-11 11:48:06.257 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@6186f369
+2018-01-11 11:48:06.269 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [(sampleDirectory, This is, false)][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:48:53.882 [main] INFO  PCTest - 
+
+2018-01-11 11:48:53.896 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@2f00fa67
+2018-01-11 11:48:53.897 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [(sampleDirectory, This is, false)][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:49:32.863 [main] INFO  PCTest - 
+
+2018-01-11 11:49:32.881 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@2f00fa67
+2018-01-11 11:49:32.882 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [(sampleDirectory, This is, false)][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:50:21.214 [main] INFO  PCTest - 
+
+2018-01-11 11:50:21.227 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@5a963103
+2018-01-11 11:50:21.228 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [(sampleDirectory, This is, false)][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:50:21.228 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)][(sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:50:21.229 [Thread-1] INFO  com.work.assignments.FileIO.Producer - EndLoop : QUEUE: [(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)] QUERYLIST: []
+2018-01-11 11:50:21.229 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-11 11:55:51.771 [main] INFO  PCTest - 
+
+2018-01-11 11:55:55.016 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@2cfa2652
+2018-01-11 11:56:43.763 [main] INFO  PCTest - 
+
+2018-01-11 11:56:43.777 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@2058ee2f
+2018-01-11 11:56:43.779 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [(sampleDirectory, This is, false)][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:56:43.779 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)][(sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 11:56:43.780 [Thread-1] INFO  com.work.assignments.FileIO.Producer - EndLoop : QUEUE: [(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)] QUERYLIST: []
+2018-01-11 11:56:43.780 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-11 11:56:59.470 [main] INFO  PCTest - 
+
+2018-01-11 11:57:39.483 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@6d410b34
+2018-01-11 11:57:59.996 [main] INFO  PCTest - 
+
+2018-01-11 11:58:04.643 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@71ca7306
+2018-01-11 11:59:14.733 [main] INFO  PCTest - 
+
+2018-01-11 11:59:14.748 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@2f00fa67
+2018-01-11 11:59:14.749 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [(sampleDirectory, This is, false)][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 12:01:15.899 [main] INFO  PCTest - 
+
+2018-01-11 12:01:15.906 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@2058ee2f
+2018-01-11 12:01:15.907 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [(sampleDirectory, This is, false)][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 12:15:59.797 [main] INFO  PCTest - 
+
+2018-01-11 12:15:59.813 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@c58051f
+2018-01-11 12:15:59.814 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [(sampleDirectory, This is, false)][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 12:15:59.815 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Hit Consumercom.work.assignments.FileIO.Consumer@3222bee5
+2018-01-11 12:15:59.816 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - hit consume loop: 0
+2018-01-11 12:15:59.816 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [(sampleDirectory/innerDirectory, This is, false)][(sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 12:15:59.817 [Thread-1] INFO  com.work.assignments.FileIO.Producer - EndLoop : QUEUE: [(sampleDirectory/innerDirectory, This is, false)] QUERYLIST: []
+2018-01-11 12:15:59.817 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-11 12:15:59.816 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - hit execute
+2018-01-11 12:15:59.819 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit getDirectoryWordOccurrences
+2018-01-11 12:15:59.819 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit getFileWordOccurrences
+2018-01-11 12:15:59.820 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.821 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.821 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.821 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit getFileWordOccurrences
+2018-01-11 12:15:59.822 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.822 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.822 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.822 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.822 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.822 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.823 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.823 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.823 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.823 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.823 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.823 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.823 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.823 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.824 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.824 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.824 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.824 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.824 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.826 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0,sampleDirectory/sampleInput), (1, 23,sampleDirectory/sampleInput), (2, 2,sampleDirectory/sampleInput), (2, 26,sampleDirectory/sampleInput), (3, 2,sampleDirectory/sampleInput), (3, 25,sampleDirectory/sampleInput), (1, 0,sampleDirectory/sampleInput2), (1, 23,sampleDirectory/sampleInput2), (2, 2,sampleDirectory/sampleInput2), (2, 26,sampleDirectory/sampleInput2), (3, 2,sampleDirectory/sampleInput2), (3, 25,sampleDirectory/sampleInput2)]
+2018-01-11 12:15:59.826 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - hit consume loop: 1
+2018-01-11 12:15:59.826 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - hit execute
+2018-01-11 12:15:59.827 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit getDirectoryWordOccurrences
+2018-01-11 12:15:59.827 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit getFileWordOccurrences
+2018-01-11 12:15:59.848 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.848 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.852 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.852 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit getFileWordOccurrences
+2018-01-11 12:15:59.855 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.856 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.856 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.856 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.856 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.856 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.857 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.857 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.857 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.857 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.857 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.858 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.858 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.858 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.858 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.858 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.858 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.859 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.859 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:15:59.860 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0,sampleDirectory/innerDirectory/sampleInput), (1, 23,sampleDirectory/innerDirectory/sampleInput), (2, 2,sampleDirectory/innerDirectory/sampleInput), (2, 26,sampleDirectory/innerDirectory/sampleInput), (3, 2,sampleDirectory/innerDirectory/sampleInput), (3, 25,sampleDirectory/innerDirectory/sampleInput), (1, 0,sampleDirectory/innerDirectory/sampleInput2), (1, 23,sampleDirectory/innerDirectory/sampleInput2), (2, 2,sampleDirectory/innerDirectory/sampleInput2), (2, 26,sampleDirectory/innerDirectory/sampleInput2), (3, 2,sampleDirectory/innerDirectory/sampleInput2), (3, 25,sampleDirectory/innerDirectory/sampleInput2)]
+2018-01-11 12:15:59.861 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - hit consume loop: 2
+2018-01-11 12:20:11.720 [main] INFO  PCTest - 
+
+2018-01-11 12:20:11.753 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Hit Consumercom.work.assignments.FileIO.Consumer@48acf066
+2018-01-11 12:20:11.753 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@286299ee
+2018-01-11 12:20:11.754 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - hit consume loop: 0
+2018-01-11 12:20:11.755 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [(sampleDirectory, This is, false)][(sampleDirectory, This is, false), (sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 12:20:11.756 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - hit execute
+2018-01-11 12:20:11.756 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit before put [(sampleDirectory/innerDirectory, This is, false)][(sampleDirectory/innerDirectory, This is, false)]
+2018-01-11 12:20:11.757 [Thread-1] INFO  com.work.assignments.FileIO.Producer - EndLoop : QUEUE: [(sampleDirectory/innerDirectory, This is, false)] QUERYLIST: []
+2018-01-11 12:20:11.760 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit getDirectoryWordOccurrences
+2018-01-11 12:20:11.761 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit getFileWordOccurrences
+2018-01-11 12:20:11.762 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.763 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.763 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.764 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit getFileWordOccurrences
+2018-01-11 12:20:11.764 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.765 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.765 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.765 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.765 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.765 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.765 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.766 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.766 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.766 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.766 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.766 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.767 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.767 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.767 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.767 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.767 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.768 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.768 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.769 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0,sampleDirectory/sampleInput), (1, 23,sampleDirectory/sampleInput), (2, 2,sampleDirectory/sampleInput), (2, 26,sampleDirectory/sampleInput), (3, 2,sampleDirectory/sampleInput), (3, 25,sampleDirectory/sampleInput), (1, 0,sampleDirectory/sampleInput2), (1, 23,sampleDirectory/sampleInput2), (2, 2,sampleDirectory/sampleInput2), (2, 26,sampleDirectory/sampleInput2), (3, 2,sampleDirectory/sampleInput2), (3, 25,sampleDirectory/sampleInput2)]
+2018-01-11 12:20:11.769 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - hit consume loop: 1
+2018-01-11 12:20:11.770 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - hit execute
+2018-01-11 12:20:11.770 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-11 12:20:11.770 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit getDirectoryWordOccurrences
+2018-01-11 12:20:11.770 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit getFileWordOccurrences
+2018-01-11 12:20:11.771 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.771 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.771 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.771 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit getFileWordOccurrences
+2018-01-11 12:20:11.772 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.772 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.772 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.772 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.772 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.773 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.773 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.773 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.773 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.773 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.774 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.774 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.774 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.774 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.774 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.774 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.775 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.775 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.775 [Thread-2] INFO  com.work.assignments.FileIO.DirectoryWordOccurrences - hit countWordOccurrencesInLine
+2018-01-11 12:20:11.775 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - [(1, 0,sampleDirectory/innerDirectory/sampleInput), (1, 23,sampleDirectory/innerDirectory/sampleInput), (2, 2,sampleDirectory/innerDirectory/sampleInput), (2, 26,sampleDirectory/innerDirectory/sampleInput), (3, 2,sampleDirectory/innerDirectory/sampleInput), (3, 25,sampleDirectory/innerDirectory/sampleInput), (1, 0,sampleDirectory/innerDirectory/sampleInput2), (1, 23,sampleDirectory/innerDirectory/sampleInput2), (2, 2,sampleDirectory/innerDirectory/sampleInput2), (2, 26,sampleDirectory/innerDirectory/sampleInput2), (3, 2,sampleDirectory/innerDirectory/sampleInput2), (3, 25,sampleDirectory/innerDirectory/sampleInput2)]
+2018-01-11 12:20:11.776 [Thread-2] INFO  com.work.assignments.FileIO.Consumer - hit consume loop: 2
+2018-01-11 12:20:11.776 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End

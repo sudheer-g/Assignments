@@ -13,6 +13,6 @@ public class Query {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "(" + this.directoryName + ", " + this.word + ", " + this.recursive + ")";
     }
 }
