@@ -17,7 +17,6 @@ public class DirectoryWordOccurrences {
 
 
     private void countWordOccurrencesInLine(String line, int lineCounter, String word, String fileName, List<Result> resultList) {
-        logger.info("hit countWordOccurrencesInLine");
         int wordIndex;
         wordIndex = line.indexOf(word);
         Result result;
@@ -29,7 +28,6 @@ public class DirectoryWordOccurrences {
     }
 
     private List<Result> getFileWordOccurances(String fileName, String word) {
-        logger.info("hit getFileWordOccurrences");
         BufferedReader bufferedReader = null;
         List<Result> resultList = new ArrayList<>();
         int lineCounter = 1;
@@ -50,7 +48,6 @@ public class DirectoryWordOccurrences {
     }
 
     public List<Result> getDirectoryWordOccurrences(String directoryName, String word, boolean recursive) {
-        logger.info("hit getDirectoryWordOccurrences");
         File folder = new File(directoryName);
         File[] listOfFiles = folder.listFiles();
         if (listOfFiles != null) {
@@ -60,10 +57,20 @@ public class DirectoryWordOccurrences {
                     resultList.addAll(list);
                 }
                 if (file.isDirectory() && recursive) {
-                    resultList = getDirectoryWordOccurrences(directoryName + '/' + file.getName(), word, recursive);
+                    resultList = getDirectoryWordOccurrences(directoryName + '/' + file.getName(), word, true);
                 }
             }
         }
         return resultList;
+    }
+
+    public List<Result> getWords(Query query) {
+        File file =  new File(query.directoryName);
+        if(file.isFile()) {
+            return getFileWordOccurances(query.directoryName, query.word);
+        }
+        else {
+            return getDirectoryWordOccurrences(query.directoryName, query.word, query.recursive);
+        }
     }
 }

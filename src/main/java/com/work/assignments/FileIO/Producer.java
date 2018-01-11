@@ -26,6 +26,7 @@ public class Producer implements Runnable {
                 //logger.info("hit after remove " + blockingQueue + queryList);
             }
             blockingQueue.put(new Query(null, null, false));
+            blockingQueue.put(new Query(null, null, false));
             logger.info("EndLoop : QUEUE: " + blockingQueue + " QUERYLIST: "+ queryList);
         } catch (InterruptedException e) {
             e.printStackTrace();
