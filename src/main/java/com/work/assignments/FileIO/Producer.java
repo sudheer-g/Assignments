@@ -21,7 +21,7 @@ public class Producer implements Runnable {
     }
 
     private synchronized Query getQuery() {
-        if(nextQueryExists()) {
+        if (nextQueryExists()) {
             return queryIterator.next();
         }
         return null;
@@ -34,8 +34,9 @@ public class Producer implements Runnable {
     private synchronized void produce(Query q) {
         try {
             blockingQueue.put(q);
-            if(q.directoryName!= null)
+            if (q.directoryName != null) {
                 removeQuery();
+            }
         } catch (InterruptedException e) {
             e.printStackTrace();
             logger.error(e);
@@ -44,13 +45,13 @@ public class Producer implements Runnable {
 
     private void execute() {
         try {
+            Query q;
             while (nextQueryExists()) {
-                Query q = getQuery();
-                if(q!= null) {
+                q = getQuery();
+                if (q != null) {
                     produce(q);
                 }
             }
-            produce(new Query(null, null, false));
         } catch (Throwable e) {
             e.printStackTrace();
         }

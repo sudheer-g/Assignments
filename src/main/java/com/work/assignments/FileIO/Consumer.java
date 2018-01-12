@@ -26,6 +26,15 @@ public class Consumer implements Runnable {
         return q;
     }
 
+    private synchronized void addPoisonPill() {
+        try {
+            blockingQueue.put(new Query(null, null, false));
+        }
+        catch (InterruptedException e){
+            e.printStackTrace();
+        }
+    }
+
     private synchronized void addResults(List<Result> results) {
         resultList.addAll(results);
     }
@@ -37,6 +46,7 @@ public class Consumer implements Runnable {
             while (true) {
                 q = consume();
                 if (q.directoryName == null || q.word == null) {
+                    addPoisonPill();
                     break;
                 }
                 addResults(fo.getWords(q));
