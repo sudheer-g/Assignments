@@ -15,6 +15,7 @@ import java.util.*;
 
 public class PCTest {
     private Logger logger = LogManager.getLogger();
+
     @DataProvider(name = "ProducerInput")
     public static Object[] producerInput() {
         BufferedReader bufferedReader = null;
@@ -43,20 +44,19 @@ public class PCTest {
         queryList.add(new Query("sampleDirectory", "This is", true));
         //queryList.add(new Query("sampleDirectory/sampleInput", "This is", false));
         //queryList.add(new Query("sampleDirectory/innerDirectory", "This is", false));
-        return new Object[][] {new Object[]{queryList, resultList}};
+        return new Object[][]{new Object[]{queryList, resultList}};
     }
+
     @Test(dataProvider = "ProducerInput")
     public void testPCController(List<Query> queryList, List<Result> assertList) {
-        logger.info("\n");
         PCController pcController = new PCController();
-        List<Result> resultList =  pcController.wordSearch(queryList);
+        List<Result> resultList = pcController.wordSearch(queryList);
         Collections.sort(resultList);
-        logger.info(resultList);
         Collections.sort(assertList);
+        Assert.assertEquals(resultList.size() == assertList.size(), true);
         Iterator<Result> resultIterator = resultList.iterator();
-        for(Result result : assertList) {
-            Assert.assertEquals(Objects.equals(result, resultIterator.next()) , true);
+        for (Result result : assertList) {
+            Assert.assertEquals(Objects.equals(result, resultIterator.next()), true);
         }
-        //logger.info(resultList);
     }
 }

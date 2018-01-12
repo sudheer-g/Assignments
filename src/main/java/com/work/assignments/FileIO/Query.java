@@ -11,6 +11,9 @@ public class Query {
         this.recursive = recursive;
     }
 
+    public Query() {
+    }
+
     @Override
     public String toString() {
         return "(" + this.directoryName + ", " + this.word + ", " + this.recursive + ")";

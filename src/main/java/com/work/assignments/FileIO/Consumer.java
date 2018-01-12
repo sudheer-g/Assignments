@@ -12,43 +12,47 @@ public class Consumer implements Runnable {
     private BlockingQueue<Query> blockingQueue;
 
     public Consumer(BlockingQueue<Query> blockingQueue, List<Result> resultList) {
-
         this.blockingQueue = blockingQueue;
         this.resultList = resultList;
     }
 
-    private void execute(Query q) {
-        //logger.info("hit execute");
-        DirectoryWordOccurrences fo = new DirectoryWordOccurrences();
-        resultList.addAll(fo.getWords(q));
-        //logger.info("hit before result log");
-        //logger.info(resultList);
-        //logger.info("hit after log");
+    private synchronized Query consume() {
+        Query q = new Query();
+        try {
+            q = blockingQueue.take();
+        } catch (InterruptedException e) {
+            logger.error(e);
+        }
+        return q;
     }
 
-    private synchronized void consume() {
+    private synchronized void addResults(List<Result> results) {
+        resultList.addAll(results);
+    }
+
+    private void execute() {
+        DirectoryWordOccurrences fo = new DirectoryWordOccurrences();
+        Query q;
         try {
             while (true) {
-                //logger.info("hit consume loop: " + count);
-                Query q = blockingQueue.take();
+                q = consume();
                 if (q.directoryName == null || q.word == null) {
                     break;
                 }
-                execute(q);
+                addResults(fo.getWords(q));
             }
-        } catch (InterruptedException e) {
-            logger.error(e);
+        }
+        catch (Throwable e) {
+            e.printStackTrace();
         }
     }
 
     @Override
     public void run() {
         try {
-            //logger.debug("Hit Consumer" + this);
-            consume();
-            //logger.debug("Consumer End");
-        }
-        catch (Throwable e) {
+            execute();
+            logger.debug("Consumer End");
+        } catch (Throwable e) {
             logger.error(e);
         }
     }
