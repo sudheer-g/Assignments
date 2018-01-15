@@ -20,6 +20,7 @@ public class Consumer implements Runnable {
         Query q = new Query();
         try {
             q = blockingQueue.take();
+            logger.debug("Consumer " + this + " took: " + q);
         } catch (InterruptedException e) {
             logger.error(e);
         }
@@ -42,14 +43,17 @@ public class Consumer implements Runnable {
     private void execute() {
         DirectoryWordOccurrences fo = new DirectoryWordOccurrences();
         Query q;
+        List<Result> results;
         try {
             while (true) {
                 q = consume();
-                if (q.directoryName == null || q.word == null) {
+                if (q.directoryOrFile == null || q.word == null) {
                     addPoisonPill();
                     break;
                 }
-                addResults(fo.getWords(q));
+                results = fo.getWords(q);
+                addResults(results);
+                results.clear();
             }
         }
         catch (Throwable e) {

@@ -65,11 +65,11 @@ public class DirectoryWordOccurrences {
     }
 
     public List<Result> getWords(Query query) {
-        File file = new File(query.directoryName);
+        File file = new File(query.directoryOrFile);
         if (file.isFile()) {
-            return getFileWordOccurances(query.directoryName, query.word);
+            return getFileWordOccurances(query.directoryOrFile, query.word);
         } else {
-            return getDirectoryWordOccurrences(query.directoryName, query.word, query.recursive);
+            return getDirectoryWordOccurrences(query.directoryOrFile, query.word, query.recursive);
         }
     }
 }

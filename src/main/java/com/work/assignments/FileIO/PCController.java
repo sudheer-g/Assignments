@@ -10,19 +10,22 @@ public class PCController {
         BlockingQueue<Query> blockingQueue = new ArrayBlockingQueue<>(3);
         List<Result> resultList = new ArrayList<>();
         Thread producerThread = new Thread(new Producer(blockingQueue, queryList.iterator()));
-        Thread producerThread2 = new Thread(new Producer(blockingQueue, queryList.iterator()));
         Thread consumerThread = new Thread(new Consumer(blockingQueue, resultList));
         Thread consumerThreadTwo = new Thread(new Consumer(blockingQueue, resultList));
+        Thread consumerThreadThree = new Thread(new Consumer(blockingQueue, resultList));
+        Thread consumerThreadFour = new Thread(new Consumer(blockingQueue, resultList));
         try {
             producerThread.start();
-            //producerThread2.start();
             consumerThread.start();
             consumerThreadTwo.start();
+            consumerThreadThree.start();
+            consumerThreadFour.start();
             producerThread.join();
-            //producerThread2.join();
             blockingQueue.put(new Query(null, null, false));
             consumerThread.join();
             consumerThreadTwo.join();
+            consumerThreadThree.join();
+            consumerThreadFour.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

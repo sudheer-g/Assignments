@@ -34,7 +34,8 @@ public class Producer implements Runnable {
     private synchronized void produce(Query q) {
         try {
             blockingQueue.put(q);
-            if (q.directoryName != null) {
+            logger.debug("Producer " + this + " put: " + q);
+            if (q.directoryOrFile != null) {
                 removeQuery();
             }
         } catch (InterruptedException e) {

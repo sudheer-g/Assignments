@@ -1,160 +1,46 @@
-2018-01-12 15:13:05.732 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@387eb306
-2018-01-12 15:13:05.736 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 15:13:05.733 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@a420d35
-2018-01-12 15:13:05.737 [Thread-2] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 15:13:05.737 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 15:13:05.740 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 16:30:10.105 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@d54747e
-2018-01-12 16:30:10.109 [Thread-2] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 16:30:10.104 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@67724ca
-2018-01-12 16:30:10.111 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 16:30:10.112 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 16:30:10.129 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 16:39:41.232 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@f2beea3
-2018-01-12 16:39:41.231 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@d54747e
-2018-01-12 16:39:41.236 [Thread-2] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 16:39:41.238 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 16:39:41.242 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 16:39:41.243 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 16:39:46.597 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@387eb306
-2018-01-12 16:39:46.601 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@a420d35
-2018-01-12 16:39:46.603 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 16:39:46.604 [Thread-2] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 16:39:46.612 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 16:39:46.623 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 16:39:53.090 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@a420d35
-2018-01-12 16:39:53.091 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@387eb306
-2018-01-12 16:39:53.098 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 16:39:53.115 [Thread-2] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 16:39:53.123 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 16:39:53.127 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 16:45:15.452 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@387eb306
-2018-01-12 16:45:15.458 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 16:45:15.458 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@a420d35
-2018-01-12 16:45:15.459 [Thread-2] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 16:45:15.468 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 16:45:15.476 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 17:43:52.342 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@1e232364
-2018-01-12 17:43:52.346 [Thread-2] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 17:43:52.341 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@58d78e0e
-2018-01-12 17:43:52.347 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 17:43:52.350 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 17:43:52.350 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 17:43:56.223 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@387eb306
-2018-01-12 17:43:56.223 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@a420d35
-2018-01-12 17:43:56.229 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 17:43:56.231 [Thread-2] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 17:43:56.248 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 17:43:56.249 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 17:43:59.067 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@65bb54e2
-2018-01-12 17:43:59.072 [Thread-2] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 17:43:59.067 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@675522e9
-2018-01-12 17:43:59.073 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 17:43:59.073 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 17:43:59.074 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 17:44:01.770 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@58d78e0e
-2018-01-12 17:44:01.771 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@1e232364
-2018-01-12 17:44:01.775 [Thread-2] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 17:44:01.776 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 17:44:01.778 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 17:44:01.778 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 17:46:46.579 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@f2beea3
-2018-01-12 17:46:46.579 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@22e3450f
-2018-01-12 17:46:46.584 [Thread-2] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 17:46:46.585 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 17:46:46.593 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 17:46:46.604 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 17:46:53.169 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@67724ca
-2018-01-12 17:46:53.169 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@d54747e
-2018-01-12 17:46:53.173 [Thread-2] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 17:46:53.180 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 17:46:53.181 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 17:46:53.181 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 17:46:56.020 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@34c9371c
-2018-01-12 17:46:56.024 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@39336529
-2018-01-12 17:46:56.025 [Thread-2] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 17:46:56.042 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 17:46:56.043 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 17:46:56.044 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 17:46:58.774 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@22e3450f
-2018-01-12 17:46:58.779 [Thread-2] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 17:46:58.774 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@f2beea3
-2018-01-12 17:46:58.780 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 17:46:58.792 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 17:46:58.793 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 17:56:11.503 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@7ae25d23
-2018-01-12 17:56:11.506 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@39336529
-2018-01-12 17:56:11.511 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 17:56:11.511 [Thread-2] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 17:56:11.512 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 17:56:11.512 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 17:58:54.295 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@22e3450f
-2018-01-12 17:58:54.294 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@f2beea3
-2018-01-12 17:58:54.303 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 17:58:54.309 [Thread-2] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 17:58:54.309 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 17:58:54.324 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 17:58:58.896 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@a420d35
-2018-01-12 17:58:58.896 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@41d0daf7
-2018-01-12 17:58:58.900 [Thread-2] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 17:58:58.901 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 17:58:58.905 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 17:58:58.908 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 18:23:36.720 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@39336529
-2018-01-12 18:23:36.725 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 18:23:36.725 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 18:23:54.796 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@67724ca
-2018-01-12 18:23:54.802 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 18:23:54.808 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 18:25:58.152 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@54b25277
-2018-01-12 18:25:58.158 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 18:25:58.158 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 18:25:58.159 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 18:26:30.190 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@d38bd37
-2018-01-12 18:26:30.191 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 18:26:30.196 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 18:26:30.190 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 18:26:42.598 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 18:26:42.602 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 18:26:42.603 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@41d0daf7
-2018-01-12 18:26:42.604 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 18:26:47.673 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@5f384236
-2018-01-12 18:26:47.679 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 18:26:47.681 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 18:26:47.674 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 18:27:20.891 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 18:27:20.891 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 18:27:20.891 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@76c7e96f
-2018-01-12 18:27:20.896 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 18:28:13.603 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@41d0daf7
-2018-01-12 18:28:13.603 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@6fe3839b
-2018-01-12 18:28:13.608 [Thread-2] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 18:28:13.615 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 18:28:13.627 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 18:28:13.627 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 18:28:23.151 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@39336529
-2018-01-12 18:28:23.155 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@34c9371c
-2018-01-12 18:28:23.158 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 18:28:23.184 [Thread-2] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 18:28:23.185 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 18:28:23.186 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 18:28:26.931 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@6fe3839b
-2018-01-12 18:28:26.931 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@67724ca
-2018-01-12 18:28:26.936 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 18:28:26.943 [Thread-2] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 18:28:26.953 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 18:28:26.953 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 18:28:29.979 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@6fe3839b
-2018-01-12 18:28:29.984 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 18:28:29.987 [Thread-2] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@67724ca
-2018-01-12 18:28:29.988 [Thread-2] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 18:28:29.997 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 18:28:29.996 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 18:28:49.544 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@387eb306
-2018-01-12 18:28:49.550 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 18:28:49.555 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 18:28:49.559 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 18:28:53.714 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@41d0daf7
-2018-01-12 18:28:53.719 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-12 18:28:53.721 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-12 18:28:53.723 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 11:59:19.466 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@e1c48ef
+2018-01-15 11:59:19.471 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@e1c48ef put: (sampleDirectory, This is, true)
+2018-01-15 11:59:19.472 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@73147d93 took: (sampleDirectory, This is, true)
+2018-01-15 11:59:19.472 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@38532bf0 took: (sampleDirectory2, This is, false)
+2018-01-15 11:59:19.474 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@e1c48ef put: (sampleDirectory2, This is, false)
+2018-01-15 11:59:19.474 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@17feee5 took: (sampleDirectory3, This is, false)
+2018-01-15 11:59:19.476 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@e1c48ef put: (sampleDirectory3, This is, false)
+2018-01-15 11:59:19.476 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@e1c48ef put: (sampleDirectory4, This is, false)
+2018-01-15 11:59:19.476 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@e1c48ef put: (sampleDirectory5, This is, false)
+2018-01-15 11:59:19.477 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@e1c48ef put: (sampleInput, This is, false)
+2018-01-15 11:59:19.477 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1f1a22a6 took: (sampleDirectory4, This is, false)
+2018-01-15 11:59:19.478 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1f1a22a6 took: (sampleDirectory5, This is, false)
+2018-01-15 11:59:19.479 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1f1a22a6 took: (sampleInput, This is, false)
+2018-01-15 11:59:19.477 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-15 11:59:19.484 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1f1a22a6 took: (null, null, false)
+2018-01-15 11:59:19.485 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@38532bf0 took: (null, null, false)
+2018-01-15 11:59:19.485 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 11:59:19.486 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@17feee5 took: (null, null, false)
+2018-01-15 11:59:19.486 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 11:59:19.486 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 11:59:19.508 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@73147d93 took: (null, null, false)
+2018-01-15 11:59:19.508 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 11:59:19.512 [main] INFO  PCTest - 108 108
+2018-01-15 12:02:23.225 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@3486ac59
+2018-01-15 12:02:23.230 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b131112 took: (sampleDirectory, This is, true)
+2018-01-15 12:02:23.230 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@3486ac59 put: (sampleDirectory, This is, true)
+2018-01-15 12:02:23.231 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1a942c5c took: (sampleDirectory2, This is, false)
+2018-01-15 12:02:23.231 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@3486ac59 put: (sampleDirectory2, This is, false)
+2018-01-15 12:02:23.232 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1a942c5c took: (sampleDirectory3, This is, false)
+2018-01-15 12:02:23.232 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@3486ac59 put: (sampleDirectory3, This is, false)
+2018-01-15 12:02:23.232 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@3486ac59 put: (sampleDirectory4, This is, false)
+2018-01-15 12:02:23.232 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@3486ac59 put: (sampleDirectory5, This is, false)
+2018-01-15 12:02:23.232 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@3486ac59 put: (sampleInput, This is, false)
+2018-01-15 12:02:23.232 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1a942c5c took: (sampleDirectory4, This is, false)
+2018-01-15 12:02:23.233 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-15 12:02:23.233 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b131112 took: (sampleDirectory5, This is, false)
+2018-01-15 12:02:23.233 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@44397192 took: (sampleInput, This is, false)
+2018-01-15 12:02:23.234 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1a942c5c took: (null, null, false)
+2018-01-15 12:02:23.234 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 12:02:23.234 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b131112 took: (null, null, false)
+2018-01-15 12:02:23.235 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 12:02:23.235 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@44397192 took: (null, null, false)
+2018-01-15 12:02:23.235 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 12:02:23.236 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@615e5af4 took: (null, null, false)
+2018-01-15 12:02:23.237 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 12:02:23.241 [main] INFO  PCTest - 108 108

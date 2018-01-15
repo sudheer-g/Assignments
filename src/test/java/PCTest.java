@@ -25,7 +25,7 @@ public class PCTest {
         String fileName = "";
         Result result;
         try {
-            FileReader fr = FileIO.openFile("src/test/testCasesWordOccurrences");
+            FileReader fr = FileIO.openFile("src/test/testCasesWCThreads");
             bufferedReader = new BufferedReader(fr);
             String line;
             while ((line = bufferedReader.readLine()) != null) {
@@ -44,8 +44,11 @@ public class PCTest {
         }
         List<Query> queryList = new ArrayList<>();
         queryList.add(new Query("sampleDirectory", "This is", true));
-        //queryList.add(new Query("sampleDirectory/sampleInput", "This is", false));
-        //queryList.add(new Query("sampleDirectory/innerDirectory", "This is", false));
+        queryList.add(new Query("sampleDirectory2", "This is", false));
+        queryList.add(new Query("sampleDirectory3", "This is", false));
+        queryList.add(new Query("sampleDirectory4", "This is", false));
+        queryList.add(new Query("sampleDirectory5", "This is", false));
+        queryList.add(new Query("sampleInput", "This is", false));
         return new Object[][]{new Object[]{queryList, resultList}};
     }
 
@@ -56,6 +59,7 @@ public class PCTest {
         Collections.sort(resultList);
         Collections.sort(assertList);
         Assert.assertEquals(resultList.size() == assertList.size(), true);
+        logger.info(resultList.size() + " " + assertList.size());
         Iterator<Result> resultIterator = resultList.iterator();
         for (Result result : assertList) {
             Assert.assertEquals(Objects.equals(result, resultIterator.next()), true);
