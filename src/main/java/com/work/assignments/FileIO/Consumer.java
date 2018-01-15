@@ -16,18 +16,13 @@ public class Consumer implements Runnable {
         this.resultList = resultList;
     }
 
-    private synchronized Query consume() {
-        Query q = new Query();
-        try {
-            q = blockingQueue.take();
-            logger.debug("Consumer " + this + " took: " + q);
-        } catch (InterruptedException e) {
-            logger.error(e);
-        }
+    private Query consume() throws InterruptedException {
+        Query q = blockingQueue.take();
+        logger.debug("Consumer " + this + " took: " + q);
         return q;
     }
 
-    private synchronized void addPoisonPill() {
+    private void addPoisonPill() {
         try {
             blockingQueue.put(new Query(null, null, false));
         }
@@ -36,28 +31,18 @@ public class Consumer implements Runnable {
         }
     }
 
-    private synchronized void addResults(List<Result> results) {
-        resultList.addAll(results);
-    }
-
-    private void execute() {
+    private void execute() throws InterruptedException {
         DirectoryWordOccurrences fo = new DirectoryWordOccurrences();
         Query q;
         List<Result> results;
-        try {
-            while (true) {
-                q = consume();
-                if (q.directoryOrFile == null || q.word == null) {
-                    addPoisonPill();
-                    break;
-                }
-                results = fo.getWords(q);
-                addResults(results);
-                results.clear();
+        while (true) {
+            q = consume();
+            if (q.directoryOrFile == null || q.word == null) {
+                addPoisonPill();
+                break;
             }
-        }
-        catch (Throwable e) {
-            e.printStackTrace();
+            results = fo.search(q);
+            resultList.addAll(results);
         }
     }
 

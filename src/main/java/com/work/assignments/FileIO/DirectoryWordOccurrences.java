@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class DirectoryWordOccurrences {
+public class DirectoryWordOccurrences implements WordSearchService {
     private List<Result> resultList = new ArrayList<>();
     private Logger logger = LogManager.getLogger(DirectoryWordOccurrences.class);
 
@@ -64,7 +64,27 @@ public class DirectoryWordOccurrences {
         return resultList;
     }
 
-    public List<Result> getWords(Query query) {
+    private List<Query> getDirectoryList(Query query) {
+        File folder = new File(query.directoryOrFile);
+        List<Query> queryList = new ArrayList<>();
+        if(folder.isFile()) {
+            queryList.add(new Query(query.directoryOrFile , query.word, query.recursive));
+        }
+        else {
+            File[] listOfFiles = folder.listFiles();
+            if (listOfFiles != null) {
+                for (File file : listOfFiles) {
+                    queryList.add(new Query(query.directoryOrFile + "/" + file.getName(), query.word, query.recursive));
+
+                }
+            }
+        }
+        return queryList;
+    }
+
+
+    @Override
+    public List<Result> search(Query query) {
         File file = new File(query.directoryOrFile);
         if (file.isFile()) {
             return getFileWordOccurances(query.directoryOrFile, query.word);

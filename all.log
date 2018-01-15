@@ -1,46 +1,520 @@
-2018-01-15 11:59:19.466 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@e1c48ef
-2018-01-15 11:59:19.471 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@e1c48ef put: (sampleDirectory, This is, true)
-2018-01-15 11:59:19.472 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@73147d93 took: (sampleDirectory, This is, true)
-2018-01-15 11:59:19.472 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@38532bf0 took: (sampleDirectory2, This is, false)
-2018-01-15 11:59:19.474 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@e1c48ef put: (sampleDirectory2, This is, false)
-2018-01-15 11:59:19.474 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@17feee5 took: (sampleDirectory3, This is, false)
-2018-01-15 11:59:19.476 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@e1c48ef put: (sampleDirectory3, This is, false)
-2018-01-15 11:59:19.476 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@e1c48ef put: (sampleDirectory4, This is, false)
-2018-01-15 11:59:19.476 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@e1c48ef put: (sampleDirectory5, This is, false)
-2018-01-15 11:59:19.477 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@e1c48ef put: (sampleInput, This is, false)
-2018-01-15 11:59:19.477 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1f1a22a6 took: (sampleDirectory4, This is, false)
-2018-01-15 11:59:19.478 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1f1a22a6 took: (sampleDirectory5, This is, false)
-2018-01-15 11:59:19.479 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1f1a22a6 took: (sampleInput, This is, false)
-2018-01-15 11:59:19.477 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-15 11:59:19.484 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1f1a22a6 took: (null, null, false)
-2018-01-15 11:59:19.485 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@38532bf0 took: (null, null, false)
-2018-01-15 11:59:19.485 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-15 11:59:19.486 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@17feee5 took: (null, null, false)
-2018-01-15 11:59:19.486 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-15 11:59:19.486 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-15 11:59:19.508 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@73147d93 took: (null, null, false)
-2018-01-15 11:59:19.508 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-15 11:59:19.512 [main] INFO  PCTest - 108 108
-2018-01-15 12:02:23.225 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@3486ac59
-2018-01-15 12:02:23.230 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b131112 took: (sampleDirectory, This is, true)
-2018-01-15 12:02:23.230 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@3486ac59 put: (sampleDirectory, This is, true)
-2018-01-15 12:02:23.231 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1a942c5c took: (sampleDirectory2, This is, false)
-2018-01-15 12:02:23.231 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@3486ac59 put: (sampleDirectory2, This is, false)
-2018-01-15 12:02:23.232 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1a942c5c took: (sampleDirectory3, This is, false)
-2018-01-15 12:02:23.232 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@3486ac59 put: (sampleDirectory3, This is, false)
-2018-01-15 12:02:23.232 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@3486ac59 put: (sampleDirectory4, This is, false)
-2018-01-15 12:02:23.232 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@3486ac59 put: (sampleDirectory5, This is, false)
-2018-01-15 12:02:23.232 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@3486ac59 put: (sampleInput, This is, false)
-2018-01-15 12:02:23.232 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1a942c5c took: (sampleDirectory4, This is, false)
-2018-01-15 12:02:23.233 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
-2018-01-15 12:02:23.233 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b131112 took: (sampleDirectory5, This is, false)
-2018-01-15 12:02:23.233 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@44397192 took: (sampleInput, This is, false)
-2018-01-15 12:02:23.234 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1a942c5c took: (null, null, false)
-2018-01-15 12:02:23.234 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-15 12:02:23.234 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b131112 took: (null, null, false)
-2018-01-15 12:02:23.235 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-15 12:02:23.235 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@44397192 took: (null, null, false)
-2018-01-15 12:02:23.235 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-15 12:02:23.236 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@615e5af4 took: (null, null, false)
-2018-01-15 12:02:23.237 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
-2018-01-15 12:02:23.241 [main] INFO  PCTest - 108 108
+2018-01-15 15:43:13.402 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@61326274
+2018-01-15 15:43:13.407 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6aeacc98 took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:43:13.409 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@61326274 put: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:43:13.410 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5ffa67b9 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:43:13.410 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@61326274 put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:43:13.411 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@45a50c2b took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:43:13.412 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@61326274 put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:43:13.413 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@71fbe277 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:43:13.424 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@61326274 put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:43:13.424 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6aeacc98 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:43:13.425 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@61326274 put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:43:13.427 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5ffa67b9 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:43:13.428 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@61326274 put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:43:13.428 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@45a50c2b took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:43:13.429 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@61326274 put: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:43:13.430 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@71fbe277 took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:43:13.430 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@61326274 put: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:43:13.430 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6aeacc98 took: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:43:13.431 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@61326274 put: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:43:13.431 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-15 15:43:13.432 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5ffa67b9 took: (null, null, false)
+2018-01-15 15:43:13.432 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:43:13.433 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@45a50c2b took: (null, null, false)
+2018-01-15 15:43:13.433 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:43:13.433 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@71fbe277 took: (null, null, false)
+2018-01-15 15:43:13.433 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:43:13.433 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6aeacc98 took: (null, null, false)
+2018-01-15 15:43:13.434 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:43:13.437 [main] INFO  PCTest - 54 54
+2018-01-15 15:47:56.944 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@43ad315e
+2018-01-15 15:47:56.950 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@712f466e took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:47:56.952 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@43ad315e put: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:47:56.953 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6ed077c took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:47:56.953 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@43ad315e put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:47:56.954 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2cf79c16 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:47:56.955 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@43ad315e put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:47:56.955 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@f72dd9 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:47:56.955 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@43ad315e put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:47:56.957 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@712f466e took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:47:56.957 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@43ad315e put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:47:56.959 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6ed077c took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:47:56.960 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@43ad315e put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:47:56.961 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2cf79c16 took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:47:56.962 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@43ad315e put: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:47:56.962 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@f72dd9 took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:47:56.962 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@43ad315e put: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:47:56.963 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@712f466e took: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:47:56.964 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@43ad315e put: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:47:56.964 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-15 15:47:56.965 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6ed077c took: (null, null, false)
+2018-01-15 15:47:56.965 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:47:56.966 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2cf79c16 took: (null, null, false)
+2018-01-15 15:47:56.966 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:47:56.966 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@f72dd9 took: (null, null, false)
+2018-01-15 15:47:56.966 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:47:56.967 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@712f466e took: (null, null, false)
+2018-01-15 15:47:56.967 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:47:56.970 [main] INFO  PCTest - 54 54
+2018-01-15 15:49:16.679 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@58fec6a9
+2018-01-15 15:49:16.684 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@33e0b873 took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:49:16.683 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:49:16.685 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:49:16.685 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:49:16.685 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:49:16.688 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@520a9be took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:49:16.688 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7b808a7c took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:49:16.689 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7b808a7c took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:49:16.692 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:49:16.692 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:49:16.692 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:49:16.694 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@bf09459 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:49:16.695 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@bf09459 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:49:16.695 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@bf09459 took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:49:16.696 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:49:16.697 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:49:16.697 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-15 15:49:16.698 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@bf09459 took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:49:16.699 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@bf09459 took: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:49:16.699 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@bf09459 took: (null, null, false)
+2018-01-15 15:49:16.700 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@33e0b873 took: (null, null, false)
+2018-01-15 15:49:16.701 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:49:16.702 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@520a9be took: (null, null, false)
+2018-01-15 15:49:16.703 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7b808a7c took: (null, null, false)
+2018-01-15 15:49:16.703 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:49:16.705 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:49:16.705 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:49:16.709 [main] INFO  PCTest - 54 54
+2018-01-15 15:50:15.976 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@710c299a
+2018-01-15 15:50:15.982 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@785f940b took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:50:15.983 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@710c299a put: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:50:15.984 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@16065184 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:50:15.985 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@710c299a put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:50:15.985 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@710c299a put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:50:15.986 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@710c299a put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:50:15.986 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@710c299a put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:50:15.986 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@710c299a put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:50:15.985 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3529f3df took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:50:15.987 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@785f940b took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:50:15.987 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@785f940b took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:50:15.989 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2cf79c16 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:50:15.990 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3529f3df took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:50:15.991 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@710c299a put: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:50:15.991 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@785f940b took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:50:15.992 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@710c299a put: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:50:15.992 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@16065184 took: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:50:16.004 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@710c299a put: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:50:16.004 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-15 15:50:16.005 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2cf79c16 took: (null, null, false)
+2018-01-15 15:50:16.008 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3529f3df took: (null, null, false)
+2018-01-15 15:50:16.008 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:50:16.008 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@785f940b took: (null, null, false)
+2018-01-15 15:50:16.009 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:50:16.009 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@16065184 took: (null, null, false)
+2018-01-15 15:50:16.009 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:50:16.012 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:50:16.015 [main] INFO  PCTest - 54 54
+2018-01-15 15:50:21.069 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@7b808a7c
+2018-01-15 15:50:21.078 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6c0801b9 took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:50:21.084 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@7b808a7c put: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:50:21.085 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5b77aef took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:50:21.085 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@7b808a7c put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:50:21.086 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6c0801b9 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:50:21.087 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@7b808a7c put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:50:21.087 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1948dff3 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:50:21.088 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@7b808a7c put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:50:21.089 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@7b808a7c put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:50:21.090 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6c0801b9 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:50:21.091 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@7b808a7c put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:50:21.089 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@4819131f took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:50:21.092 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@4819131f took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:50:21.093 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@7b808a7c put: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:50:21.093 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5b77aef took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:50:21.094 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@7b808a7c put: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:50:21.094 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6c0801b9 took: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:50:21.094 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@7b808a7c put: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:50:21.095 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-15 15:50:21.096 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1948dff3 took: (null, null, false)
+2018-01-15 15:50:21.096 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:50:21.097 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5b77aef took: (null, null, false)
+2018-01-15 15:50:21.097 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:50:21.099 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6c0801b9 took: (null, null, false)
+2018-01-15 15:50:21.099 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:50:21.104 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@4819131f took: (null, null, false)
+2018-01-15 15:50:21.107 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:50:21.111 [main] INFO  PCTest - 54 54
+2018-01-15 15:50:50.844 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@785f940b
+2018-01-15 15:50:50.849 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6ed077c took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:50:50.852 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@785f940b put: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:50:50.852 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@785f940b put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:50:50.852 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@785f940b put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:50:50.853 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@785f940b put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:50:50.853 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@785f940b put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:50:50.853 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@785f940b put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:50:50.853 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@785f940b put: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:50:50.854 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@785f940b put: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:50:50.854 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@785f940b put: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:50:50.854 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-15 15:50:50.856 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6ed077c took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:50:50.856 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6ed077c took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:50:50.857 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6ed077c took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:50:50.857 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6ed077c took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:50:50.858 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6ed077c took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:50:50.858 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6ed077c took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:50:50.859 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6ed077c took: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:50:50.859 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6ed077c took: (null, null, false)
+2018-01-15 15:50:50.861 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1ef737e3 took: (null, null, false)
+2018-01-15 15:50:50.863 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:50:50.864 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@43ad315e took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:50:50.865 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@43ad315e took: (null, null, false)
+2018-01-15 15:50:50.865 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:50:50.860 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:50:50.866 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6aa2d9a6 took: (null, null, false)
+2018-01-15 15:50:50.868 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:50:50.872 [main] INFO  PCTest - 54 54
+2018-01-15 15:50:59.683 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@348dcc5f
+2018-01-15 15:50:59.689 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2edde97b took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:50:59.690 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@348dcc5f put: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:50:59.691 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@348dcc5f put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:50:59.691 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@e86e9a1 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:50:59.691 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6d535543 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:50:59.692 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@348dcc5f put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:50:59.692 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@348dcc5f put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:50:59.693 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2edde97b took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:50:59.693 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@348dcc5f put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:50:59.692 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@615e5af4 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:50:59.694 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@e86e9a1 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:50:59.695 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@348dcc5f put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:50:59.696 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6d535543 took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:50:59.696 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@348dcc5f put: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:50:59.696 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2edde97b took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:50:59.697 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@348dcc5f put: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:50:59.698 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@615e5af4 took: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:50:59.698 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@348dcc5f put: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:50:59.705 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-15 15:50:59.706 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@e86e9a1 took: (null, null, false)
+2018-01-15 15:50:59.706 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:50:59.707 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6d535543 took: (null, null, false)
+2018-01-15 15:50:59.707 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:50:59.708 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2edde97b took: (null, null, false)
+2018-01-15 15:50:59.709 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:50:59.710 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@615e5af4 took: (null, null, false)
+2018-01-15 15:50:59.711 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:50:59.715 [main] INFO  PCTest - 54 54
+2018-01-15 15:52:32.655 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@58fec6a9
+2018-01-15 15:52:32.662 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6373a12c took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:52:32.666 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:52:32.666 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:52:32.667 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@4db54a10 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:52:32.667 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:52:32.667 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7b808a7c took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:52:32.668 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6373a12c took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:52:32.667 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:52:32.670 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@bf09459 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:52:32.671 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:52:32.672 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@4db54a10 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:52:32.673 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:52:32.673 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7b808a7c took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:52:32.674 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:52:32.674 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6373a12c took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:52:32.674 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:52:32.675 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@bf09459 took: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:52:32.676 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:52:32.676 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-15 15:52:32.676 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@4db54a10 took: (null, null, false)
+2018-01-15 15:52:32.677 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:52:32.677 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7b808a7c took: (null, null, false)
+2018-01-15 15:52:32.678 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:52:32.678 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6373a12c took: (null, null, false)
+2018-01-15 15:52:32.678 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@bf09459 took: (null, null, false)
+2018-01-15 15:52:32.679 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:52:32.680 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:52:32.683 [main] INFO  PCTest - 54 54
+2018-01-15 15:52:36.994 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@348dcc5f
+2018-01-15 15:52:37.000 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1f4c50bf took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:52:37.004 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@348dcc5f put: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:52:37.005 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@348dcc5f put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:52:37.005 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@58fec6a9 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:52:37.006 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@58fec6a9 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:52:37.007 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@348dcc5f put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:52:37.008 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@348dcc5f put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:52:37.008 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1f4c50bf took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:52:37.009 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@348dcc5f put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:52:37.010 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3dd1bac4 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:52:37.009 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@348dcc5f put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:52:37.011 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2edde97b took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:52:37.012 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@348dcc5f put: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:52:37.012 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1f4c50bf took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:52:37.012 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@348dcc5f put: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:52:37.013 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@58fec6a9 took: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:52:37.013 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@348dcc5f put: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:52:37.013 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-15 15:52:37.010 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3dd1bac4 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:52:37.014 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2edde97b took: (null, null, false)
+2018-01-15 15:52:37.014 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:52:37.014 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1f4c50bf took: (null, null, false)
+2018-01-15 15:52:37.014 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:52:37.015 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3dd1bac4 took: (null, null, false)
+2018-01-15 15:52:37.015 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:52:37.018 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@58fec6a9 took: (null, null, false)
+2018-01-15 15:52:37.018 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:52:37.022 [main] INFO  PCTest - 54 54
+2018-01-15 15:52:40.455 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@712f466e
+2018-01-15 15:52:40.463 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3b323c76 took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:52:40.464 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:52:40.470 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@66c577ff took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:52:40.471 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:52:40.472 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@18a52848 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:52:40.472 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:52:40.473 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:52:40.473 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:52:40.474 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:52:40.474 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:52:40.474 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:52:40.474 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:52:40.475 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-15 15:52:40.475 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@66c577ff took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:52:40.475 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@18a52848 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:52:40.476 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@18a52848 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:52:40.476 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@18a52848 took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:52:40.477 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@18a52848 took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:52:40.477 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@18a52848 took: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:52:40.478 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@18a52848 took: (null, null, false)
+2018-01-15 15:52:40.480 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3b323c76 took: (null, null, false)
+2018-01-15 15:52:40.480 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:52:40.481 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@66c577ff took: (null, null, false)
+2018-01-15 15:52:40.482 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:52:40.483 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@708e525f took: (null, null, false)
+2018-01-15 15:52:40.486 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:52:40.486 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:52:40.492 [main] INFO  PCTest - 54 54
+2018-01-15 15:52:43.665 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@58fec6a9
+2018-01-15 15:52:43.671 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7b808a7c took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:52:43.671 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:52:43.672 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:52:43.672 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1948dff3 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:52:43.673 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:52:43.673 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3108d56a took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:52:43.673 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1948dff3 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:52:43.673 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:52:43.673 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7b808a7c took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:52:43.674 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:52:43.674 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:52:43.674 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@4337f30d took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:52:43.675 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3108d56a took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:52:43.675 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:52:43.676 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:52:43.676 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1948dff3 took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:52:43.676 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7b808a7c took: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:52:43.676 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:52:43.677 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@58fec6a9 put: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:52:43.677 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-15 15:52:43.677 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3108d56a took: (null, null, false)
+2018-01-15 15:52:43.678 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1948dff3 took: (null, null, false)
+2018-01-15 15:52:43.678 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:52:43.678 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:52:43.678 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7b808a7c took: (null, null, false)
+2018-01-15 15:52:43.678 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:54:21.274 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@5f24dfd9
+2018-01-15 15:54:21.280 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@14e0faec took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:54:21.297 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@5f24dfd9 put: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:54:21.298 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b6a33b took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:54:21.297 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@5f24dfd9 put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:54:21.299 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@5f24dfd9 put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:54:21.299 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@5f24dfd9 put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:54:21.299 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@5f24dfd9 put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:54:21.300 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@5f24dfd9 put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:54:21.300 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@5f24dfd9 put: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:54:21.300 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@5f24dfd9 put: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:54:21.300 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@5f24dfd9 put: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:54:21.301 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-15 15:54:21.303 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1e8f6d3b took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:54:21.304 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1e8f6d3b took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:54:21.304 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b6a33b took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:54:21.304 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b6a33b took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:54:21.304 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1e8f6d3b took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:54:21.305 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1e8f6d3b took: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:54:21.305 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@14e0faec took: (null, null, false)
+2018-01-15 15:54:21.305 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b6a33b took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:54:21.306 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:54:21.306 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b6a33b took: (null, null, false)
+2018-01-15 15:54:21.306 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:54:21.306 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1e8f6d3b took: (null, null, false)
+2018-01-15 15:54:21.306 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:54:21.308 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2454cb2f took: (null, null, false)
+2018-01-15 15:54:21.313 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:54:21.316 [main] INFO  PCTest - 54 54
+2018-01-15 15:54:28.128 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@43ad315e
+2018-01-15 15:54:28.133 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@712f466e took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:54:28.133 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@43ad315e put: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:54:28.135 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@43ad315e put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:54:28.136 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@43ad315e put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:54:28.137 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@43ad315e put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:54:28.137 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@43ad315e put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:54:28.138 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@43ad315e put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:54:28.138 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@43ad315e put: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:54:28.136 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@f72dd9 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:54:28.139 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@43ad315e put: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:54:28.140 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@f72dd9 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:54:28.140 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@43ad315e put: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:54:28.141 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@f72dd9 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:54:28.141 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-15 15:54:28.142 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@f72dd9 took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:54:28.141 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7718b2f4 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:54:28.142 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7718b2f4 took: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:54:28.142 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@f72dd9 took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:54:28.143 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@f72dd9 took: (null, null, false)
+2018-01-15 15:54:28.143 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@712f466e took: (null, null, false)
+2018-01-15 15:54:28.143 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:54:28.143 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:54:28.144 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7718b2f4 took: (null, null, false)
+2018-01-15 15:54:28.144 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:54:28.141 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@e86e9a1 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:54:28.146 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@e86e9a1 took: (null, null, false)
+2018-01-15 15:54:28.146 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:54:28.150 [main] INFO  PCTest - 54 54
+2018-01-15 15:54:31.912 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@406b53ec
+2018-01-15 15:54:31.917 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@406b53ec put: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:54:31.917 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5f24dfd9 took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:54:31.917 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@406b53ec put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:54:31.917 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@406b53ec put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:54:31.917 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5f24dfd9 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:54:31.918 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@406b53ec put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:54:31.918 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5f24dfd9 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:54:31.918 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@406b53ec put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:54:31.918 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@406b53ec put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:54:31.918 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@406b53ec put: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:54:31.918 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5f24dfd9 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:54:31.919 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@406b53ec put: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:54:31.919 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@406b53ec put: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:54:31.919 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-15 15:54:31.919 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5f24dfd9 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:54:31.919 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5f24dfd9 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:54:31.919 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@14e0faec took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:54:31.920 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5f24dfd9 took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:54:31.920 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@14e0faec took: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:54:31.920 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5f24dfd9 took: (null, null, false)
+2018-01-15 15:54:31.921 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:54:31.921 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@14e0faec took: (null, null, false)
+2018-01-15 15:54:31.921 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:54:31.921 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@c8cc27 took: (null, null, false)
+2018-01-15 15:54:31.922 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:54:31.922 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5100b67d took: (null, null, false)
+2018-01-15 15:54:31.922 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:54:31.926 [main] INFO  PCTest - 54 54
+2018-01-15 15:54:35.283 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@712f466e
+2018-01-15 15:54:35.294 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@45a50c2b took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:54:35.296 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:54:35.296 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:54:35.297 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:54:35.297 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:54:35.297 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:54:35.298 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:54:35.298 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:54:35.298 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:54:35.298 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:54:35.298 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-15 15:54:35.299 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3b323c76 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:54:35.299 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3b323c76 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:54:35.300 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3b323c76 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:54:35.300 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3b323c76 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:54:35.301 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3b323c76 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:54:35.301 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3b323c76 took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:54:35.302 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3b323c76 took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:54:35.302 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3b323c76 took: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:54:35.304 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@45a50c2b took: (null, null, false)
+2018-01-15 15:54:35.306 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:54:35.306 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@348dcc5f took: (null, null, false)
+2018-01-15 15:54:35.306 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:54:35.308 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3b323c76 took: (null, null, false)
+2018-01-15 15:54:35.308 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:54:35.310 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@66c577ff took: (null, null, false)
+2018-01-15 15:54:35.311 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:54:35.316 [main] INFO  PCTest - 54 54
+2018-01-15 15:54:47.193 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@712f466e
+2018-01-15 15:54:47.198 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:54:47.198 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:54:47.199 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:54:47.199 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:54:47.200 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:54:47.200 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:54:47.200 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:54:47.200 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:54:47.200 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3b323c76 took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:54:47.201 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@712f466e put: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:54:47.201 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-15 15:54:47.201 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3b323c76 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:54:47.202 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3b323c76 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:54:47.202 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3b323c76 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:54:47.203 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3b323c76 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:54:47.203 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3b323c76 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:54:47.204 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3b323c76 took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:54:47.205 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3b323c76 took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:54:47.205 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3b323c76 took: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:54:47.212 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3b323c76 took: (null, null, false)
+2018-01-15 15:54:47.213 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:54:47.214 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@66c577ff took: (null, null, false)
+2018-01-15 15:54:47.215 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@4b4b63b3 took: (null, null, false)
+2018-01-15 15:54:47.215 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:54:47.217 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:54:47.217 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@885041f took: (null, null, false)
+2018-01-15 15:54:47.220 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:54:47.225 [main] INFO  PCTest - 54 54
+2018-01-15 15:54:51.768 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@3b323c76
+2018-01-15 15:54:51.778 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2bfc4f8a took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:54:51.787 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@3b323c76 put: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:54:51.787 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@4151eac took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:54:51.788 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@3b323c76 put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:54:51.789 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2bfc4f8a took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:54:51.789 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@3b323c76 put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:54:51.790 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@3b323c76 put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:54:51.791 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@348dcc5f took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:54:51.791 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@4151eac took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:54:51.791 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@3b323c76 put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:54:51.792 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@708e525f took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:54:51.792 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@3b323c76 put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:54:51.793 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@3b323c76 put: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:54:51.793 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2bfc4f8a took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:54:51.793 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@4151eac took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:54:51.793 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@3b323c76 put: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:54:51.793 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@3b323c76 put: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:54:51.793 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@348dcc5f took: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:54:51.793 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-15 15:54:51.794 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@708e525f took: (null, null, false)
+2018-01-15 15:54:51.795 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:54:51.795 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@4151eac took: (null, null, false)
+2018-01-15 15:54:51.795 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:54:51.795 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2bfc4f8a took: (null, null, false)
+2018-01-15 15:54:51.795 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@348dcc5f took: (null, null, false)
+2018-01-15 15:54:51.796 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:54:51.796 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:54:51.799 [main] INFO  PCTest - 54 54
+2018-01-15 15:59:39.944 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@658311a7
+2018-01-15 15:59:39.950 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@34c9371c took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:59:39.952 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@658311a7 put: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-15 15:59:39.952 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@39336529 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:59:39.953 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@658311a7 put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-15 15:59:39.954 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5a91a82a took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:59:39.953 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@658311a7 put: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-15 15:59:39.955 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@658311a7 put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:59:39.956 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@658311a7 put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:59:39.956 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@658311a7 put: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:59:39.957 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@34c9371c took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-15 15:59:39.957 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@34c9371c took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-15 15:59:39.958 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@34c9371c took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:59:39.958 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6e05d6b8 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-15 15:59:39.956 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@658311a7 put: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-15 15:59:39.972 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@34c9371c took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:59:39.972 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@658311a7 put: (sampleDirectory/sampleInput2, This is, false)
+2018-01-15 15:59:39.973 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@39336529 took: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:59:39.974 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer com.work.assignments.FileIO.Producer@658311a7 put: (sampleDirectory/sampleInput, This is, false)
+2018-01-15 15:59:39.974 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-15 15:59:39.974 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6e05d6b8 took: (null, null, false)
+2018-01-15 15:59:39.975 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:59:39.975 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5a91a82a took: (null, null, false)
+2018-01-15 15:59:39.975 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@34c9371c took: (null, null, false)
+2018-01-15 15:59:39.975 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:59:39.976 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@39336529 took: (null, null, false)
+2018-01-15 15:59:39.976 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:59:39.976 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-15 15:59:39.980 [main] INFO  PCTest - 54 54

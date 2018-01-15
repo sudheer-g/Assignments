@@ -1,7 +1,4 @@
-import com.work.assignments.FileIO.FileIO;
-import com.work.assignments.FileIO.PCController;
-import com.work.assignments.FileIO.Query;
-import com.work.assignments.FileIO.Result;
+import com.work.assignments.FileIO.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
@@ -12,8 +9,6 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
 
 public class PCTest {
     private Logger logger = LogManager.getLogger();
@@ -25,7 +20,7 @@ public class PCTest {
         String fileName = "";
         Result result;
         try {
-            FileReader fr = FileIO.openFile("src/test/testCasesWCThreads");
+            FileReader fr = FileIO.openFile("src/test/testCasesWordOccurrences");
             bufferedReader = new BufferedReader(fr);
             String line;
             while ((line = bufferedReader.readLine()) != null) {
@@ -42,20 +37,13 @@ public class PCTest {
         } finally {
             FileIO.closeFile(bufferedReader);
         }
-        List<Query> queryList = new ArrayList<>();
-        queryList.add(new Query("sampleDirectory", "This is", true));
-        queryList.add(new Query("sampleDirectory2", "This is", false));
-        queryList.add(new Query("sampleDirectory3", "This is", false));
-        queryList.add(new Query("sampleDirectory4", "This is", false));
-        queryList.add(new Query("sampleDirectory5", "This is", false));
-        queryList.add(new Query("sampleInput", "This is", false));
-        return new Object[][]{new Object[]{queryList, resultList}};
+        return new Object[][]{new Object[]{new Query("sampleDirectory", "This is", true), resultList}};
     }
 
     @Test(dataProvider = "ProducerInput")
-    public void testPCController(List<Query> queryList, List<Result> assertList) {
-        PCController pcController = new PCController();
-        List<Result> resultList = pcController.wordSearch(queryList);
+    public void testPCController(Query query, List<Result> assertList) {
+        MultiThreadedWordSearchService getWords = new MultiThreadedWordSearchService();
+        List<Result> resultList = getWords.search(query);
         Collections.sort(resultList);
         Collections.sort(assertList);
         Assert.assertEquals(resultList.size() == assertList.size(), true);

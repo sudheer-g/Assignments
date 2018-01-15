@@ -1,31 +1,31 @@
 package com.work.assignments.FileIO;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
 public class PCController {
-    public List<Result> wordSearch(List<Query> queryList) {
-        BlockingQueue<Query> blockingQueue = new ArrayBlockingQueue<>(3);
-        List<Result> resultList = new ArrayList<>();
-        Thread producerThread = new Thread(new Producer(blockingQueue, queryList.iterator()));
-        Thread consumerThread = new Thread(new Consumer(blockingQueue, resultList));
-        Thread consumerThreadTwo = new Thread(new Consumer(blockingQueue, resultList));
-        Thread consumerThreadThree = new Thread(new Consumer(blockingQueue, resultList));
-        Thread consumerThreadFour = new Thread(new Consumer(blockingQueue, resultList));
+    public List<Result> wordSearch(Query query) {
+        BlockingQueue<Query> blockingQueue = new ArrayBlockingQueue<>(10);
+        List<Result> resultList = Collections.synchronizedList(new ArrayList<>());
+        int consumerCount = 4;
+        Thread producerThread = new Thread(new Producer(blockingQueue, query));
+        Thread[] consumers = new Thread[consumerCount];
+        for(int i = 0; i < consumers.length; i++) {
+            consumers[i] = new Thread(new Consumer(blockingQueue, resultList));
+        }
         try {
             producerThread.start();
-            consumerThread.start();
-            consumerThreadTwo.start();
-            consumerThreadThree.start();
-            consumerThreadFour.start();
+            for(Thread consumer : consumers) {
+                consumer.start();
+            }
             producerThread.join();
             blockingQueue.put(new Query(null, null, false));
-            consumerThread.join();
-            consumerThreadTwo.join();
-            consumerThreadThree.join();
-            consumerThreadFour.join();
+            for(Thread consumer : consumers) {
+                consumer.join();
+            }
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
