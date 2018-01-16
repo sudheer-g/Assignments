@@ -5,30 +5,25 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.List;
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.TimeUnit;
 
 public class Consumer implements Runnable {
     private Logger logger = LogManager.getLogger(Consumer.class);
     private List<Result> resultList;
     private BlockingQueue<Query> blockingQueue;
+    private AtomicBoolean end;
 
-    public Consumer(BlockingQueue<Query> blockingQueue, List<Result> resultList) {
+    public Consumer(BlockingQueue<Query> blockingQueue, List<Result> resultList, AtomicBoolean end) {
         this.blockingQueue = blockingQueue;
         this.resultList = resultList;
+        this.end = end;
     }
 
     private Query consume() throws InterruptedException {
-        Query q = blockingQueue.take();
+        Query q = blockingQueue.poll(100,TimeUnit.MILLISECONDS);
         logger.debug("Consumer " + this + " took: " + q);
         return q;
-    }
-
-    private void addPoisonPill() {
-        try {
-            blockingQueue.put(new Query(null, null, false));
-        }
-        catch (InterruptedException e){
-            e.printStackTrace();
-        }
     }
 
     private void execute() throws InterruptedException {
@@ -36,13 +31,14 @@ public class Consumer implements Runnable {
         Query q;
         List<Result> results;
         while (true) {
-            q = consume();
-            if (q.directoryOrFile == null || q.word == null) {
-                addPoisonPill();
+            if (blockingQueue.isEmpty() && end.get()) {
                 break;
             }
-            results = fo.search(q);
-            resultList.addAll(results);
+            q = consume();
+            if (q != null) {
+                results = fo.search(q);
+                resultList.addAll(results);
+            }
         }
     }
 
@@ -52,7 +48,7 @@ public class Consumer implements Runnable {
             execute();
             logger.debug("Consumer End");
         } catch (Throwable e) {
-            logger.error(e);
+            throw new RuntimeException(e);
         }
     }
 }
