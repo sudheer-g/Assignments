@@ -1,12 +1,14 @@
 import com.work.assignments.FileIO.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 
@@ -14,7 +16,7 @@ public class PCTest {
     private Logger logger = LogManager.getLogger();
 
     @DataProvider(name = "ProducerInput")
-    public static Object[] producerInput() {
+    public static Object[][] producerInput() {
         BufferedReader bufferedReader = null;
         List<Result> resultList = new ArrayList<>();
         String fileName = "";
@@ -47,8 +49,8 @@ public class PCTest {
             List<Result> resultList = getWords.search(query);
             Collections.sort(resultList);
             Collections.sort(assertList);
-            Assert.assertEquals(resultList.size() == assertList.size(), true);
             logger.info(resultList.size() + " " + assertList.size());
+            Assert.assertEquals(resultList.size() == assertList.size(), true);
             Iterator<Result> resultIterator = resultList.iterator();
             for (Result result : assertList) {
                 Assert.assertEquals(Objects.equals(result, resultIterator.next()), true);

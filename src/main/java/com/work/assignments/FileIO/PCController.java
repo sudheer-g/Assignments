@@ -29,7 +29,7 @@ public class PCController {
             }
             producerThread.join();
             end.set(true);
-            consumers[2].interrupt();
+            //consumers[2].interrupt();
             for(Thread consumer : consumers) {
                 consumer.join();
             }

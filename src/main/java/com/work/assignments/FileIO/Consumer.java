@@ -19,24 +19,27 @@ public class Consumer implements Runnable {
         this.end = end;
     }
 
-    private Query consume() throws InterruptedException {
+    private Query takeFromQueue() throws InterruptedException {
         Query q = blockingQueue.poll(100,TimeUnit.MILLISECONDS);
         logger.debug("Consumer {} took: {}", this, q);
         return q;
     }
 
     private void execute() throws InterruptedException {
-        DirectoryWordOccurrences fo = new DirectoryWordOccurrences();
+        FileWordOccurrences fo = new FileWordOccurrences();
         Query q;
-        List<Result> results;
         while (true) {
+            q = takeFromQueue();
+            if (q != null) {
+                try {
+                    List<Result> results = fo.search(q);
+                    resultList.addAll(results);
+                } catch (Exception e) {
+                    logger.warn("Failed to search for query {}", q);
+                }
+            }
             if (blockingQueue.isEmpty() && end.get()) {
                 break;
-            }
-            q = consume();
-            if (q != null) {
-                results = fo.search(q);
-                resultList.addAll(results);
             }
         }
     }
@@ -49,7 +52,7 @@ public class Consumer implements Runnable {
         } catch (InterruptedException e) {
             StackTraceElement elements[] = e.getStackTrace();
             for (StackTraceElement element : elements) {
-                logger.log(Level.WARN, element.getMethodName());
+                logger.warn(element.getMethodName());
             }
             throw new RuntimeException(e);
         }

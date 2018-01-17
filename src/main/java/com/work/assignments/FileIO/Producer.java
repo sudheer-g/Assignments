@@ -1,5 +1,6 @@
 package com.work.assignments.FileIO;
 
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -16,25 +17,21 @@ public class Producer implements Runnable {
         this.query = query;
     }
 
-    private void addToQueue(Query q) {
-        try {
-            blockingQueue.put(q);
-            logger.debug("Adding query {} by producer {}", q, this);
-        } catch (InterruptedException e) {
-            logger.error(e);
-        }
+    private void addToQueue(Query q) throws InterruptedException{
+        blockingQueue.put(q);
+        logger.debug("Adding query {} by producer {}", q, this);
     }
 
 
-    private void execute(Query q) {
-        File folder = new File(q.directoryOrFile);
+    private void execute(Query q) throws InterruptedException{
+        File folder = new File(q.fileName);
         File[] listOfFiles = folder.listFiles();
         if(listOfFiles!= null) {
             for (File file : listOfFiles) {
                 if (file.isFile()) {
-                    addToQueue(new Query(q.directoryOrFile + '/' + file.getName(), q.word, false));
+                    addToQueue(new Query(q.fileName + '/' + file.getName(), q.word, false));
                 } else {
-                    execute(new Query(q.directoryOrFile + '/' + file.getName(), q.word, q.recursive));
+                    execute(new Query(q.fileName + '/' + file.getName(), q.word, q.recursive));
                 }
             }
         }
@@ -43,11 +40,15 @@ public class Producer implements Runnable {
     @Override
     public void run() {
         try {
-            logger.info("hit producer " + this);
+            logger.debug("hit producer:  {}", this);
             execute(query);
             logger.debug("Producer end");
-        } catch (Throwable e) {
-            logger.error(e);
+        } catch (InterruptedException e) {
+            StackTraceElement elements[] = e.getStackTrace();
+            for (StackTraceElement element : elements) {
+                logger.log(Level.WARN, element.getMethodName());
+            }
+            throw new RuntimeException(e);
         }
     }
 }
