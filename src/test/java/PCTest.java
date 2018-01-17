@@ -54,8 +54,8 @@ public class PCTest {
                 Assert.assertEquals(Objects.equals(result, resultIterator.next()), true);
             }
         }
-        catch (InterruptedException e) {
-            logger.error("Thread was interrupted.",e);
+        catch (Exception e) {
+            logger.error("Unexpected Exception: ",e);
         }
 
     }

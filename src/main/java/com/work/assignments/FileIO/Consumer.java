@@ -1,7 +1,6 @@
 package com.work.assignments.FileIO;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.*;
 
 import java.util.List;
 import java.util.concurrent.BlockingQueue;
@@ -48,8 +47,10 @@ public class Consumer implements Runnable {
             execute();
             logger.debug("Consumer End");
         } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-            logger.error("Thread has been interrupted.");
+            StackTraceElement elements[] = e.getStackTrace();
+            for (StackTraceElement element : elements) {
+                logger.log(Level.WARN, element.getMethodName());
+            }
             throw new RuntimeException(e);
         }
     }
