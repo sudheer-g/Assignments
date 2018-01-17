@@ -43,14 +43,20 @@ public class PCTest {
     @Test(dataProvider = "ProducerInput")
     public void testPCController(Query query, List<Result> assertList) {
         MultiThreadedWordSearchService getWords = new MultiThreadedWordSearchService();
-        List<Result> resultList = getWords.search(query);
-        Collections.sort(resultList);
-        Collections.sort(assertList);
-        Assert.assertEquals(resultList.size() == assertList.size(), true);
-        logger.info(resultList.size() + " " + assertList.size());
-        Iterator<Result> resultIterator = resultList.iterator();
-        for (Result result : assertList) {
-            Assert.assertEquals(Objects.equals(result, resultIterator.next()), true);
+        try {
+            List<Result> resultList = getWords.search(query);
+            Collections.sort(resultList);
+            Collections.sort(assertList);
+            Assert.assertEquals(resultList.size() == assertList.size(), true);
+            logger.info(resultList.size() + " " + assertList.size());
+            Iterator<Result> resultIterator = resultList.iterator();
+            for (Result result : assertList) {
+                Assert.assertEquals(Objects.equals(result, resultIterator.next()), true);
+            }
         }
+        catch (InterruptedException e) {
+            logger.error("Thread was interrupted.",e);
+        }
+
     }
 }

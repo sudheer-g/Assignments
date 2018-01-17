@@ -22,7 +22,7 @@ public class Consumer implements Runnable {
 
     private Query consume() throws InterruptedException {
         Query q = blockingQueue.poll(100,TimeUnit.MILLISECONDS);
-        logger.debug("Consumer " + this + " took: " + q);
+        logger.debug("Consumer {} took: {}", this, q);
         return q;
     }
 
@@ -47,7 +47,9 @@ public class Consumer implements Runnable {
         try {
             execute();
             logger.debug("Consumer End");
-        } catch (Throwable e) {
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            logger.error("Thread has been interrupted.");
             throw new RuntimeException(e);
         }
     }

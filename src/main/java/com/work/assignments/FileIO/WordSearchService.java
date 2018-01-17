@@ -4,5 +4,5 @@ import java.io.IOException;
 import java.util.List;
 
 public interface WordSearchService {
-    public List<Result> search(Query query);
+    public List<Result> search(Query query) throws InterruptedException;
 }

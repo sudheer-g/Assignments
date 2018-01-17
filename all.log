@@ -3601,3 +3601,353 @@
 2018-01-16 15:01:22.836 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@23506041 took: null
 2018-01-16 15:01:22.836 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
 2018-01-16 15:01:22.841 [main] INFO  PCTest - 54 54
+2018-01-16 15:06:40.008 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@39336529
+2018-01-16 15:06:40.012 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1f4c50bf took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-16 15:06:40.013 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-16 15:06:40.014 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-16 15:06:40.014 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-16 15:06:40.014 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5183a9f4 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-16 15:06:40.014 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-16 15:06:40.014 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5183a9f4 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-16 15:06:40.014 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-16 15:06:40.015 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-16 15:06:40.015 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5183a9f4 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-16 15:06:40.014 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@24861bf6 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-16 15:06:40.015 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-16 15:06:40.015 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5183a9f4 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-16 15:06:40.015 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-16 15:06:40.015 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@24861bf6 took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-16 15:06:40.015 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-16 15:06:40.016 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-16 15:06:40.016 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5183a9f4 took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-16 15:06:40.016 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7ae25d23 took: (sampleDirectory/sampleInput, This is, false)
+2018-01-16 15:06:40.113 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1f4c50bf took: null
+2018-01-16 15:06:40.113 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-16 15:06:40.116 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5183a9f4 took: null
+2018-01-16 15:06:40.116 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@24861bf6 took: null
+2018-01-16 15:06:40.116 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-16 15:06:40.116 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-16 15:06:40.117 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7ae25d23 took: null
+2018-01-16 15:06:40.117 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-16 15:06:40.121 [main] INFO  PCTest - 54 54
+2018-01-17 10:09:00.795 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@3486ac59
+2018-01-17 10:09:00.802 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@3486ac59
+2018-01-17 10:09:00.803 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@3486ac59
+2018-01-17 10:09:00.803 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@3486ac59
+2018-01-17 10:09:00.803 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@3486ac59
+2018-01-17 10:09:00.804 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@3486ac59
+2018-01-17 10:09:00.804 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@3486ac59
+2018-01-17 10:09:00.804 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@3486ac59
+2018-01-17 10:09:00.804 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@3486ac59
+2018-01-17 10:09:00.805 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@3486ac59
+2018-01-17 10:09:00.805 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-17 10:09:00.808 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@73147d93 took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-17 10:09:00.808 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@38532bf0 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-17 10:09:00.808 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b131112 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-17 10:09:00.808 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@e1c48ef took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-17 10:09:00.813 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b131112 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-17 10:09:00.814 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@73147d93 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-17 10:09:00.814 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@e1c48ef took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-17 10:09:00.828 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@38532bf0 took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-17 10:09:00.839 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@38532bf0 took: (sampleDirectory/sampleInput, This is, false)
+2018-01-17 10:09:00.840 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 10:09:00.841 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 10:09:00.842 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 10:09:00.849 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 10:09:00.852 [main] INFO  PCTest - 54 54
+2018-01-17 10:09:22.276 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@658311a7
+2018-01-17 10:09:22.285 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@70dfea14 took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-17 10:09:22.284 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@658311a7
+2018-01-17 10:09:22.295 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@658311a7
+2018-01-17 10:09:22.295 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@658311a7
+2018-01-17 10:09:22.296 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@658311a7
+2018-01-17 10:09:22.296 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@70dfea14 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-17 10:09:22.297 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@70dfea14 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-17 10:09:22.310 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@70dfea14 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-17 10:09:22.326 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@64e23e99 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-17 10:09:22.326 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@658311a7
+2018-01-17 10:09:22.331 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@34c9371c took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-17 10:09:22.330 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@658311a7
+2018-01-17 10:09:22.333 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@658311a7
+2018-01-17 10:09:22.334 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@70dfea14 took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-17 10:09:22.334 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@70dfea14 took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-17 10:09:22.334 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@658311a7
+2018-01-17 10:09:22.359 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@658311a7
+2018-01-17 10:09:22.359 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@34c9371c took: (sampleDirectory/sampleInput, This is, false)
+2018-01-17 10:09:22.359 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-17 10:09:22.429 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@64e23e99 took: null
+2018-01-17 10:09:22.430 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 10:09:22.435 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@70dfea14 took: null
+2018-01-17 10:09:22.435 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 10:09:22.438 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@437c4387 took: null
+2018-01-17 10:09:22.439 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 10:09:22.460 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@34c9371c took: null
+2018-01-17 10:09:22.460 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 10:09:22.463 [main] INFO  PCTest - 54 54
+2018-01-17 10:50:13.306 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@658311a7
+2018-01-17 10:50:13.317 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@658311a7
+2018-01-17 10:50:13.317 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@658311a7
+2018-01-17 10:50:13.318 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@658311a7
+2018-01-17 10:50:13.317 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2dd8b409 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-17 10:50:13.317 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@f72dd9 took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-17 10:50:13.318 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2dd8b409 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-17 10:50:13.318 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@658311a7
+2018-01-17 10:50:13.318 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@66c577ff took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-17 10:50:13.319 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2dd8b409 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-17 10:50:13.319 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@658311a7
+2018-01-17 10:50:13.319 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@658311a7
+2018-01-17 10:50:13.319 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2dd8b409 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-17 10:50:13.319 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@658311a7
+2018-01-17 10:50:13.319 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@658311a7
+2018-01-17 10:50:13.319 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2dd8b409 took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-17 10:50:13.320 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@658311a7
+2018-01-17 10:50:13.320 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-17 10:50:13.320 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2dd8b409 took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-17 10:50:13.320 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@66c577ff took: (sampleDirectory/sampleInput, This is, false)
+2018-01-17 10:50:13.403 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@34c9371c took: null
+2018-01-17 10:50:13.404 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 10:50:13.419 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@f72dd9 took: null
+2018-01-17 10:50:13.419 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 10:50:13.421 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2dd8b409 took: null
+2018-01-17 10:50:13.421 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@66c577ff took: null
+2018-01-17 10:50:13.421 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 10:50:13.421 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 10:50:13.427 [main] INFO  PCTest - 54 54
+2018-01-17 11:04:33.374 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@39336529
+2018-01-17 11:04:33.382 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@f3d5c took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-17 11:04:33.385 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-17 11:04:33.385 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-17 11:04:33.385 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-17 11:04:33.386 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-17 11:04:33.386 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-17 11:04:33.387 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7ae25d23 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-17 11:04:33.387 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7ae25d23 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-17 11:04:33.388 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7ae25d23 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-17 11:04:33.389 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7ae25d23 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-17 11:04:33.389 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7ae25d23 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-17 11:04:33.386 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-17 11:04:33.391 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-17 11:04:33.391 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-17 11:04:33.391 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-17 11:04:33.397 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-17 11:04:33.397 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@f3d5c took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-17 11:04:33.399 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@708e525f took: (sampleDirectory/sampleInput, This is, false)
+2018-01-17 11:04:33.400 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:04:33.399 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@f3d5c took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-17 11:04:33.402 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:04:33.403 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:04:33.490 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7ae25d23 took: null
+2018-01-17 11:04:33.490 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:04:33.494 [main] INFO  PCTest - 54 54
+2018-01-17 11:05:10.554 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@39336529
+2018-01-17 11:05:10.562 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@48047c6d took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-17 11:05:10.566 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-17 11:05:10.566 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-17 11:05:10.567 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7ae25d23 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-17 11:05:10.568 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-17 11:05:10.569 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-17 11:05:10.569 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@48047c6d took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-17 11:05:10.570 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3344cb88 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-17 11:05:10.571 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7ae25d23 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-17 11:05:10.569 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-17 11:05:10.590 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-17 11:05:10.589 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@48047c6d took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-17 11:05:10.591 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@48047c6d took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-17 11:05:10.592 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-17 11:05:10.592 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3344cb88 took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-17 11:05:10.593 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-17 11:05:10.595 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@39336529
+2018-01-17 11:05:10.596 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-17 11:05:10.596 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@48047c6d took: (sampleDirectory/sampleInput, This is, false)
+2018-01-17 11:05:10.598 [Thread-4] ERROR com.work.assignments.FileIO.Consumer - Thread has been interrupted.
+2018-01-17 11:05:10.672 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7ae25d23 took: null
+2018-01-17 11:05:10.672 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:05:10.692 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@520a9be took: null
+2018-01-17 11:05:10.693 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3344cb88 took: null
+2018-01-17 11:05:10.693 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:05:10.693 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:05:10.695 [main] INFO  PCTest - 54 54
+2018-01-17 11:06:21.741 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@6df51261
+2018-01-17 11:06:21.746 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@6df51261
+2018-01-17 11:06:21.746 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7bafad4e took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-17 11:06:21.747 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@6df51261
+2018-01-17 11:06:21.747 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7bafad4e took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-17 11:06:21.747 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@6df51261
+2018-01-17 11:06:21.747 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@10996f23 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-17 11:06:21.748 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@6df51261
+2018-01-17 11:06:21.748 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6144d22a took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-17 11:06:21.749 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7bafad4e took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-17 11:06:21.749 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@6df51261
+2018-01-17 11:06:21.750 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@36c1f136 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-17 11:06:21.753 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@6df51261
+2018-01-17 11:06:21.754 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7bafad4e took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-17 11:06:21.754 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@6df51261
+2018-01-17 11:06:21.754 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@6df51261
+2018-01-17 11:06:21.754 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7bafad4e took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-17 11:06:21.754 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@6df51261
+2018-01-17 11:06:21.755 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-17 11:06:21.755 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7bafad4e took: (sampleDirectory/sampleInput, This is, false)
+2018-01-17 11:06:21.755 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:06:21.755 [Thread-4] ERROR com.work.assignments.FileIO.Consumer - Thread has been interrupted.
+2018-01-17 11:06:21.850 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@10996f23 took: null
+2018-01-17 11:06:21.850 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:06:21.851 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@36c1f136 took: null
+2018-01-17 11:06:21.851 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:06:21.854 [main] INFO  PCTest - 54 54
+2018-01-17 11:08:10.673 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@76c7e96f
+2018-01-17 11:08:10.689 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5267395a took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-17 11:08:10.690 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@76c7e96f
+2018-01-17 11:08:10.692 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7523605e took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-17 11:08:10.693 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@76c7e96f
+2018-01-17 11:08:10.693 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7a5f5d9a took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-17 11:08:10.695 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@76c7e96f
+2018-01-17 11:08:10.695 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@701c409d took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-17 11:08:10.696 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@76c7e96f
+2018-01-17 11:08:10.697 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5267395a took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-17 11:08:10.699 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@76c7e96f
+2018-01-17 11:08:10.700 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7523605e took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-17 11:08:10.702 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@76c7e96f
+2018-01-17 11:08:10.702 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7a5f5d9a took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-17 11:08:10.704 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@76c7e96f
+2018-01-17 11:08:10.705 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@701c409d took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-17 11:08:10.706 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@76c7e96f
+2018-01-17 11:08:10.706 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5267395a took: (sampleDirectory/sampleInput, This is, false)
+2018-01-17 11:08:10.707 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@76c7e96f
+2018-01-17 11:08:10.708 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-17 11:08:10.801 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@7523605e took: null
+2018-01-17 11:08:10.801 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:08:10.806 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@701c409d took: null
+2018-01-17 11:08:10.806 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:08:10.807 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5267395a took: null
+2018-01-17 11:08:10.807 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:08:10.811 [main] INFO  PCTest - 54 54
+2018-01-17 11:08:30.752 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@d38bd37
+2018-01-17 11:08:30.761 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@d38bd37
+2018-01-17 11:08:30.763 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@d38bd37
+2018-01-17 11:08:30.763 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@d38bd37
+2018-01-17 11:08:30.763 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@d38bd37
+2018-01-17 11:08:30.764 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@d38bd37
+2018-01-17 11:08:30.764 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@d38bd37
+2018-01-17 11:08:30.765 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@d38bd37
+2018-01-17 11:08:30.765 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@d38bd37
+2018-01-17 11:08:30.766 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@d38bd37
+2018-01-17 11:08:30.766 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-17 11:08:30.769 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5cccaeb took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-17 11:08:30.770 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5cccaeb took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-17 11:08:30.770 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5cccaeb took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-17 11:08:30.771 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5cccaeb took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-17 11:08:30.771 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5cccaeb took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-17 11:08:30.772 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3fda89d4 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-17 11:08:30.773 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3fda89d4 took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-17 11:08:30.774 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3fda89d4 took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-17 11:08:30.774 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3fda89d4 took: (sampleDirectory/sampleInput, This is, false)
+2018-01-17 11:08:30.779 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:08:30.878 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3fda89d4 took: null
+2018-01-17 11:08:30.878 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:08:30.879 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@5cccaeb took: null
+2018-01-17 11:08:30.879 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:08:30.882 [main] INFO  PCTest - 54 54
+2018-01-17 11:11:22.699 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@22e3450f
+2018-01-17 11:11:22.707 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@4b4b63b3 took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-17 11:11:22.707 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@22e3450f
+2018-01-17 11:11:22.709 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@785b4dbb took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-17 11:11:22.710 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@22e3450f
+2018-01-17 11:11:22.711 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6aa2d9a6 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-17 11:11:22.712 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@22e3450f
+2018-01-17 11:11:22.713 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@658311a7 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-17 11:11:22.714 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@22e3450f
+2018-01-17 11:11:22.714 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@22e3450f
+2018-01-17 11:11:22.715 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@785b4dbb took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-17 11:11:22.715 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@4b4b63b3 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-17 11:11:22.714 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@22e3450f
+2018-01-17 11:11:22.717 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@6aa2d9a6 took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-17 11:11:22.718 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@22e3450f
+2018-01-17 11:11:22.718 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@658311a7 took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-17 11:11:22.719 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@22e3450f
+2018-01-17 11:11:22.719 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@785b4dbb took: (sampleDirectory/sampleInput, This is, false)
+2018-01-17 11:11:22.720 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@22e3450f
+2018-01-17 11:11:22.721 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-17 11:11:22.721 [Thread-4] ERROR com.work.assignments.FileIO.Consumer - Thread has been interrupted.
+2018-01-17 11:11:22.816 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@4b4b63b3 took: null
+2018-01-17 11:11:22.816 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:11:22.819 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@658311a7 took: null
+2018-01-17 11:11:22.819 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:11:22.820 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@785b4dbb took: null
+2018-01-17 11:11:22.820 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:11:22.825 [main] INFO  PCTest - 54 54
+2018-01-17 11:16:12.431 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@33f9de2a
+2018-01-17 11:16:12.437 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@33f9de2a
+2018-01-17 11:16:12.438 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@33f9de2a
+2018-01-17 11:16:12.438 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@33f9de2a
+2018-01-17 11:16:12.438 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@33f9de2a
+2018-01-17 11:16:12.439 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@33f9de2a
+2018-01-17 11:16:12.439 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@33f9de2a
+2018-01-17 11:16:12.439 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@33f9de2a
+2018-01-17 11:16:12.439 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@33f9de2a
+2018-01-17 11:16:12.440 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b131112 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-17 11:16:12.440 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@33f9de2a
+2018-01-17 11:16:12.441 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-17 11:16:12.441 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@e1c48ef took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-17 11:16:12.443 [Thread-4] ERROR com.work.assignments.FileIO.Consumer - Thread has been interrupted.
+2018-01-17 11:16:12.445 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b131112 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-17 11:16:12.446 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b131112 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-17 11:16:12.446 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b131112 took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-17 11:16:12.447 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b131112 took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-17 11:16:12.448 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b131112 took: (sampleDirectory/sampleInput, This is, false)
+2018-01-17 11:16:12.448 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:16:12.439 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@3486ac59 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-17 11:16:12.451 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:16:12.439 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@44397192 took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-17 11:16:12.453 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:16:12.456 [main] INFO  PCTest - 54 54
+2018-01-17 11:16:45.785 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@e1c48ef
+2018-01-17 11:16:45.798 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@15e249d6 took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-17 11:16:45.801 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@e1c48ef
+2018-01-17 11:16:45.802 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@e1c48ef
+2018-01-17 11:16:45.802 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@712f466e took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-17 11:16:45.802 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@712f466e took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-17 11:16:45.802 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@e1c48ef
+2018-01-17 11:16:45.803 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@e1c48ef
+2018-01-17 11:16:45.804 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@e1c48ef
+2018-01-17 11:16:45.804 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@e1c48ef
+2018-01-17 11:16:45.804 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@e1c48ef
+2018-01-17 11:16:45.804 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@e1c48ef
+2018-01-17 11:16:45.805 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@e1c48ef
+2018-01-17 11:16:45.805 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-17 11:16:45.806 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@73147d93 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-17 11:16:45.807 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@73147d93 took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-17 11:16:45.807 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@712f466e took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-17 11:16:45.807 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@73147d93 took: (sampleDirectory/sampleInput, This is, false)
+2018-01-17 11:16:45.807 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:16:45.808 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:16:45.808 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@15e249d6 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-17 11:16:45.813 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:16:45.805 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2454cb2f took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-17 11:16:45.815 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:16:45.818 [main] INFO  PCTest - 54 54
+2018-01-17 11:18:22.515 [Thread-1] INFO  com.work.assignments.FileIO.Producer - hit producer com.work.assignments.FileIO.Producer@3486ac59
+2018-01-17 11:18:22.525 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1b2cf3a3 took: (sampleDirectory/innerDirectory/sampleInput2, This is, false)
+2018-01-17 11:18:22.534 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@3486ac59
+2018-01-17 11:18:22.535 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@3486ac59
+2018-01-17 11:18:22.535 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@3486ac59
+2018-01-17 11:18:22.536 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@3486ac59
+2018-01-17 11:18:22.536 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@3486ac59
+2018-01-17 11:18:22.536 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b131112 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput2, This is, false)
+2018-01-17 11:18:22.537 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b131112 took: (sampleDirectory/innerDirectory/innerDirectory2/sampleInput, This is, false)
+2018-01-17 11:18:22.538 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b131112 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory4/sampleInput, This is, false)
+2018-01-17 11:18:22.538 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b131112 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput2, This is, false)
+2018-01-17 11:18:22.539 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b131112 took: (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false)
+2018-01-17 11:18:22.536 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/innerDirectory2/innerDirectory3/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@3486ac59
+2018-01-17 11:18:22.542 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/innerDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@3486ac59
+2018-01-17 11:18:22.542 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput2, This is, false) by producer com.work.assignments.FileIO.Producer@3486ac59
+2018-01-17 11:18:22.543 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Adding query (sampleDirectory/sampleInput, This is, false) by producer com.work.assignments.FileIO.Producer@3486ac59
+2018-01-17 11:18:22.543 [Thread-1] DEBUG com.work.assignments.FileIO.Producer - Producer end
+2018-01-17 11:18:22.544 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@1b2cf3a3 took: (sampleDirectory/innerDirectory/sampleInput, This is, false)
+2018-01-17 11:18:22.547 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b131112 took: (sampleDirectory/sampleInput, This is, false)
+2018-01-17 11:18:22.548 [Thread-5] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:18:22.546 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2a605923 took: (sampleDirectory/sampleInput2, This is, false)
+2018-01-17 11:18:22.549 [Thread-4] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:18:22.550 [Thread-3] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:18:22.647 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer com.work.assignments.FileIO.Consumer@2b131112 took: null
+2018-01-17 11:18:22.648 [Thread-2] DEBUG com.work.assignments.FileIO.Consumer - Consumer End
+2018-01-17 11:18:22.651 [main] INFO  PCTest - 54 54

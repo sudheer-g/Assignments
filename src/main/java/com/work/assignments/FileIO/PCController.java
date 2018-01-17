@@ -8,9 +8,9 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class PCController {
-    //private volatile boolean end;
     private AtomicBoolean end = new AtomicBoolean(false);
-    public List<Result> wordSearch(Query query) {
+
+    public List<Result> wordSearch(Query query) throws InterruptedException{
         BlockingQueue<Query> blockingQueue = new ArrayBlockingQueue<>(10);
         List<Result> resultList = Collections.synchronizedList(new ArrayList<>());
         int consumerCount = 4;
@@ -19,19 +19,15 @@ public class PCController {
         for(int i = 0; i < consumers.length; i++) {
             consumers[i] = new Thread(new Consumer(blockingQueue, resultList, end));
         }
-        try {
-            producerThread.start();
-            for(Thread consumer : consumers) {
-                consumer.start();
-            }
-            producerThread.join();
-            //blockingQueue.put(new Query(null, null, false));
-            end.set(true);
-            for(Thread consumer : consumers) {
-                consumer.join();
-            }
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+        producerThread.start();
+        for(Thread consumer : consumers) {
+            consumer.start();
+        }
+        producerThread.join();
+        end.set(true);
+        //consumers[2].interrupt();
+        for(Thread consumer : consumers) {
+            consumer.join();
         }
         return resultList;
     }
