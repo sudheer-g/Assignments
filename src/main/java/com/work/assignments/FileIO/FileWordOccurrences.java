@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class FileWordOccurrences implements WordSearchService{
@@ -31,6 +32,7 @@ public class FileWordOccurrences implements WordSearchService{
                 countWordOccurrencesInLine(line, lineCounter, word, fileName, resultList);
                 lineCounter++;
             }
+            Collections.sort(resultList);
             return resultList;
         } catch (IOException e) {
             throw new RuntimeException("Failed to read File.", e);

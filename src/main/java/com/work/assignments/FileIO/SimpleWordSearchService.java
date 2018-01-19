@@ -2,6 +2,7 @@ package com.work.assignments.FileIO;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -22,6 +23,9 @@ public class SimpleWordSearchService implements WordSearchService {
                     resultList = getDirectoryWordOccurrences(directoryName + '/' + file.getName(), word, true);
                 }
             }
+        }
+        if(resultList!= null) {
+            Collections.sort(resultList);
         }
         return resultList;
     }

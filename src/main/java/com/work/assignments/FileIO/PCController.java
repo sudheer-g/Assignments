@@ -37,6 +37,7 @@ public class PCController {
             logger.error("Thread has been interrupted.");
             throw new RuntimeException(e);
         }
+        Collections.sort(resultList);
         return resultList;
     }
 }
