@@ -23,7 +23,7 @@ public class SimpleWordSearchServiceTest {
         String fileName = "";
         Result result;
         try {
-            FileReader fr = FileIO.openFile("src/test/testCasesWordOccurrences");
+            FileReader fr = FileIO.openFile("src/test/resources/testCasesWordOccurrences");
             bufferedReader = new BufferedReader(fr);
             String line;
             while ((line = bufferedReader.readLine()) != null) {
@@ -41,7 +41,7 @@ public class SimpleWordSearchServiceTest {
             FileIO.closeFile(bufferedReader);
         }
 
-        return new Object[][]{new Object[]{"sampleDirectory", "This is", resultList, true}};
+        return new Object[][]{new Object[]{"src/test/resources/sampleDirectory", "This is", resultList, true}};
     }
 
     @Test(dataProvider = "SimpleWordSearchService")

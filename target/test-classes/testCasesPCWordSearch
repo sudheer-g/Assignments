@@ -1,2 +1,2 @@
-sampleDirectory,This is,false
-sampleDirectory/innerDirectory,This is,false
+src/test/resources/sampleDirectory,This is,false
+src/test/resources/sampleDirectory/innerDirectory,This is,false

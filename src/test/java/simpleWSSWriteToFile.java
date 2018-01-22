@@ -17,7 +17,7 @@ public class simpleWSSWriteToFile {
     @Test
     public void writeResultsToFile() {
         SimpleWordSearchService service = new SimpleWordSearchService();
-        Query query = new Query("100","This is", true);
+        Query query = new Query("src/test/100","This is", true);
         List<Result> resultList = service.search(query);
 
         JSONArray resultArray = new JSONArray();
