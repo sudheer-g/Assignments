@@ -11,6 +11,18 @@ public class Result implements Comparable<Result> {
         this.fileName = fileName;
     }
 
+    public int getLineNumber() {
+        return lineNumber;
+    }
+
+    public int getPositionNumber() {
+        return positionNumber;
+    }
+
+    public String getFileName() {
+        return fileName;
+    }
+
     @Override
     public String toString() {
         return "(" + lineNumber + ", " + positionNumber + "," + fileName + ")";
